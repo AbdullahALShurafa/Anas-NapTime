@@ -1,0 +1,17 @@
+/Users/Anas/naptime/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/Anas/naptime/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/Anas/naptime/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/Anas/naptime/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/Anas/naptime/Temp/bin/Debug/UnityEngine.dll
+/Users/Anas/naptime/Temp/bin/Debug/UnityEditor.dll
+/Users/Anas/naptime/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Anas/naptime/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Anas/naptime/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Anas/naptime/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Anas/naptime/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Anas/naptime/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Anas/naptime/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Anas/naptime/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Anas/naptime/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Anas/naptime/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Anas/naptime/Temp/bin/Debug/Mono.Cecil.Mdb.dll
