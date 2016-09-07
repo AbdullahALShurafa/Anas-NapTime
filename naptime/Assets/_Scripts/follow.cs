@@ -19,6 +19,7 @@ public class follow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //quit
        if(Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
