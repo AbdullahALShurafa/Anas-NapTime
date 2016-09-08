@@ -38,6 +38,8 @@ public class Player : MonoBehaviour
 	//------------------
 
 
+
+
 	void Awake()
 	{
 		myPlayer = this;
@@ -62,6 +64,12 @@ public class Player : MonoBehaviour
 		m_playerBehaviour.Behaviour ();
 		Heart_Handler();
 
+		if (Input.GetKey(KeyCode.A))
+		{
+			g_CurrentHealth--;
+			Heart_Handler();
+		}
+
 	}
 		
 
@@ -83,6 +91,7 @@ public class Player : MonoBehaviour
 		// Change this to last checkpoint
 		transform.position = m_startPoisition.position;
 		//m_health = 5;
+
 	}
 
 
@@ -140,6 +149,8 @@ public class Player : MonoBehaviour
 			AddStamina(100);
 			Destroy(col.gameObject);
 		}
+
+
 	}
 		
 
