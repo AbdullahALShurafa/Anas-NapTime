@@ -11,14 +11,16 @@ public class Player : MonoBehaviour
 
 	PlayerBehaviour m_playerBehaviour;
 
+	// Transforms and vector components
 	public Transform m_startPoisition;
+	internal Vector3 checkPointPos;
+	//-------------------------
 
 	//UI Componenets-------------
 	public Text g_lowStaminaTxt;
 	//-------------------------
 
 	// Health componenets------
-
 	public int m_health = 5;
 	public int g_CurrentHealth;
 
@@ -36,8 +38,6 @@ public class Player : MonoBehaviour
 	public Slider g_StaminaSlider;
 	public bool IsStaminaEmpty = false;
 	//------------------
-
-
 
 
 	void Awake()
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
 		m_playerBehaviour.Behaviour ();
 		Heart_Handler();
 
-		if (Input.GetKey(KeyCode.A))
+		if (Input.GetKeyUp(KeyCode.J))
 		{
 			g_CurrentHealth--;
 			Heart_Handler();
@@ -87,10 +87,9 @@ public class Player : MonoBehaviour
 
 	void Respawn()
 	{
-		m_playerBehaviour.Animation (AnimationClip.Idle);
-		// Change this to last checkpoint
-		transform.position = m_startPoisition.position;
-		//m_health = 5;
+		//TODO: Set player pos to this pos 
+		this.transform.position = checkPointPos;
+		g_CurrentHealth = 5;
 
 	}
 
@@ -139,6 +138,12 @@ public class Player : MonoBehaviour
 		if (col.gameObject.CompareTag("Enemy"))
 			{
 				g_CurrentHealth--;
+
+				if(g_CurrentHealth <=0)
+				{
+					Respawn();
+				}
+
 			}
 	}
 
@@ -149,14 +154,10 @@ public class Player : MonoBehaviour
 			AddStamina(100);
 			Destroy(col.gameObject);
 		}
-
-
 	}
 		
 
-	//______________________________
 	//Events for certain clips..
-
 	//while in the jump state
 	void EventOfJump()
 	{
