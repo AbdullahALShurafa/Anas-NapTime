@@ -20,10 +20,20 @@ public class Player : MonoBehaviour
 	public Text g_lowStaminaTxt;
 	//-------------------------
 
+
 	// Health componenets------
+	/// <summary>
+	/// Player health is 5 lives and total is health is 2 therefore whenever the player loses his 5 lives he will spawn at the checkpoint and total health get's to 1. if the player 
+	/// loses his hearts again he will lose the whole level. For example : player get's hit 5 times he respawns at the last checkpoint and his total health is x1 now.
+	/// This logic is done in order to use both checkpoints and game over mechanics in the game therefore the player total health is 10 not 5 because he has 2 chances before the game
+	/// ends
+	/// </summary>
+	// The hearts health which is 5
 	public int m_health = 5;
 	public int g_CurrentHealth;
-
+	// The total health which is x2
+	public int g_totalHealth = 2;
+	public Text g_totalHealthTxt;
 	public Sprite[] HeartSprites;
 
 	public Image HeartUIContainer;
@@ -36,7 +46,7 @@ public class Player : MonoBehaviour
 	public int g_startingStamina = 500;
 	public int g_currStamina;
 	public Slider g_StaminaSlider;
-	public bool IsStaminaEmpty = false;
+	internal bool IsStaminaEmpty = false;
 	//------------------
 
 
@@ -64,32 +74,31 @@ public class Player : MonoBehaviour
 		m_playerBehaviour.Behaviour ();
 		Heart_Handler();
 
-		if (Input.GetKeyUp(KeyCode.J))
-		{
-			g_CurrentHealth--;
-			Heart_Handler();
-		}
+		// when total health is x0 pop up the game over canvas.
+		 if ( g_totalHealth <=0)
+			Death();
+		
 
 	}
 		
 
 	void Death()
 	{
-		//Is player out of health
-		if (m_health <= 0) 
-		{
-			//Trigger dying animation.
-			m_playerBehaviour.Animation(AnimationClip.Die);
-
-			//TODO: Pop up option menu to restart or go to menu
-		}
+//			//Trigger dying animation.
+//			m_playerBehaviour.Animation(AnimationClip.Die);
+//
+//			//TODO: Pop up option menu to restart or go to menu
 	}
 
 	void Respawn()
 	{
 		//TODO: Set player pos to this pos 
 		this.transform.position = checkPointPos;
+
+		// Refill his health and remove one of his total healths
 		g_CurrentHealth = 5;
+		g_totalHealth--;
+		g_totalHealthTxt.text = "x" + g_totalHealth; 
 
 	}
 
@@ -139,11 +148,8 @@ public class Player : MonoBehaviour
 			{
 				g_CurrentHealth--;
 
-				if(g_CurrentHealth <=0)
-				{
+				if(g_CurrentHealth <=0 && g_totalHealth >0)
 					Respawn();
-				}
-
 			}
 	}
 
