@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[AddComponentMenu("Camera/3RDPerson Camera")]
 public class follow : MonoBehaviour
 {
 
@@ -19,11 +18,7 @@ public class follow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //quit
-       if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+      
         if (target)
         {
 			// me

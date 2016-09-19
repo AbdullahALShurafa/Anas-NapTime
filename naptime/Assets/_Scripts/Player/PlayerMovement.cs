@@ -11,26 +11,20 @@ public class PlayerMovement : Protagonist
 	{	
 		if (Is_keyPressed(KeyCode.W)) 
 		{
-//			if (!Player.myPlayer.IsStaminaEmpty)
-//			{
+
 				//Move Player with the right animation
 				Run(Vector3.forward, AnimationClip.RunForward);
 				//set his direction
 				Direction(0);
 				// Deduct his stamina.
 				Player.myPlayer.DeductStamina(1);
-			//}
-
-//			else 
-//				Tired(Vector3.forward);
-//				Debug.Log("sss");
 		}
 
 		else if (Is_keyPressed(KeyCode.S))
 		{
 			
-			Run (Vector3.forward , AnimationClip.RunBackward);
-			Direction (180);
+			Run (Vector3.back , AnimationClip.RunBackward);
+		//	Direction (180);
 			Player.myPlayer.DeductStamina(1);				
 
 
@@ -38,8 +32,8 @@ public class PlayerMovement : Protagonist
 
 		else if (Is_keyPressed(KeyCode.A)) 
 		{
-			Run (Vector3.forward , AnimationClip.RunLeft);
-			Direction (-90);
+			Run (Vector3.left , AnimationClip.RunLeft);
+			//Direction (-90);
 			Player.myPlayer.DeductStamina(1);				
 
 
@@ -47,8 +41,8 @@ public class PlayerMovement : Protagonist
 
 		else if (Is_keyPressed(KeyCode.D))
 		{
-			Run (Vector3.forward , AnimationClip.RunRight);
-			Direction (90);
+			Run (Vector3.right , AnimationClip.RunRight);
+		//	Direction (90);
 			Player.myPlayer.DeductStamina(1);				
 
 
