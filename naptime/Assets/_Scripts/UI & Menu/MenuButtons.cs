@@ -22,7 +22,9 @@ public class MenuButtons : MonoBehaviour
 
 	void Awake()
 	{
-		
+
+		Time.timeScale = 1;
+
 		if (!m_instance)
 		{
 			m_instance = this;

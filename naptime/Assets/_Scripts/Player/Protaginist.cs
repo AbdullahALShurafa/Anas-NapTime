@@ -61,14 +61,16 @@ public class Protagonist
 		Animation (AnimationClip.RunForward);
 		m_transform.rotation=Quaternion.AngleAxis(a_direction, Vector3.up);
 
-
 	}
 
 	internal void Run(Vector3 a_position, AnimationClip a_animationClip)
 	{
 		m_transform.Translate (a_position * m_speed * Time.deltaTime);
+
 		Animation(a_animationClip);
 	}
+
+
 
 	internal void Tired(Vector3 a_position)
 	{
@@ -76,8 +78,5 @@ public class Protagonist
 		m_animator.Play("TiredWalking");
 	}
 
-	internal void LockCertainRotations()
-	{	//allowing player to rotate only in y-axis rotation
-		m_transform.eulerAngles = new Vector3 (0, m_transform.eulerAngles.y, 0);
-	}
+
 }
