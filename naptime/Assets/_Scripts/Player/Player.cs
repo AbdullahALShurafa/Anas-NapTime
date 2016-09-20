@@ -144,17 +144,18 @@ public class Player : MonoBehaviour
 
 	void OnCollisionEnter (Collision col)
 	{
-		if (col.gameObject.CompareTag("Enemy"))
-			{
-				g_CurrentHealth--;
-
-				if(g_CurrentHealth <=0 && g_totalHealth >0)
-					Respawn();
-			}
+		
 	}
 
 	void OnTriggerEnter(Collider col)
 	{
+		if (col.gameObject.CompareTag("Enemy"))
+		{
+			g_CurrentHealth--;
+
+			if(g_CurrentHealth <=0 && g_totalHealth >0)
+				Respawn();
+		}
 		if ( col.gameObject.CompareTag("Coin"))
 		{
 			AddStamina(100);

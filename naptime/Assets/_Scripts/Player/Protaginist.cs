@@ -27,7 +27,7 @@ public class Protagonist
 	internal int m_hit = 0;
 
 	internal Vector3 m_distance ;
-	internal Vector3 jumpVelocity = new  Vector3(0, 10.0f, 0);
+	internal Vector3 jumpVelocity = new  Vector3(0, 25.0f, 0);
 
 
 	//Checking is player in the state of certain animation
