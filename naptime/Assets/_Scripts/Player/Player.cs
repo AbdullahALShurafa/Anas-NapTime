@@ -117,7 +117,11 @@ public class Player : MonoBehaviour
 
 	public int AddHealth()
 	{
-		return g_CurrentHealth++;
+		if ( g_CurrentHealth >= 5)
+			return 0;
+		
+		else
+			return g_CurrentHealth++;
 
 	}
 
@@ -170,10 +174,19 @@ public class Player : MonoBehaviour
 			if(g_CurrentHealth <=0 && g_totalHealth >0)
 				Respawn();
 		}
+
 		if ( col.gameObject.CompareTag("Coin"))
 		{
 			AddStamina(100);
 			Destroy(col.gameObject);
+		}
+
+		if ( col.gameObject.CompareTag("Heart"))
+		{
+			AddHealth();
+			//TODO: play heart VFX here
+			Destroy(col.gameObject);
+
 		}
 	}
 		
