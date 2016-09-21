@@ -9,7 +9,7 @@ public enum AnimationClip
 	RunRight = 3,
 	RunLeft = 4,
 	Die = 8,
-	TiredWalking = 5,
+	//TiredWalking = 5,
 };
 
 
@@ -27,7 +27,7 @@ public class Protagonist
 	internal int m_hit = 0;
 
 	internal Vector3 m_distance ;
-	internal Vector3 jumpVelocity = new  Vector3(0, 25.0f, 0);
+	internal Vector3 jumpVelocity = new  Vector3(0, 15.0f, 0);
 
 
 	//Checking is player in the state of certain animation
@@ -72,11 +72,11 @@ public class Protagonist
 
 
 
-	internal void Tired(Vector3 a_position)
-	{
-		m_transform.Translate (a_position * m_speed * Time.deltaTime);
-		m_animator.Play("TiredWalking");
-	}
-
+//	internal void Tired(Vector3 a_position)
+//	{
+//		m_transform.Translate (a_position * m_speed * Time.deltaTime);
+//		m_animator.Play("TiredWalking");
+//	}
+//
 
 }
