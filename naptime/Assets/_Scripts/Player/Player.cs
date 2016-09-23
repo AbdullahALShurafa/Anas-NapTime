@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
 	private Animator m_animator;
 	PlayerBehaviour m_playerBehaviour;
 	internal bool isPlayerGrounded = true;
+	private bool isShieldOn;
 	private Rigidbody rb;
 	// Transforms and vector components for player
 	public Transform m_startPoisition;
@@ -117,6 +119,7 @@ public class Player : MonoBehaviour
 
 	public int AddHealth()
 	{
+		// handles index out of range error
 		if ( g_CurrentHealth >= 5)
 			return 0;
 		
@@ -151,23 +154,27 @@ public class Player : MonoBehaviour
 		g_lowStaminaTxt.enabled = false;
 	}
 
+	IEnumerator ShieldOnBehavior (float a_shieldTime)
+	{
+		isShieldOn = true;
+		Debug.Log(isShieldOn);
+		yield return new WaitForSeconds(a_shieldTime);
+		isShieldOn = false;
+		Debug.Log(isShieldOn);
+	}
+
 	void OnCollisionEnter (Collision col)
 	{
 		if(col.gameObject.CompareTag ("floor"))
 		{
 			isPlayerGrounded = true;
-			//Debug.Log( "should be true" + isPlayerGrounded);
 			rb.isKinematic = true;
-
-
 		}
 	}
-
-
-
+		
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.CompareTag("Enemy"))
+		if (col.gameObject.CompareTag("Enemy") && !isShieldOn)
 		{
 			g_CurrentHealth--;
 
@@ -180,6 +187,13 @@ public class Player : MonoBehaviour
 			AddStamina(100);
 			Destroy(col.gameObject);
 		}
+
+		if ( col.gameObject.CompareTag("shield"))
+		{
+			StartCoroutine(ShieldOnBehavior(20));
+			Destroy(col.gameObject);
+		}
+
 
 		if ( col.gameObject.CompareTag("Heart"))
 		{
