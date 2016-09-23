@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 	PlayerBehaviour m_playerBehaviour;
 	internal bool isPlayerGrounded = true;
 	private bool isShieldOn;
+
 	private Rigidbody rb;
 	// Transforms and vector components for player
 	public Transform m_startPoisition;
@@ -82,9 +83,8 @@ public class Player : MonoBehaviour
 		Heart_Handler();
 
 		// when total health is x0 pop up the game over canvas.
-		 if ( g_totalHealth <=0)
-			Death();
-		
+//		 if ( g_totalHealth <=0)
+//			Death();
 
 	}
 		
@@ -163,6 +163,11 @@ public class Player : MonoBehaviour
 		Debug.Log(isShieldOn);
 	}
 
+	void FastRunningPowerUp ()
+	{
+		m_playerBehaviour.m_speed = 50;	
+	}
+
 	void OnCollisionEnter (Collision col)
 	{
 		if(col.gameObject.CompareTag ("floor"))
@@ -202,6 +207,13 @@ public class Player : MonoBehaviour
 			Destroy(col.gameObject);
 
 		}
+		if ( col.gameObject.CompareTag("Arrow"))
+		{
+			FastRunningPowerUp();
+			Destroy(col.gameObject);
+		}
+
+
 	}
 		
 
