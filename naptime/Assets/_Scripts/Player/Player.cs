@@ -14,8 +14,9 @@ public class Player : MonoBehaviour
 	PlayerBehaviour m_playerBehaviour;
 	internal bool isPlayerGrounded = true;
 	private bool isShieldOn;
-
 	private Rigidbody rb;
+	public Image flashingHurtImage;
+
 	// Transforms and vector components for player
 	public Transform m_startPoisition;
 	internal Vector3 checkPointPos;
@@ -74,6 +75,7 @@ public class Player : MonoBehaviour
 
 		rb = GetComponent<Rigidbody>();
 
+		flashingHurtImage.enabled = false;
 	}
 
 	// Update is called once per frame
@@ -81,6 +83,7 @@ public class Player : MonoBehaviour
 	{ 
 		m_playerBehaviour.Behaviour ();
 		Heart_Handler();
+
 
 		// when total health is x0 pop up the game over canvas.
 //		 if ( g_totalHealth <=0)
@@ -91,6 +94,7 @@ public class Player : MonoBehaviour
 
 	void Death()
 	{
+		Debug.Log("Buya");
 //			//Trigger dying animation.
 //			m_playerBehaviour.Animation(AnimationClip.Die);
 //
@@ -130,7 +134,9 @@ public class Player : MonoBehaviour
 
 	public void DeductStamina(int amount)
 	{
+		// How much stamina are we going to deduct when player is running?
 		g_currStamina -= amount;
+		// Change the slider value depending on the stamina
 		g_StaminaSlider.value = g_currStamina;
 
 		if (g_currStamina <= 0 )
@@ -157,10 +163,18 @@ public class Player : MonoBehaviour
 	IEnumerator ShieldOnBehavior (float a_shieldTime)
 	{
 		isShieldOn = true;
-		Debug.Log(isShieldOn);
+		// The time that the shield will stay on
 		yield return new WaitForSeconds(a_shieldTime);
 		isShieldOn = false;
-		Debug.Log(isShieldOn);
+	}
+
+	public IEnumerator FlashHurtImage()
+	{
+		//Enable the image for the flash effect
+		flashingHurtImage.enabled = true;
+		yield return new WaitForSeconds(0.2f);
+		flashingHurtImage.enabled = false;
+		//yield return new WaitForSeconds(0.3f); 
 	}
 
 	void FastRunningPowerUp ()
@@ -179,10 +193,14 @@ public class Player : MonoBehaviour
 		
 	void OnTriggerEnter(Collider col)
 	{
+		// When enemies damage our player and our shield powerup is not on
 		if (col.gameObject.CompareTag("Enemy") && !isShieldOn)
 		{
+			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
+			StartCoroutine(FlashHurtImage());
 
+			// when player health is finished respawn him to the last checkpoint 
 			if(g_CurrentHealth <=0 && g_totalHealth >0)
 				Respawn();
 		}
