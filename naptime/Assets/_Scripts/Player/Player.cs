@@ -168,6 +168,16 @@ public class Player : MonoBehaviour
 		isShieldOn = false;
 	}
 
+//	IEnumerator TimerPowerUp (float a_TimerDuration)
+//	{
+//		// Get the timer Bool from the gamemanager class and set it to false so that the timer doesn't run anymore.
+//		GameManager.g_gameManager.isTimer = false;
+//		// The time that the powerup will stay enabled
+//		yield return new WaitForSeconds(a_TimerDuration);
+//		// set everything back to default.
+//		GameManager.g_gameManager.isTimer = true;
+//	}
+//
 	public IEnumerator FlashHurtImage()
 	{
 		//Enable the image for the flash effect
@@ -231,6 +241,12 @@ public class Player : MonoBehaviour
 			Destroy(col.gameObject);
 		}
 
+//		if ( col.gameObject.CompareTag("clock"))
+//		{
+//			StartCoroutine(TimerPowerUp(5));
+//			Destroy(col.gameObject);
+//		}
+//
 
 	}
 		
