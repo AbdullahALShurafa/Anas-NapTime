@@ -190,6 +190,14 @@ public class Player : MonoBehaviour
 		//yield return new WaitForSeconds(0.3f); 
 	}
 
+	public IEnumerator PauseTimePowerup(float a_time)
+	{
+		//Enable the image for the flash effect
+		GameManager.g_gameManager.isTimerPaused = true;
+		yield return new WaitForSeconds(a_time);
+		GameManager.g_gameManager.isTimerPaused = false;
+	}
+
 	void FastRunningPowerUp ()
 	{
 		m_playerBehaviour.m_speed = 50;	
@@ -244,11 +252,11 @@ public class Player : MonoBehaviour
 			Destroy(col.gameObject);
 		}
 
-//		if ( col.gameObject.CompareTag("clock"))
-//		{
-//			StartCoroutine(TimerPowerUp(5));
-//			Destroy(col.gameObject);
-//		}
+		if ( col.gameObject.CompareTag("clock"))
+		{
+			StartCoroutine(PauseTimePowerup(5));
+			Destroy(col.gameObject);
+		}
 //
 
 	}
