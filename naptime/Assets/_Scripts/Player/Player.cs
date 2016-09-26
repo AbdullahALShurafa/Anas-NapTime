@@ -64,7 +64,10 @@ public class Player : MonoBehaviour
 
 	void Start () 
 	{
+		myPlayer.enabled = true;
+
 		m_animator = GetComponent<Animator> ();
+
 		m_playerBehaviour = new PlayerBehaviour (m_animator,transform,m_cam);
 
 		g_CurrentHealth = m_health;
