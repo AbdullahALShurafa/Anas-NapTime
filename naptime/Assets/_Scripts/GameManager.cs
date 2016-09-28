@@ -14,11 +14,11 @@ public class GameManager : MonoBehaviour {
 	internal bool isTimerPaused;
 
 	/// <summary>
-	/// Fading
+	/// Screen fading
 	/// </summary>
 	public float fadeTime;
 	public Image m_fadePlane;
-
+	public Image g_portalPanel;
 	public GameObject endLevelPanel;
 	public static GameManager g_gameManager;
 	public Text highScore;
@@ -32,8 +32,8 @@ public class GameManager : MonoBehaviour {
 		StartCoroutine (Timer());
 	}
 
-	void Update()
-	{
+//	void Update()
+//	{
 //		// Timer in Minutes and seconds. 
 //		startTime += Time.deltaTime;
 //		// Check for 1 seconds and add a second. also check if the timer is being paused or not. because the timer will be paused by using a time powerup or at 2.5D Mode.
@@ -53,8 +53,8 @@ public class GameManager : MonoBehaviour {
 //			}
 //			// Update our text.
 //			timeText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
-		//}
-	}
+//		}
+//	}
 
 	void LevelEnded()
 	{
@@ -71,11 +71,10 @@ public class GameManager : MonoBehaviour {
 	{
 		while (true )
 		{
-				
-
 			yield return new WaitForSeconds(1);
 
-			if (isTimerPaused == false)
+			// Check if wether we got the powerup or not & if we in the 2D world or not. because in the 2D world time pause.
+			if (isTimerPaused == false && !Portal._portalInstance.isInSecondDimension)
 			{
 				seconds++;
 
@@ -95,7 +94,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-
+	// Fading used for transsisions between scenes.
 	IEnumerator Fade(Color a_from, Color a_to, float a_time)
 	{
 		float speed = 1 / a_time;
@@ -111,9 +110,19 @@ public class GameManager : MonoBehaviour {
 
 	}
 
+	// USed for portal fading
+	public void Fading(Color a_from, Color a_to, float a_time)
+	{
+		float speed = 1 / a_time;
+		float percent = 0;
 
+		while (percent < 1) 
+		{
+			percent += Time.deltaTime * speed;
+			g_portalPanel.color = Color.Lerp (a_from, a_to, percent);
 
+		}
 
-
+	}
 
 }

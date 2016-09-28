@@ -9,12 +9,11 @@ public enum AnimationClip
 	RunRight = 3,
 	RunLeft = 4,
 	Die = 8,
-	//TiredWalking = 5,
 };
 
 
 
-public class Protagonist 
+public class Characters 
 {
 	internal Animator m_animator;
 	internal Transform m_transform;
@@ -28,6 +27,7 @@ public class Protagonist
 
 	internal Vector3 m_distance ;
 	internal Vector3 jumpVelocity = new  Vector3(0, 15.0f, 0);
+
 
 
 	//Checking is player in the state of certain animation

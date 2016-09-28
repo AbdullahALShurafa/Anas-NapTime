@@ -15,21 +15,22 @@ public class PlayerBehaviour : PlayerMovement
 	{
 		
 		FreeMovement ();
-		JumpState ();
+		SecondDimentionMovement();
+	//	JumpState ();
 		SlideState();
 	}
 
 
 	//Method to make player jump
-	void JumpState()
-	{
-		//if not in the state of jumping
-		if (Input.GetKeyDown (KeyCode.Space) && Is_animation("Jump", false)) 
-		{
-			//Let player jump
-			TriggerAnimation ("Jump");
-		}
-	}
+//	void JumpState()
+//	{
+//		//if not in the state of jumping
+//		if (Input.GetKeyDown (KeyCode.Space) && Is_animation("Jump", false)) 
+//		{
+//			//Let player jump
+//			TriggerAnimation ("Jump");
+//		}
+//	}
 
 	/// <summary>
 	/// slide State. Will work if the player pressed the correct keys and if the slide animation is not being used 

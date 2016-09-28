@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 	public GameObject m_cam;
 	private Animator m_animator;
 	PlayerBehaviour m_playerBehaviour;
-	internal bool isPlayerGrounded = true;
+	public bool isPlayerGrounded = true;
 	private bool isShieldOn;
 	private Rigidbody rb;
 	public Image flashingHurtImage;
@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
 	// Transforms and vector components for player
 	public Transform m_startPoisition;
 	internal Vector3 checkPointPos;
+	internal Vector3 portalPos;
 	//---------------------------------------
 
 	//UI Componenets-------------
@@ -84,6 +85,8 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{ 
+
+		JumpState();
 		m_playerBehaviour.Behaviour ();
 		Heart_Handler();
 
@@ -208,6 +211,7 @@ public class Player : MonoBehaviour
 		if(col.gameObject.CompareTag ("floor"))
 		{
 			isPlayerGrounded = true;
+			m_playerBehaviour.m_animator.SetBool ("Jump", false);
 			rb.isKinematic = true;
 		}
 	}
@@ -262,21 +266,42 @@ public class Player : MonoBehaviour
 	}
 		
 
+	void JumpState()
+	{
+			//if not in the state of jumping
+		if (Input.GetKeyDown (KeyCode.Space) && m_playerBehaviour.Is_animation("Jump", false) && isPlayerGrounded) 
+			{
+			
+//			if(isPlayerGrounded == true)
+//				{
+					//Let player jump
+					m_playerBehaviour.TriggerAnimation ("Jump");
+					//Jump
+					rb.isKinematic = false;
+					transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
+					isPlayerGrounded = false;
+				//}
+
+//				else
+//				{
+//					isPlayerGrounded = true;
+//					m_playerBehaviour.m_animator.SetBool ("Jump", false);
+//
+//				}
+//				
+			}
+	}
+
 	//Events for certain clips..
 	//while in the jump state
-	void EventOfJump()
-	{
-		
-		//Jump
-		rb.isKinematic = false;
-		transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
-		isPlayerGrounded = false;
-
-	}
+//	void EventOfJump()
+//	{
+//
+//	}
 
 	void EventOfSlide()
 	{
-			m_playerBehaviour.m_animator.SetBool("Slide", true);
+		m_playerBehaviour.m_animator.SetBool("Slide", true);
 	}
 
 	//This is being called inside certain animation clips, to make player move. 
@@ -287,10 +312,10 @@ public class Player : MonoBehaviour
 		
 	//Events Disables
 	//Following logic will disable certain parameter
-	void DisableJumpTrigger()
-	{
-		m_playerBehaviour.m_animator.SetBool ("Jump", false);
-	}
+//	void DisableJumpTrigger()
+//	{
+//		m_playerBehaviour.m_animator.SetBool ("Jump", false);
+//	}
 
 	void DisableSlideTrigger()
 	{
