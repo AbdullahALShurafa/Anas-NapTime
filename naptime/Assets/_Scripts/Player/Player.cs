@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
 	private bool isShieldOn;
 	private Rigidbody rb;
 	public Image flashingHurtImage;
-
 	// Transforms and vector components for player
 	public Transform m_startPoisition;
 	internal Vector3 checkPointPos;
@@ -42,7 +41,7 @@ public class Player : MonoBehaviour
 	public int g_totalHealth = 2;
 	public Text g_totalHealthTxt;
 	public Sprite[] HeartSprites;
-
+	internal bool isInSecondDimension =false;
 	public Image HeartUIContainer;
 	//-------------------------
 
@@ -80,6 +79,7 @@ public class Player : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 
 		flashingHurtImage.enabled = false;
+
 	}
 
 	// Update is called once per frame
@@ -100,7 +100,6 @@ public class Player : MonoBehaviour
 
 	void Death()
 	{
-		Debug.Log("Buya");
 //			//Trigger dying animation.
 //			m_playerBehaviour.Animation(AnimationClip.Die);
 //
@@ -214,6 +213,8 @@ public class Player : MonoBehaviour
 			m_playerBehaviour.m_animator.SetBool ("Jump", false);
 			rb.isKinematic = true;
 		}
+
+
 	}
 		
 	void OnTriggerEnter(Collider col)
@@ -261,7 +262,12 @@ public class Player : MonoBehaviour
 			StartCoroutine(PauseTimePowerup(5));
 			Destroy(col.gameObject);
 		}
-//
+
+		if(col.gameObject.CompareTag ("portal"))
+		{
+			isInSecondDimension = true;
+
+		}
 
 	}
 		

@@ -30,6 +30,7 @@ public class Characters
 
 
 
+
 	//Checking is player in the state of certain animation
 	internal bool Is_animation(string a_nameTag, bool a_isActive)
 	{

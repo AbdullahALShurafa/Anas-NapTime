@@ -10,7 +10,7 @@ public class PlayerMovement : Characters
 	internal void FreeMovement()
 	{    
 
-		if (Portal._portalInstance.isInSecondDimension == false)
+		if (Player.myPlayer.isInSecondDimension == false)
 		{
 			if (Is_keyPressed(KeyCode.W)) 
 			{
@@ -67,7 +67,7 @@ public class PlayerMovement : Characters
 	/// </summary>
 	internal void SecondDimentionMovement()
 	{
-		if (Portal._portalInstance.isInSecondDimension == true)
+		if (Player.myPlayer.isInSecondDimension == true)
 		{
 			Debug.Log("hhh");
 			if (Is_keyPressed(KeyCode.A)) 

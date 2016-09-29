@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour {
 			yield return new WaitForSeconds(1);
 
 			// Check if wether we got the powerup or not & if we in the 2D world or not. because in the 2D world time pause.
-			if (isTimerPaused == false && !Portal._portalInstance.isInSecondDimension)
+			if (isTimerPaused == false && Player.myPlayer.isInSecondDimension)
 			{
 				seconds++;
 
