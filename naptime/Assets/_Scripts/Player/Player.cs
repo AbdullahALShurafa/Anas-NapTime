@@ -13,13 +13,16 @@ public class Player : MonoBehaviour
 	private Animator m_animator;
 	PlayerBehaviour m_playerBehaviour;
 	public bool isPlayerGrounded = true;
+	internal bool isPlayerAlive = true;
 	private bool isShieldOn;
+	internal bool isInSecondDimension =false;
 	private Rigidbody rb;
 	public Image flashingHurtImage;
 	// Transforms and vector components for player
 	public Transform m_startPoisition;
 	internal Vector3 checkPointPos;
 	internal Vector3 portalPos;
+
 	//---------------------------------------
 
 	//UI Componenets-------------
@@ -36,12 +39,10 @@ public class Player : MonoBehaviour
 	// The hearts health which is 5
 	public int m_health = 5;
 	public int g_CurrentHealth;
-
 	// The total health which is x2
 	public int g_totalHealth = 2;
 	public Text g_totalHealthTxt;
 	public Sprite[] HeartSprites;
-	internal bool isInSecondDimension =false;
 	public Image HeartUIContainer;
 	//-------------------------
 
@@ -88,34 +89,43 @@ public class Player : MonoBehaviour
 
 		JumpState();
 		m_playerBehaviour.Behaviour ();
-		Heart_Handler();
 
+		if (g_totalHealth > 0 )
+			Heart_Handler();
 
-		// when total health is x0 pop up the game over canvas.
-//		 if ( g_totalHealth <=0)
-//			Death();
-
+		 if (g_totalHealth <= 0)
+			Death();
 	}
 		
 
 	void Death()
 	{
-//			//Trigger dying animation.
-//			m_playerBehaviour.Animation(AnimationClip.Die);
-//
-//			//TODO: Pop up option menu to restart or go to menu
+		// Player is Dead. 
+		isPlayerAlive = false;
+
+//		//Trigger dying animation.
+		m_playerBehaviour.TriggerAnimation ("Death");
+
+		// Fixes a bug that affects the UI of the Health.. , Tried to do it automaticly in the if condition but did'nt work therefore it needed a manual fix
+		HeartUIContainer.sprite = HeartSprites[0];
+
+//		TODO: Pop up option menu to restart or go to menu
+			
 	}
 
 	void Respawn()
 	{
+		g_totalHealth--;
+		// Respawn only when we have health 
 		//TODO: Set player pos to this pos 
-		this.transform.position = checkPointPos;
+		// Activated checkpoint only when our player has total health else his dead and he shouldn't respawn at the checkpoint
+		if (g_totalHealth >0) 
+			this.transform.position = checkPointPos;
 
 		// Refill his health and remove one of his total healths
 		g_CurrentHealth = 5;
-		g_totalHealth--;
+			
 		g_totalHealthTxt.text = "x" + g_totalHealth; 
-
 	}
 
 
@@ -123,7 +133,6 @@ public class Player : MonoBehaviour
 	{
 		// Change the heart sprite depending on health
 		HeartUIContainer.sprite = HeartSprites[g_CurrentHealth];
-
 	}
 
 	public int AddHealth()
@@ -214,13 +223,12 @@ public class Player : MonoBehaviour
 			rb.isKinematic = true;
 		}
 
-
 	}
 		
 	void OnTriggerEnter(Collider col)
 	{
 		// When enemies damage our player and our shield powerup is not on
-		if (col.gameObject.CompareTag("Enemy") && !isShieldOn)
+		if (col.gameObject.CompareTag("Enemy") && !isShieldOn && isPlayerAlive)
 		{
 			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
@@ -275,7 +283,11 @@ public class Player : MonoBehaviour
 	void JumpState()
 	{
 			//if not in the state of jumping
-		if (Input.GetKeyDown (KeyCode.Space) && m_playerBehaviour.Is_animation("Jump", false) && isPlayerGrounded) 
+		if (Input.GetKeyDown (KeyCode.Space) 
+			&& m_playerBehaviour.Is_animation("Jump", false) 
+			&& isPlayerGrounded 
+			&& isPlayerAlive) 
+
 			{
 			
 //			if(isPlayerGrounded == true)

@@ -70,14 +70,4 @@ public class Characters
 
 		Animation(a_animationClip);
 	}
-
-
-
-//	internal void Tired(Vector3 a_position)
-//	{
-//		m_transform.Translate (a_position * m_speed * Time.deltaTime);
-//		m_animator.Play("TiredWalking");
-//	}
-//
-
 }

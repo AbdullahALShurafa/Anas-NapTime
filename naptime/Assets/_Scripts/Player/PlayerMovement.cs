@@ -4,8 +4,6 @@ using System.Collections.Generic;
 public class PlayerMovement : Characters 
 {
 
-
-
 	//Free Movement: allow protagonist to rotate and move only with forward animation clip in certain directions
 	internal void FreeMovement()
 	{    
@@ -72,7 +70,6 @@ public class PlayerMovement : Characters
 			Debug.Log("hhh");
 			if (Is_keyPressed(KeyCode.A)) 
 			{
-
 				//Move Player with the right animation
 				Run(Vector3.forward, AnimationClip.RunLeft);
 				//set his direction

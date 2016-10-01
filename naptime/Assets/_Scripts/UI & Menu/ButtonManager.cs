@@ -12,7 +12,6 @@ public class ButtonManager : MonoBehaviour {
 	public Canvas m_pauseCanvas;
 	public Canvas m_helpCanas;
 
-
 	bool IsPasued = false;
 	bool isHelpOpend = false;
 
@@ -30,9 +29,14 @@ public class ButtonManager : MonoBehaviour {
 		SceneManager.LoadScene(a_scene);
 	}
 
+	public void LoadCurrentScene()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	}
+		
+
 	void Update()
 	{
-
 		CheckForPause();
 
 	}
@@ -101,7 +105,6 @@ public class ButtonManager : MonoBehaviour {
 			m_pauseCanvas.enabled = true;	
 			TogglePlayerScript();
 
-
 		}
 
 	}
@@ -123,22 +126,19 @@ public class ButtonManager : MonoBehaviour {
 		m_gameCanvas.GetComponent<GraphicRaycaster>().enabled = true;
 		m_helpCanas.enabled = false;
 		isHelpOpend = false;
-
-
 	}
 
 	void TogglePlayerScript()
 	{
-		GameObject PlayerScriptClass = GameObject.FindWithTag("Player");
-
+		// Toggle player's controller if the game is paused.
 		if (IsPasued)
 		{
-			PlayerScriptClass.GetComponent<Player>().enabled = false;
+			Player.myPlayer.enabled = false;
 		}
 
-		if (IsPasued == false)
+		if (!IsPasued)
 		{
-			PlayerScriptClass.GetComponent<Player>().enabled = true;
+			Player.myPlayer.enabled = true;
 		}
 	}
 }
