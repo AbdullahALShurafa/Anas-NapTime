@@ -192,6 +192,7 @@ public class Player : MonoBehaviour
 //		GameManager.g_gameManager.isTimer = true;
 //	}
 //
+
 	public IEnumerator FlashHurtImage()
 	{
 		//Enable the image for the flash effect

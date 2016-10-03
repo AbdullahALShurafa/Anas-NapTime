@@ -9,23 +9,21 @@ public class Portal : MonoBehaviour {
     public GameObject SpawnPointIn2D;
     public GameObject SpawnPointIn3D;
     bool isIn3Dworld;
-    // Use this for initialization
+
     void Start()
     {
         activatePortal = false;
         isCameraViewDefault = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
-       // Debug.Log(Player.myPlayer.isInSecondDimension);
-        Debug.Log(isIn3Dworld);
         if (activatePortal)
         {
             Camera.main.fieldOfView += 30 * Time.deltaTime;
         }
+
         if (Camera.main.fieldOfView >= 180)
         {
             
@@ -53,6 +51,7 @@ public class Portal : MonoBehaviour {
             Camera.main.GetComponent<follow>().rotationDamping = 0;
             Camera.main.GetComponent<follow>().height = 2;
         }
+
         if (!isCameraViewDefault)
         {
             
@@ -81,7 +80,7 @@ public class Portal : MonoBehaviour {
    // TO DO::: PLAY IDLE ANIMATION
     void OnTriggerEnter(Collider obj)
     {
-
+		// Going to 2D
         if (obj.gameObject.CompareTag("Player") && Player.myPlayer.isInSecondDimension == false)
         {
             HandlePortalEvents(new Vector3(0,90,0));
@@ -95,6 +94,7 @@ public class Portal : MonoBehaviour {
 
     void HandlePortalEvents(Vector3 a_playerTransform)
     {
+		Player.myPlayer.isInSecondDimension = true;
         GetComponent<BoxCollider>().enabled = false;
         Player.myPlayer.enabled = false;
         activatePortal = true;
@@ -104,22 +104,10 @@ public class Portal : MonoBehaviour {
     void TransportPlayer(GameObject a_point)
     {
         player.transform.localPosition = new Vector3(a_point.transform.position.x, a_point.transform.position.y, a_point.transform.position.z);
+		Debug.Log("jj");
     }
 }
 
 
-//	IEnumerator TransportToOtherDimension()
-//	{
-//		
-////		//TODO: Play the particle system , Fade screen then teleport. Same thing for going back just patrol him last position
-////		PS_Transport.Play();
-////		isInSecondDimension = true;
-////		Player.myPlayer.enabled = false;
-////		yield return new WaitForSeconds(10);
-////		GameManager.g_gameManager.Fading(Color.clear, Color.black, 1);
-////
-////        player.transform.localPosition = new Vector3(SpawnPoint.transform.position.x,SpawnPoint.transform.position.y,SpawnPoint.transform.position.z);
-////		Player.myPlayer.enabled = true;
-////		player.transform.Rotate(0, 90, 0);
-//	}
+
 

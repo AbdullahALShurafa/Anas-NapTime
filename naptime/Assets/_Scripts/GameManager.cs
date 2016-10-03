@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour {
 
 	float minutes;
 	float seconds;
-	public bool isTimer = true;
 	internal bool isTimerPaused;
 
 	/// <summary>
