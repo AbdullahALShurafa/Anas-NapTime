@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 	public bool isPlayerGrounded = true;
 	internal bool isPlayerAlive = true;
 	private bool isShieldOn;
-	internal bool isInSecondDimension =false;
+	internal bool isInSecondDimension = false;
 	private Rigidbody rb;
 	public Image flashingHurtImage;
 	// Transforms and vector components for player
@@ -271,11 +271,7 @@ public class Player : MonoBehaviour
 			Destroy(col.gameObject);
 		}
 
-		if(col.gameObject.CompareTag ("portal"))
-		{
-			isInSecondDimension = true;
-
-		}
+		
 
 	}
 		

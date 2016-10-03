@@ -4,73 +4,108 @@ using System.Collections;
 public class Portal : MonoBehaviour {
 
     public GameObject player;
-  //  bool activatePortal;
-   // bool isCameraViewDefault;
-    public GameObject SpawnPoint;
-	internal bool isInSecondDimension = false;
-	public static Portal _portalInstance;
-	private int NoOfTimePlayerCanEnterPortal;
-	public ParticleSystem PS_Transport;
-	internal Animator m_animator;
-
-	void Awake()
-	{
-		_portalInstance = this;
-		m_animator = GetComponent<Animator>();
-
-	}
-//	void Start ()
-//	{
-//       // activatePortal = false;
-//      //  isCameraViewDefault = true;
-//	}
-	
-
-//	void Update () 
-//	{
-//		
-//	       // manipulate field of view
-//	        if(activatePortal)
-//			Camera.main.fieldOfView += 30 * Time.deltaTime;
-//	        
-//
-//	         if(Camera.main.fieldOfView >= 160)
-//	        {
-//	            player.transform.localPosition = new Vector3(SpawnPoint.transform.position.x,SpawnPoint.transform.position.y,SpawnPoint.transform.position.z);
-//	            isCameraViewDefault = false;
-//	            activatePortal = false;
-//	            Camera.main.GetComponent<follow>().rotationDamping = 0;
-//	            Camera.main.GetComponent<follow>().height = 2;
-//	        }
-//
-//			// Return the normal field of view
-//	          if(!isCameraViewDefault)
-//	        {
-//				Camera.main.fieldOfView -= 20 * Time.deltaTime;
-//
-//		        if (Camera.main.fieldOfView <= 60)
-//		          {
-//		              Camera.main.fieldOfView = 60;
-//		              isCameraViewDefault = true;
-//		          }
-//	        }
-//
-//    }
-//
-
-	void OnCollisionEnter(Collision obj)
+    bool activatePortal;
+    bool isCameraViewDefault;
+    public GameObject SpawnPointIn2D;
+    public GameObject SpawnPointIn3D;
+    bool isIn3Dworld;
+    // Use this for initialization
+    void Start()
     {
-        if(obj.gameObject.CompareTag("Player"))
+        activatePortal = false;
+        isCameraViewDefault = true;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+       // Debug.Log(Player.myPlayer.isInSecondDimension);
+        Debug.Log(isIn3Dworld);
+        if (activatePortal)
         {
-			NoOfTimePlayerCanEnterPortal++;
-			if (NoOfTimePlayerCanEnterPortal <=2)
-			{
-				Debug.Log("jhuhuhuh");
-				player.transform.Rotate(0, 90, 0);
-			}
+            Camera.main.fieldOfView += 30 * Time.deltaTime;
+        }
+        if (Camera.main.fieldOfView >= 180)
+        {
+            
+            // Transport player to 2D world
+            if(Player.myPlayer.isInSecondDimension == false)
+            {
+                if (SpawnPointIn2D != null)
+                {
+                    TransportPlayer(SpawnPointIn2D);
+                    isIn3Dworld = false;
+                }
+            }
+            // Transport Player to 3D world
+            if(Player.myPlayer.isInSecondDimension == true)
+            {
+                if (SpawnPointIn3D != null)
+                {
+                    TransportPlayer(SpawnPointIn3D);
+                    isIn3Dworld = true;
+                }
+            }
+
+            isCameraViewDefault = false;
+            activatePortal = false;
+            Camera.main.GetComponent<follow>().rotationDamping = 0;
+            Camera.main.GetComponent<follow>().height = 2;
+        }
+        if (!isCameraViewDefault)
+        {
+            
+            Camera.main.fieldOfView -= 20 * Time.deltaTime;
+            if (Camera.main.fieldOfView <= 60)
+            {
+                Camera.main.fieldOfView = 60;
+                isCameraViewDefault = true;
+                Player.myPlayer.enabled = true;
+                if(!isIn3Dworld)
+                {
+                    Player.myPlayer.isInSecondDimension = true;
+                }
+                if(isIn3Dworld)
+                {
+                    Player.myPlayer.isInSecondDimension = false;
+                }
+                
+                
+            }
+        }
+
+
+
+    }
+   // TO DO::: PLAY IDLE ANIMATION
+    void OnTriggerEnter(Collider obj)
+    {
+
+        if (obj.gameObject.CompareTag("Player") && Player.myPlayer.isInSecondDimension == false)
+        {
+            HandlePortalEvents(new Vector3(0,90,0));
+            
+        }
+        if (obj.gameObject.CompareTag("Player") && Player.myPlayer.isInSecondDimension == true)
+        {
+            HandlePortalEvents(new Vector3(0, 0, 0));
         }
     }
 
+    void HandlePortalEvents(Vector3 a_playerTransform)
+    {
+        GetComponent<BoxCollider>().enabled = false;
+        Player.myPlayer.enabled = false;
+        activatePortal = true;
+        player.transform.Rotate(a_playerTransform);
+    }
+
+    void TransportPlayer(GameObject a_point)
+    {
+        player.transform.localPosition = new Vector3(a_point.transform.position.x, a_point.transform.position.y, a_point.transform.position.z);
+    }
+}
 
 
 //	IEnumerator TransportToOtherDimension()
@@ -87,4 +122,4 @@ public class Portal : MonoBehaviour {
 ////		Player.myPlayer.enabled = true;
 ////		player.transform.Rotate(0, 90, 0);
 //	}
-}
+
