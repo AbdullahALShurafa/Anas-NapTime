@@ -19,8 +19,6 @@ public class follow : MonoBehaviour
     void Update()
     {
       
-
-
         if (target)
         {
 			// me

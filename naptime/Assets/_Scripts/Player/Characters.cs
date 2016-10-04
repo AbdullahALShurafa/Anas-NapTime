@@ -49,6 +49,12 @@ public class Characters : MonoBehaviour
 		m_animator.SetTrigger (a_animationClip);
 	}
 
+	//This method calls certain animtions that uses triggers to active
+//	internal void BoolAnimation(string a_animationClip)
+//	{
+//		m_animator.SetBool(a_animationClip , true);
+//	}
+//
 	//To check if certain input key is being hold down
 	internal bool Is_keyPressed(KeyCode a_key)
 	{

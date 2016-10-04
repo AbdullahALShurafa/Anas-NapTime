@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject endLevelPanel;
 	public GameObject LostLevelPanel;
 	public static GameManager g_gameManager;
-	public Text highScore;
+	public Text endLevelScore;
 
 
 	void Awake()
@@ -33,7 +33,6 @@ public class GameManager : MonoBehaviour {
 
 	void Update()
 	{
-
 		PanelsBehaviors();
 //		// Timer in Minutes and seconds. 
 //		startTime += Time.deltaTime;
@@ -63,9 +62,13 @@ public class GameManager : MonoBehaviour {
 		if (Input.GetKey(KeyCode.K))
 			{
 				// When level is cleared
+				// play the panel animation and enable it
 				endLevelPanel.SetActive(true);
-				highScore.text = "Finished in: " +  minutes.ToString("00") + ":" + seconds.ToString("00") ;
+				// Get me the timer score text from the timer text and implement in into my EndScore text
+				endLevelScore.text = "Finished in: " +  minutes.ToString("00") + ":" + seconds.ToString("00") ;
+				// i dont want player to have aby behavior after this so disable his script
 				Player.myPlayer.enabled = false;
+
 			}
 
 		// when player dies

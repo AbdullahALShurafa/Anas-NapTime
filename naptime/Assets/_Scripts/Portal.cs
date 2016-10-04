@@ -83,7 +83,9 @@ public class Portal : MonoBehaviour {
         {
             HandlePortalEvents(new Vector3(0,90,0));
             GameManager.g_gameManager.isTimerPaused = true;
+
         }
+		// Back to 3D
         if (obj.gameObject.CompareTag("Player") && Player.myPlayer.isInSecondDimension == true)
         {
             HandlePortalEvents(new Vector3(0, 0, 0));
@@ -93,11 +95,19 @@ public class Portal : MonoBehaviour {
 
     void HandlePortalEvents(Vector3 a_playerTransform)
     {
+		// Disable the portal collider so player can't go to 2D again.
         GetComponent<BoxCollider>().enabled = false;
+		// Remove player behavior while doing the camera effect so that player dosent run or move
         Player.myPlayer.enabled = false;
+		// bool toogle
         activatePortal = true;
+		// Rotate my playe rin a certain transform
         player.transform.Rotate(a_playerTransform);
+		// PLay the Idle animation so that he doesn't playing the last animation (ie. run )
 		Player.myPlayer.Animation (AnimationClip.Idle);
+		// Give player some stamina so if he goes to 2D with empty stamina 
+		Player.myPlayer.AddStamina(100);
+
 
     }
 

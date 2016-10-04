@@ -67,8 +67,8 @@ public class PlayerMovement : Characters
 					Direction (180);
 
 				}
-				Player.myPlayer.DeductStamina(1);	
 
+				Player.myPlayer.DeductStamina(1);	
 			}
 
 			else if (Is_keyPressed(KeyCode.A)) 
@@ -77,8 +77,6 @@ public class PlayerMovement : Characters
 				Direction (-90);
 
 				Player.myPlayer.DeductStamina(1);                
-
-
 			}
 
 			else if (Is_keyPressed(KeyCode.D))

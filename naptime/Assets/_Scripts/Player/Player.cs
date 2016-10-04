@@ -9,8 +9,7 @@ public class Player : Characters
 
 
 	/// Player Componenets, -------------------
-	//public GameObject m_cam;
-//	private Animator m_animator;
+
 	PlayerBehaviour m_playerBehaviour;
 	public bool isPlayerGrounded = true;
 	internal bool isPlayerAlive = true;
@@ -67,7 +66,7 @@ public class Player : Characters
 
 		m_animator = GetComponent<Animator> ();
 
-		m_playerBehaviour = new PlayerBehaviour (m_animator,transform,m_cam);
+		m_playerBehaviour = new PlayerBehaviour (m_animator,transform);
 
 		g_CurrentHealth = m_health;
 
@@ -107,7 +106,6 @@ public class Player : Characters
 		// Fixes a bug that affects the UI of the Health.. , Tried to do it automaticly in the if condition but did'nt work therefore it needed a manual fix
 		HeartUIContainer.sprite = HeartSprites[0];
 
-//		TODO: Pop up option menu to restart or go to menu
 			
 	}
 
@@ -166,7 +164,7 @@ public class Player : Characters
 
 	}
 
-	 void AddStamina(int a_staminaToAdd)
+	public void AddStamina(int a_staminaToAdd)
 	{
 		g_currStamina += a_staminaToAdd;
 		g_lowStaminaTxt.enabled = false;
@@ -218,7 +216,8 @@ public class Player : Characters
 		if(col.gameObject.CompareTag ("floor"))
 		{
 			isPlayerGrounded = true;
-			m_playerBehaviour.m_animator.SetBool ("Jump", false);
+			// stop the jump state
+			m_playerBehaviour.m_animator.SetBool ("jump" ,false);
 		//	rb.isKinematic = true;
 		}
 
@@ -284,24 +283,13 @@ public class Player : Characters
 			&& isPlayerAlive) 
 
 			{
-			
-//			if(isPlayerGrounded == true)
-//				{
 					//Let player jump
-					m_playerBehaviour.TriggerAnimation ("Jump");
+			//		m_playerBehaviour.BoolAnimation ("jump");
+					m_animator.SetBool("jump",true);
 					//Jump
 					rb.isKinematic = false;
 					transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
 					isPlayerGrounded = false;
-				//}
-
-//				else
-//				{
-//					isPlayerGrounded = true;
-//					m_playerBehaviour.m_animator.SetBool ("Jump", false);
-//
-//				}
-//				
 			}
 	}
 
@@ -334,8 +322,5 @@ public class Player : Characters
 	{
 		m_playerBehaviour.m_animator.SetBool("Slide", false);
 	}
-
-
-
 
 }
