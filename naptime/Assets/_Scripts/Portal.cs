@@ -18,7 +18,7 @@ public class Portal : MonoBehaviour {
 
     void Update()
     {
-        
+        Debug.Log(Player.myPlayer.isInSecondDimension);
         if (activatePortal)
         {
             Camera.main.fieldOfView += 30 * Time.deltaTime;
@@ -49,7 +49,6 @@ public class Portal : MonoBehaviour {
             isCameraViewDefault = false;
             activatePortal = false;
             Camera.main.GetComponent<follow>().rotationDamping = 0;
-            Camera.main.GetComponent<follow>().height = 2;
         }
 
         if (!isCameraViewDefault)
@@ -84,17 +83,17 @@ public class Portal : MonoBehaviour {
         if (obj.gameObject.CompareTag("Player") && Player.myPlayer.isInSecondDimension == false)
         {
             HandlePortalEvents(new Vector3(0,90,0));
-            
+            GameManager.g_gameManager.isTimerPaused = true;
         }
         if (obj.gameObject.CompareTag("Player") && Player.myPlayer.isInSecondDimension == true)
         {
             HandlePortalEvents(new Vector3(0, 0, 0));
+            GameManager.g_gameManager.isTimerPaused = false;
         }
     }
 
     void HandlePortalEvents(Vector3 a_playerTransform)
     {
-		Player.myPlayer.isInSecondDimension = true;
         GetComponent<BoxCollider>().enabled = false;
         Player.myPlayer.enabled = false;
         activatePortal = true;
