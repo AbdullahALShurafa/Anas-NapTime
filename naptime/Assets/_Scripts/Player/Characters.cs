@@ -13,7 +13,7 @@ public enum AnimationClip
 
 
 
-public class Characters 
+public class Characters : MonoBehaviour
 {
 	internal Animator m_animator;
 	internal Transform m_transform;

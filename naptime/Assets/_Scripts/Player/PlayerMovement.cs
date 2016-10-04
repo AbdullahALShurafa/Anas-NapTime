@@ -8,27 +8,66 @@ public class PlayerMovement : Characters
 	internal void FreeMovement()
 	{    
 
-		if (Player.myPlayer.isInSecondDimension == false)
+		if (!Player.myPlayer.isInSecondDimension)
 		{
+//			ForntRight = 45,
+//			FrontLeft = 315,
+//			BackRight = 135,
+//			BackLeft = 225,
+
 			if (Is_keyPressed(KeyCode.W)) 
 			{
+				if (Is_keyPressed(KeyCode.A)) 
+				{
+					//Move Player with the right animation
+					Run(Vector3.forward, AnimationClip.RunForward);
+					//set his direction
+					Direction (315);
 
-				//Move Player with the right animation
-				Run(Vector3.forward, AnimationClip.RunForward);
-				//set his direction
-				Direction (0);
+				} 
 
-				// Deduct his stamina.
-				Player.myPlayer.DeductStamina(1);
+				else if (Is_keyPressed(KeyCode.D)) 
+				{
+					//Move Player with the right animation
+					Run(Vector3.forward, AnimationClip.RunForward);
+					//set his direction
+					Direction (45);
+				} 
+
+				else 
+				{
+					//Move Player with the right animation
+					Run(Vector3.forward, AnimationClip.RunForward);
+					//set his direction
+					Direction (0);
+				}
+
+				Player.myPlayer.DeductStamina(1);	
 			}
 
 			else if (Is_keyPressed(KeyCode.S))
 			{
+				if (Is_keyPressed(KeyCode.A)) 
+				{
+					//Move Player with the right animation
+					Run(Vector3.forward, AnimationClip.RunBackward);
+					//set his direction
+					Direction (225);				
+				} 
+				else if (Is_keyPressed(KeyCode.D)) 
+				{
+					//Move Player with the right animation
+					Run(Vector3.forward, AnimationClip.RunBackward);
+					//set his direction
+					Direction (135);				
+				} 
+				else 
+				{
+					Run(Vector3.forward, AnimationClip.RunBackward);
+					Direction (180);
 
-				Run (Vector3.forward , AnimationClip.RunBackward);
-				Direction (180);
-				Player.myPlayer.DeductStamina(1);                
-
+				}
+				Player.myPlayer.DeductStamina(1);	
 
 			}
 
@@ -65,9 +104,8 @@ public class PlayerMovement : Characters
 	/// </summary>
 	internal void SecondDimentionMovement()
 	{
-		if (Player.myPlayer.isInSecondDimension == true)
+		if (Player.myPlayer.isInSecondDimension)
 		{
-			Debug.Log("hhh");
 			if (Is_keyPressed(KeyCode.A)) 
 			{
 				//Move Player with the right animation

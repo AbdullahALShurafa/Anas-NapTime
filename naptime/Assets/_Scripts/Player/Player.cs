@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour 
+public class Player : Characters 
 {
 
 
 	/// Player Componenets, -------------------
-	public GameObject m_cam;
-	private Animator m_animator;
+	//public GameObject m_cam;
+//	private Animator m_animator;
 	PlayerBehaviour m_playerBehaviour;
 	public bool isPlayerGrounded = true;
 	internal bool isPlayerAlive = true;
@@ -19,9 +19,7 @@ public class Player : MonoBehaviour
 	private Rigidbody rb;
 	public Image flashingHurtImage;
 	// Transforms and vector components for player
-	public Transform m_startPoisition;
 	internal Vector3 checkPointPos;
-	internal Vector3 portalPos;
 
 	//---------------------------------------
 

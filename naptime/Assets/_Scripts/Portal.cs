@@ -18,7 +18,6 @@ public class Portal : MonoBehaviour {
 
     void Update()
     {
-        Debug.Log(Player.myPlayer.isInSecondDimension);
         if (activatePortal)
         {
             Camera.main.fieldOfView += 30 * Time.deltaTime;
@@ -98,12 +97,13 @@ public class Portal : MonoBehaviour {
         Player.myPlayer.enabled = false;
         activatePortal = true;
         player.transform.Rotate(a_playerTransform);
+		Player.myPlayer.Animation (AnimationClip.Idle);
+
     }
 
     void TransportPlayer(GameObject a_point)
     {
         player.transform.localPosition = new Vector3(a_point.transform.position.x, a_point.transform.position.y, a_point.transform.position.z);
-		Debug.Log("jj");
     }
 }
 
