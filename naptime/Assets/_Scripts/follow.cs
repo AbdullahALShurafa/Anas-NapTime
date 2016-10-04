@@ -50,7 +50,7 @@ public class follow : MonoBehaviour
 
 
             // Always look at the target
-            transform.LookAt(target);
+          //  transform.LookAt(target);
         }
     }
 

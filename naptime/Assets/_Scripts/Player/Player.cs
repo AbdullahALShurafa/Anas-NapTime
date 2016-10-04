@@ -221,7 +221,7 @@ public class Player : MonoBehaviour
 		{
 			isPlayerGrounded = true;
 			m_playerBehaviour.m_animator.SetBool ("Jump", false);
-			rb.isKinematic = true;
+		//	rb.isKinematic = true;
 		}
 
 	}
