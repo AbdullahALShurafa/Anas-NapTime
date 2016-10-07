@@ -11,20 +11,19 @@ public class Player : Characters
 	/// Player Componenets, -------------------
 
 	PlayerBehaviour m_playerBehaviour;
+
 	public bool isPlayerGrounded = true;
 	internal bool isPlayerAlive = true;
 	private bool isShieldOn;
 	internal bool isInSecondDimension = false;
+
 	private Rigidbody rb;
+
 	public Image flashingHurtImage;
+
+
 	// Transforms and vector components for player
 	internal Vector3 checkPointPos;
-
-	//---------------------------------------
-
-	//UI Componenets-------------
-	//-------------------------
-
 
 	// Health componenets------
 	/// <summary>
@@ -237,15 +236,16 @@ public class Player : Characters
 				Respawn();
 		}
 
-		if ( col.gameObject.CompareTag("Coin"))
+		if ( col.gameObject.CompareTag("coffee"))
 		{
 			AddStamina(100);
+			GameManager.g_gameManager.InstantiateParticle(1);
 			Destroy(col.gameObject);
 		}
 
 		if ( col.gameObject.CompareTag("shield"))
 		{
-			StartCoroutine(ShieldOnBehavior(20));
+			StartCoroutine(ShieldOnBehavior(5));
 			Destroy(col.gameObject);
 		}
 
@@ -254,6 +254,7 @@ public class Player : Characters
 		{
 			AddHealth();
 			//TODO: play heart VFX here
+			GameManager.g_gameManager.InstantiateParticle(0);
 			Destroy(col.gameObject);
 
 		}
@@ -266,6 +267,7 @@ public class Player : Characters
 		if ( col.gameObject.CompareTag("clock"))
 		{
 			StartCoroutine(PauseTimePowerup(5));
+			GameManager.g_gameManager.InstantiateParticle(2);
 			Destroy(col.gameObject);
 		}
 
@@ -292,6 +294,8 @@ public class Player : Characters
 					isPlayerGrounded = false;
 			}
 	}
+
+
 
 	//Events for certain clips..
 	//while in the jump state

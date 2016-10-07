@@ -21,7 +21,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject LostLevelPanel;
 	public static GameManager g_gameManager;
 	public Text endLevelScore;
+	public Transform g_VfxPos;
 
+	public ParticleSystem[] CollectiablesVFX;
 
 	void Awake()
 	{
@@ -78,6 +80,12 @@ public class GameManager : MonoBehaviour {
 			isTimerPaused = true;
 
 		}
+	}
+
+	public void InstantiateParticle(int i)
+	{
+		Instantiate (CollectiablesVFX[i] , g_VfxPos.position , Quaternion.identity);
+		CollectiablesVFX[i].Play();
 	}
 
 	IEnumerator Timer()
