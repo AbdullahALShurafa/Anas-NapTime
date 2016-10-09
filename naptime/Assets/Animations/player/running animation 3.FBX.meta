@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 41856daf5cd634597a9c2c3eaa9225c5
-timeCreated: 1475994102
+timeCreated: 1476017901
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -265,11 +265,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'Base HumanNeck2' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'Base HumanLArmPalm' has
-      scale animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
