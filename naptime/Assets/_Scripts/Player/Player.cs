@@ -91,6 +91,8 @@ public class Player : Characters
 
 		 if (g_totalHealth <= 0)
 			Death();
+
+
 	}
 		
 
