@@ -4,30 +4,26 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour 
+public class Player : Characters 
 {
 
 
 	/// Player Componenets, -------------------
-	public GameObject m_cam;
-	private Animator m_animator;
+
 	PlayerBehaviour m_playerBehaviour;
+
 	public bool isPlayerGrounded = true;
 	internal bool isPlayerAlive = true;
 	private bool isShieldOn;
 	internal bool isInSecondDimension = false;
+
 	private Rigidbody rb;
+
 	public Image flashingHurtImage;
+
+
 	// Transforms and vector components for player
-	public Transform m_startPoisition;
 	internal Vector3 checkPointPos;
-	internal Vector3 portalPos;
-
-	//---------------------------------------
-
-	//UI Componenets-------------
-	//-------------------------
-
 
 	// Health componenets------
 	/// <summary>
@@ -69,7 +65,7 @@ public class Player : MonoBehaviour
 
 		m_animator = GetComponent<Animator> ();
 
-		m_playerBehaviour = new PlayerBehaviour (m_animator,transform,m_cam);
+		m_playerBehaviour = new PlayerBehaviour (m_animator,transform);
 
 		g_CurrentHealth = m_health;
 
@@ -95,6 +91,8 @@ public class Player : MonoBehaviour
 
 		 if (g_totalHealth <= 0)
 			Death();
+
+
 	}
 		
 
@@ -109,7 +107,6 @@ public class Player : MonoBehaviour
 		// Fixes a bug that affects the UI of the Health.. , Tried to do it automaticly in the if condition but did'nt work therefore it needed a manual fix
 		HeartUIContainer.sprite = HeartSprites[0];
 
-//		TODO: Pop up option menu to restart or go to menu
 			
 	}
 
@@ -168,7 +165,7 @@ public class Player : MonoBehaviour
 
 	}
 
-	 void AddStamina(int a_staminaToAdd)
+	public void AddStamina(int a_staminaToAdd)
 	{
 		g_currStamina += a_staminaToAdd;
 		g_lowStaminaTxt.enabled = false;
@@ -220,7 +217,8 @@ public class Player : MonoBehaviour
 		if(col.gameObject.CompareTag ("floor"))
 		{
 			isPlayerGrounded = true;
-			m_playerBehaviour.m_animator.SetBool ("Jump", false);
+			// stop the jump state
+			m_playerBehaviour.m_animator.SetBool ("jump" ,false);
 		//	rb.isKinematic = true;
 		}
 
@@ -240,15 +238,16 @@ public class Player : MonoBehaviour
 				Respawn();
 		}
 
-		if ( col.gameObject.CompareTag("Coin"))
+		if ( col.gameObject.CompareTag("coffee"))
 		{
 			AddStamina(100);
+			GameManager.g_gameManager.InstantiateParticle(1);
 			Destroy(col.gameObject);
 		}
 
 		if ( col.gameObject.CompareTag("shield"))
 		{
-			StartCoroutine(ShieldOnBehavior(20));
+			StartCoroutine(ShieldOnBehavior(5));
 			Destroy(col.gameObject);
 		}
 
@@ -257,6 +256,7 @@ public class Player : MonoBehaviour
 		{
 			AddHealth();
 			//TODO: play heart VFX here
+			GameManager.g_gameManager.InstantiateParticle(0);
 			Destroy(col.gameObject);
 
 		}
@@ -269,6 +269,7 @@ public class Player : MonoBehaviour
 		if ( col.gameObject.CompareTag("clock"))
 		{
 			StartCoroutine(PauseTimePowerup(5));
+			GameManager.g_gameManager.InstantiateParticle(2);
 			Destroy(col.gameObject);
 		}
 
@@ -286,26 +287,17 @@ public class Player : MonoBehaviour
 			&& isPlayerAlive) 
 
 			{
-			
-//			if(isPlayerGrounded == true)
-//				{
 					//Let player jump
-					m_playerBehaviour.TriggerAnimation ("Jump");
+			//		m_playerBehaviour.BoolAnimation ("jump");
+					m_animator.SetBool("jump",true);
 					//Jump
 					rb.isKinematic = false;
 					transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
 					isPlayerGrounded = false;
-				//}
-
-//				else
-//				{
-//					isPlayerGrounded = true;
-//					m_playerBehaviour.m_animator.SetBool ("Jump", false);
-//
-//				}
-//				
 			}
 	}
+
+
 
 	//Events for certain clips..
 	//while in the jump state
@@ -336,8 +328,5 @@ public class Player : MonoBehaviour
 	{
 		m_playerBehaviour.m_animator.SetBool("Slide", false);
 	}
-
-
-
 
 }

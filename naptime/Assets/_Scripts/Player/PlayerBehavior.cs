@@ -3,11 +3,11 @@ using System.Collections;
 
 public class PlayerBehaviour : PlayerMovement
 {
-	internal PlayerBehaviour(Animator a_animator, Transform a_transfrom, GameObject a_cam)
+	internal PlayerBehaviour(Animator a_animator, Transform a_transfrom)//, GameObject a_cam)
 	{
 		m_animator = a_animator;
 		m_transform = a_transfrom;
-		m_cam = a_cam;
+	//	m_cam = a_cam;
 	
 	}
 
