@@ -28,8 +28,7 @@ public class Characters : MonoBehaviour
 	internal Vector3 m_distance ;
 	internal Vector3 jumpVelocity = new  Vector3(0, 15.0f, 0);
 
-
-
+	float turnSpeed = 1;
 
 	//Checking is player in the state of certain animation
 	internal bool Is_animation(string a_nameTag, bool a_isActive)
@@ -62,14 +61,17 @@ public class Characters : MonoBehaviour
 	}
 
 
+
+
 	internal void Direction(float a_direction)
 	{
 		//Free movemnt, allowing player to move and play forward animation at all time
 		Animation (AnimationClip.RunForward);
-		m_transform.rotation=Quaternion.AngleAxis(a_direction, Vector3.up);
+		m_transform.rotation=Quaternion.AngleAxis(a_direction, Vector3.up );
+
 
 	}
-
+//
 	internal void Run(Vector3 a_position, AnimationClip a_animationClip)
 	{
 		m_transform.Translate (a_position * m_speed * Time.deltaTime);

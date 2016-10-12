@@ -79,6 +79,8 @@ public class Player : Characters
 
 	}
 
+
+
 	// Update is called once per frame
 	void Update ()
 	{ 
@@ -218,6 +220,7 @@ public class Player : Characters
 		{
 			isPlayerGrounded = true;
 			// stop the jump state
+			Debug.Log("floor");
 			m_playerBehaviour.m_animator.SetBool ("jump" ,false);
 		//	rb.isKinematic = true;
 		}
@@ -291,7 +294,7 @@ public class Player : Characters
 			//		m_playerBehaviour.BoolAnimation ("jump");
 					m_animator.SetBool("jump",true);
 					//Jump
-					rb.isKinematic = false;
+					//rb.isKinematic = false;
 					transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
 					isPlayerGrounded = false;
 			}

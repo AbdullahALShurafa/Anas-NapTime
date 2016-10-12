@@ -21,7 +21,7 @@ public class follow : MonoBehaviour
       
         if (target)
         {
-			// me
+			
             // Calculate the current rotation angles
             float wantedRotationAngle = target.eulerAngles.y;
             float wantedHeight = target.position.y + height;

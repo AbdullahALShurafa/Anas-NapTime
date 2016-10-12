@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class PlayerMovement : Characters 
 {
+	
 
 	//Free Movement: allow protagonist to rotate and move only with forward animation clip in certain directions
 	internal void FreeMovement()
@@ -10,10 +11,6 @@ public class PlayerMovement : Characters
 
 		if (!Player.myPlayer.isInSecondDimension)
 		{
-//			ForntRight = 45,
-//			FrontLeft = 315,
-//			BackRight = 135,
-//			BackLeft = 225,
 
 			if (Is_keyPressed(KeyCode.W)) 
 			{
@@ -29,9 +26,9 @@ public class PlayerMovement : Characters
 				else if (Is_keyPressed(KeyCode.D)) 
 				{
 					//Move Player with the right animation
-					Run(Vector3.forward, AnimationClip.RunForward);
+					Run(Vector3.forward, AnimationClip.RunRight);
 					//set his direction
-					Direction (45);
+					   Direction (45);
 				} 
 
 				else 
@@ -39,10 +36,10 @@ public class PlayerMovement : Characters
 					//Move Player with the right animation
 					Run(Vector3.forward, AnimationClip.RunForward);
 					//set his direction
-					Direction (0);
+					    Direction (0);
 				}
 
-				Player.myPlayer.DeductStamina(1);	
+				Player.myPlayer.DeductStamina(1);    
 			}
 
 			else if (Is_keyPressed(KeyCode.S))
@@ -52,23 +49,23 @@ public class PlayerMovement : Characters
 					//Move Player with the right animation
 					Run(Vector3.forward, AnimationClip.RunBackward);
 					//set his direction
-					Direction (225);				
+					    Direction (225);                
 				} 
 				else if (Is_keyPressed(KeyCode.D)) 
 				{
 					//Move Player with the right animation
-					Run(Vector3.forward, AnimationClip.RunBackward);
+					Run(Vector3.forward, AnimationClip.RunRight);
 					//set his direction
-					Direction (135);				
+					    Direction (135);                
 				} 
 				else 
 				{
 					Run(Vector3.forward, AnimationClip.RunBackward);
-					Direction (180);
+					    Direction (180);
 
 				}
 
-				Player.myPlayer.DeductStamina(1);	
+				Player.myPlayer.DeductStamina(1);    
 			}
 
 			else if (Is_keyPressed(KeyCode.A)) 
@@ -81,9 +78,10 @@ public class PlayerMovement : Characters
 
 			else if (Is_keyPressed(KeyCode.D))
 			{
-				Run (Vector3.forward , AnimationClip.RunRight);
-			    Direction (90);
-				Player.myPlayer.DeductStamina(1);                
+				Run(Vector3.forward, AnimationClip.RunRight);
+				 Direction (90);
+				Player.myPlayer.DeductStamina(1);  
+
 
 
 			}
