@@ -8,7 +8,7 @@ public class PlayerMovement : Characters
 	//Free Movement: allow protagonist to rotate and move only with forward animation clip in certain directions
 	internal void FreeMovement()
 	{    
-
+		// when player is in the default movement.
 		if (!Player.myPlayer.isInSecondDimension)
 		{
 
@@ -28,7 +28,7 @@ public class PlayerMovement : Characters
 					//Move Player with the right animation
 					Run(Vector3.forward, AnimationClip.RunRight);
 					//set his direction
-					   Direction (45);
+					Direction (45);
 				} 
 
 				else 
@@ -39,7 +39,7 @@ public class PlayerMovement : Characters
 					    Direction (0);
 				}
 
-				Player.myPlayer.DeductStamina(1);    
+					Player.myPlayer.DeductStamina(1);    
 			}
 
 			else if (Is_keyPressed(KeyCode.S))

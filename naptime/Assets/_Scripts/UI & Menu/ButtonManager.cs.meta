@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 6b29421969c1b44dd8818a87d18100fb
-timeCreated: 1473240190
+timeCreated: 1476362563
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_gameCanvas: {fileID: 22374986, guid: aaac265f693b344a59f3c9928e5fb967, type: 2}
+  - m_pauseCanvas: {fileID: 22373002, guid: ace535e8882344261b877db7a0654cb1, type: 2}
+  - m_helpCanas: {fileID: 22377880, guid: 3d9478f041e2b48f58f8dd1d07579582, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

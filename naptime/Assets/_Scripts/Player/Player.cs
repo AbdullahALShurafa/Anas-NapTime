@@ -114,14 +114,15 @@ public class Player : Characters
 
 	void Respawn()
 	{
+	//	 remove one of his total healths
 		g_totalHealth--;
-		// Respawn only when we have health 
+		// Respawn only when we have totalhealth 
 		//TODO: Set player pos to this pos 
 		// Activated checkpoint only when our player has total health else his dead and he shouldn't respawn at the checkpoint
 		if (g_totalHealth >0) 
 			this.transform.position = checkPointPos;
 
-		// Refill his health and remove one of his total healths
+		// Refill his health 
 		g_CurrentHealth = 5;
 			
 		g_totalHealthTxt.text = "x" + g_totalHealth; 
@@ -147,29 +148,35 @@ public class Player : Characters
 
 	public void DeductStamina(int amount)
 	{
-		// How much stamina are we going to deduct when player is running?
-		g_currStamina -= amount;
-		// Change the slider value depending on the stamina
-		g_StaminaSlider.value = g_currStamina;
-
-		if (g_currStamina <= 0 )
+		// only deduct stamina will player is moving on ground
+		if (isPlayerGrounded)
 		{
-			//TODO : Go slower
-			m_playerBehaviour.m_speed = 5;
-			g_currStamina = 0;
-			g_lowStaminaTxt.enabled = true;
-			IsStaminaEmpty = true;
+			// How much stamina are we going to deduct when player is running?
+			g_currStamina -= amount;
+			// Change the slider value depending on the stamina
+			g_StaminaSlider.value = g_currStamina;
 
+			if (g_currStamina <= 0 )
+			{
+				//TODO : Go slower
+				m_playerBehaviour.m_speed = 5;
+				g_currStamina = 0;
+				g_lowStaminaTxt.enabled = true;
+				IsStaminaEmpty = true;
+
+			}
+
+			else
+				g_lowStaminaTxt.enabled = false;
 		}
-
-		else
-			g_lowStaminaTxt.enabled = false;
 
 	}
 
 	public void AddStamina(int a_staminaToAdd)
 	{
+		// Add stamina when we take coffee.
 		g_currStamina += a_staminaToAdd;
+		// Disable the "need stamina: text
 		g_lowStaminaTxt.enabled = false;
 	}
 
@@ -181,16 +188,6 @@ public class Player : Characters
 		isShieldOn = false;
 	}
 
-//	IEnumerator TimerPowerUp (float a_TimerDuration)
-//	{
-//		// Get the timer Bool from the gamemanager class and set it to false so that the timer doesn't run anymore.
-//		GameManager.g_gameManager.isTimer = false;
-//		// The time that the powerup will stay enabled
-//		yield return new WaitForSeconds(a_TimerDuration);
-//		// set everything back to default.
-//		GameManager.g_gameManager.isTimer = true;
-//	}
-//
 
 	public IEnumerator FlashHurtImage()
 	{
@@ -198,13 +195,13 @@ public class Player : Characters
 		flashingHurtImage.enabled = true;
 		yield return new WaitForSeconds(0.2f);
 		flashingHurtImage.enabled = false;
-		//yield return new WaitForSeconds(0.3f); 
 	}
 
 	public IEnumerator PauseTimePowerup(float a_time)
 	{
-		//Enable the image for the flash effect
+		//Enable the bool for the time powerup
 		GameManager.g_gameManager.isTimerPaused = true;
+		// How much the time is going to freez for?
 		yield return new WaitForSeconds(a_time);
 		GameManager.g_gameManager.isTimerPaused = false;
 	}
@@ -230,7 +227,9 @@ public class Player : Characters
 	void OnTriggerEnter(Collider col)
 	{
 		// When enemies damage our player and our shield powerup is not on
-		if (col.gameObject.CompareTag("Enemy") && !isShieldOn && isPlayerAlive)
+		if (col.gameObject.CompareTag("Enemy")
+			&& !isShieldOn
+			&& isPlayerAlive)
 		{
 			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
@@ -295,8 +294,9 @@ public class Player : Characters
 					m_animator.SetBool("jump",true);
 					//Jump
 					//rb.isKinematic = false;
-					transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
 					isPlayerGrounded = false;
+			transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
+
 			}
 	}
 

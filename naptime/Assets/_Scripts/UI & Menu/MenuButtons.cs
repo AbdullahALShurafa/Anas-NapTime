@@ -80,10 +80,10 @@ public class MenuButtons : MonoBehaviour
 		DontDestroyOnLoad(g_BkMusic);
 	}
 
-	public void TogglePanel (GameObject panel) 
-	{
-		panel.SetActive (!panel.activeSelf);
-	}
+//	public void TogglePanel (GameObject panel) 
+//	{
+//		panel.SetActive (!panel.activeSelf);
+//	}
 
 	public void Quit()
 	{
