@@ -16,6 +16,7 @@ public class Player : Characters
 	internal bool isPlayerAlive = true;
 	private bool isShieldOn;
 	internal bool isInSecondDimension = false;
+	internal bool isAttacking = false;
 
 	private Rigidbody rb;
 
@@ -229,7 +230,8 @@ public class Player : Characters
 		// When enemies damage our player and our shield powerup is not on
 		if (col.gameObject.CompareTag("Enemy")
 			&& !isShieldOn
-			&& isPlayerAlive)
+			&& isPlayerAlive
+			&& !isAttacking)
 		{
 			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
@@ -309,11 +311,22 @@ public class Player : Characters
 //
 //	}
 
-	void EventOfSlide()
-	{
-		m_playerBehaviour.m_animator.SetBool("Slide", true);
-	}
-
+//	void EventOfAttack()
+//	{
+//		m_playerBehaviour.m_animator.SetBool("Attack", true);
+//
+//	}
+//
+//	void DisableOfAttack()
+//	{
+//		m_playerBehaviour.m_animator.SetBool("Attack", false);
+//
+//	}
+//	void EventOfSlide()
+//	{
+//		m_playerBehaviour.m_animator.SetBool("Slide", true);
+//	}
+//
 	//This is being called inside certain animation clips, to make player move. 
 	void ActionMove(float a_speed)
 	{
@@ -327,9 +340,9 @@ public class Player : Characters
 //		m_playerBehaviour.m_animator.SetBool ("Jump", false);
 //	}
 
-	void DisableSlideTrigger()
-	{
-		m_playerBehaviour.m_animator.SetBool("Slide", false);
-	}
+//	void DisableSlideTrigger()
+//	{
+//		m_playerBehaviour.m_animator.SetBool("Slide", false);
+//	}
 
 }

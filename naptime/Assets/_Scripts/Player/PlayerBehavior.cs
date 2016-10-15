@@ -16,21 +16,11 @@ public class PlayerBehaviour : PlayerMovement
 		
 		FreeMovement ();
 		SecondDimentionMovement();
-	//	JumpState ();
+		AttackState();
 		SlideState();
 	}
 
 
-	//Method to make player jump
-//	void JumpState()
-//	{
-//		//if not in the state of jumping
-//		if (Input.GetKeyDown (KeyCode.Space) && Is_animation("Jump", false)) 
-//		{
-//			//Let player jump
-//			TriggerAnimation ("Jump");
-//		}
-//	}
 
 	/// <summary>
 	/// slide State. Will work if the player pressed the correct keys and if the slide animation is not being used 
@@ -42,6 +32,16 @@ public class PlayerBehaviour : PlayerMovement
 		if (Input.GetKeyDown (KeyCode.DownArrow) && Is_animation("Slide" , false) && Player.myPlayer.isPlayerGrounded == true)
 		{
 			TriggerAnimation ("Slide");
+		}
+	}
+
+	void AttackState()
+	{
+
+		if (Input.GetKeyDown (KeyCode.LeftShift) && Is_animation("Attack" , false) && Player.myPlayer.isPlayerGrounded == true)
+		{
+			TriggerAnimation ("Attack");
+			Player.myPlayer.isAttacking = true;
 		}
 	}
 
