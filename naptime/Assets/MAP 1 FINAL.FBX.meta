@@ -6168,7 +6168,2555 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bamboo
+        weight: 1
+      - path: Bamboo/Cylinder065
+        weight: 1
+      - path: Bamboo/Cylinder066
+        weight: 1
+      - path: Bamboo/Cylinder067
+        weight: 1
+      - path: Bamboo/Cylinder068
+        weight: 1
+      - path: Bamboo/Cylinder069
+        weight: 1
+      - path: Bamboo/Cylinder071
+        weight: 1
+      - path: Bamboo/Cylinder072
+        weight: 1
+      - path: Bamboo/Cylinder073
+        weight: 1
+      - path: Bamboo/Cylinder074
+        weight: 1
+      - path: Bamboo/Cylinder075
+        weight: 1
+      - path: Bamboo/Cylinder076
+        weight: 1
+      - path: Bamboo/Cylinder077
+        weight: 1
+      - path: Bamboo/Cylinder078
+        weight: 1
+      - path: Bamboo/Cylinder079
+        weight: 1
+      - path: Bamboo/Cylinder080
+        weight: 1
+      - path: Bamboo/Cylinder081
+        weight: 1
+      - path: Bamboo/Cylinder082
+        weight: 1
+      - path: Bamboo/Cylinder083
+        weight: 1
+      - path: Bamboo/Cylinder084
+        weight: 1
+      - path: Bamboo/Cylinder085
+        weight: 1
+      - path: Bamboo/Cylinder086
+        weight: 1
+      - path: Bamboo/Cylinder087
+        weight: 1
+      - path: Bamboo/Cylinder088
+        weight: 1
+      - path: Bamboo/Cylinder089
+        weight: 1
+      - path: Bamboo/Cylinder090
+        weight: 1
+      - path: Bamboo/Cylinder091
+        weight: 1
+      - path: Bamboo/Cylinder092
+        weight: 1
+      - path: Bamboo/Cylinder094
+        weight: 1
+      - path: Bamboo/Cylinder095
+        weight: 1
+      - path: Bamboo/Cylinder096
+        weight: 1
+      - path: Bamboo/Cylinder097
+        weight: 1
+      - path: Bamboo/Cylinder098
+        weight: 1
+      - path: Bamboo/Cylinder099
+        weight: 1
+      - path: Bamboo/Cylinder100
+        weight: 1
+      - path: Bamboo/Cylinder101
+        weight: 1
+      - path: Bamboo/Cylinder102
+        weight: 1
+      - path: Bamboo/Cylinder128
+        weight: 1
+      - path: Bamboo/Cylinder132
+        weight: 1
+      - path: Bamboo/Cylinder133
+        weight: 1
+      - path: Bamboo/Cylinder134
+        weight: 1
+      - path: Bamboo/Cylinder135
+        weight: 1
+      - path: Bamboo/Cylinder136
+        weight: 1
+      - path: Bamboo/Cylinder140
+        weight: 1
+      - path: Bamboo/Cylinder141
+        weight: 1
+      - path: Bamboo/Cylinder142
+        weight: 1
+      - path: Bamboo/Cylinder143
+        weight: 1
+      - path: Bamboo/Cylinder196
+        weight: 1
+      - path: Bamboo/Cylinder197
+        weight: 1
+      - path: Bamboo/Cylinder198
+        weight: 1
+      - path: Bamboo/Cylinder199
+        weight: 1
+      - path: Bamboo/Cylinder200
+        weight: 1
+      - path: Bamboo/Cylinder201
+        weight: 1
+      - path: Bamboo/Cylinder202
+        weight: 1
+      - path: Bamboo/Cylinder203
+        weight: 1
+      - path: Bamboo/Cylinder204
+        weight: 1
+      - path: Bamboo/Cylinder205
+        weight: 1
+      - path: Bamboo/Cylinder206
+        weight: 1
+      - path: Bamboo/Cylinder207
+        weight: 1
+      - path: Bamboo/Cylinder208
+        weight: 1
+      - path: Bamboo/Cylinder209
+        weight: 1
+      - path: Bamboo/Cylinder210
+        weight: 1
+      - path: Bamboo/Cylinder211
+        weight: 1
+      - path: Bamboo/Cylinder212
+        weight: 1
+      - path: Bamboo/Cylinder213
+        weight: 1
+      - path: Bamboo/Cylinder214
+        weight: 1
+      - path: Bamboo/Cylinder215
+        weight: 1
+      - path: Bamboo/Cylinder216
+        weight: 1
+      - path: Bamboo/Cylinder217
+        weight: 1
+      - path: Bamboo/Cylinder218
+        weight: 1
+      - path: Bamboo/Cylinder219
+        weight: 1
+      - path: Bamboo/Cylinder220
+        weight: 1
+      - path: Bamboo/Cylinder221
+        weight: 1
+      - path: Bamboo/Cylinder222
+        weight: 1
+      - path: Bamboo/Cylinder223
+        weight: 1
+      - path: Bamboo/Cylinder224
+        weight: 1
+      - path: Bamboo/Cylinder225
+        weight: 1
+      - path: Bamboo/Cylinder226
+        weight: 1
+      - path: Bamboo/Cylinder227
+        weight: 1
+      - path: Bamboo/Cylinder228
+        weight: 1
+      - path: Bamboo/Cylinder229
+        weight: 1
+      - path: Bamboo/Cylinder230
+        weight: 1
+      - path: Bamboo/Cylinder231
+        weight: 1
+      - path: Bamboo/Cylinder232
+        weight: 1
+      - path: Bamboo/Cylinder233
+        weight: 1
+      - path: Bamboo/Cylinder234
+        weight: 1
+      - path: Bamboo/Cylinder235
+        weight: 1
+      - path: Bamboo/Cylinder236
+        weight: 1
+      - path: Bamboo/Cylinder237
+        weight: 1
+      - path: Bamboo/Cylinder238
+        weight: 1
+      - path: Bamboo/Cylinder239
+        weight: 1
+      - path: Bamboo/Cylinder240
+        weight: 1
+      - path: Bamboo/Cylinder241
+        weight: 1
+      - path: Bamboo/Cylinder242
+        weight: 1
+      - path: Bamboo/Cylinder243
+        weight: 1
+      - path: Bamboo/Cylinder244
+        weight: 1
+      - path: Bamboo/Cylinder245
+        weight: 1
+      - path: Bamboo/Cylinder246
+        weight: 1
+      - path: Bamboo/Cylinder247
+        weight: 1
+      - path: Bamboo/Cylinder248
+        weight: 1
+      - path: Bamboo/Cylinder249
+        weight: 1
+      - path: Bamboo/Cylinder250
+        weight: 1
+      - path: Bamboo/Cylinder251
+        weight: 1
+      - path: Bamboo/Cylinder252
+        weight: 1
+      - path: Bamboo/Cylinder253
+        weight: 1
+      - path: Bamboo/Cylinder254
+        weight: 1
+      - path: Bamboo/Cylinder255
+        weight: 1
+      - path: Bamboo/Cylinder256
+        weight: 1
+      - path: Bamboo/Cylinder257
+        weight: 1
+      - path: Bamboo/Cylinder258
+        weight: 1
+      - path: Bamboo/Cylinder259
+        weight: 1
+      - path: Bamboo/Cylinder260
+        weight: 1
+      - path: Bamboo/Cylinder261
+        weight: 1
+      - path: Bamboo/Cylinder262
+        weight: 1
+      - path: Bamboo/Cylinder263
+        weight: 1
+      - path: Bamboo/Cylinder264
+        weight: 1
+      - path: Bamboo/Cylinder265
+        weight: 1
+      - path: Bamboo/Cylinder266
+        weight: 1
+      - path: Bamboo/Cylinder267
+        weight: 1
+      - path: Bamboo/Cylinder268
+        weight: 1
+      - path: Bamboo/Cylinder269
+        weight: 1
+      - path: Bamboo/Cylinder270
+        weight: 1
+      - path: Bamboo/Cylinder271
+        weight: 1
+      - path: Bamboo/Cylinder272
+        weight: 1
+      - path: Bamboo/Cylinder273
+        weight: 1
+      - path: Bamboo/Cylinder274
+        weight: 1
+      - path: Bamboo/Cylinder275
+        weight: 1
+      - path: Bamboo/Cylinder276
+        weight: 1
+      - path: Bamboo/Cylinder277
+        weight: 1
+      - path: Bamboo/Cylinder278
+        weight: 1
+      - path: Bamboo/Cylinder279
+        weight: 1
+      - path: Bamboo/Cylinder280
+        weight: 1
+      - path: Bamboo/Cylinder281
+        weight: 1
+      - path: Bamboo/Cylinder282
+        weight: 1
+      - path: Bamboo/Cylinder283
+        weight: 1
+      - path: Bamboo/Cylinder284
+        weight: 1
+      - path: Bamboo/Cylinder285
+        weight: 1
+      - path: Bamboo/Cylinder286
+        weight: 1
+      - path: Bamboo/Cylinder287
+        weight: 1
+      - path: Bamboo/Cylinder288
+        weight: 1
+      - path: Bamboo/Cylinder289
+        weight: 1
+      - path: Bamboo/Cylinder290
+        weight: 1
+      - path: Bamboo/Cylinder291
+        weight: 1
+      - path: Bamboo/Cylinder292
+        weight: 1
+      - path: Bamboo/Cylinder293
+        weight: 1
+      - path: Bamboo/Cylinder294
+        weight: 1
+      - path: Bamboo/Cylinder295
+        weight: 1
+      - path: Bamboo/Cylinder296
+        weight: 1
+      - path: Bamboo/Cylinder297
+        weight: 1
+      - path: Bamboo/Cylinder298
+        weight: 1
+      - path: Bamboo/Cylinder299
+        weight: 1
+      - path: Bamboo/Cylinder300
+        weight: 1
+      - path: Bamboo/Cylinder301
+        weight: 1
+      - path: Bamboo/Cylinder302
+        weight: 1
+      - path: Bamboo/Cylinder303
+        weight: 1
+      - path: Bamboo/Cylinder304
+        weight: 1
+      - path: Bamboo/Cylinder305
+        weight: 1
+      - path: Bamboo/Cylinder306
+        weight: 1
+      - path: Bamboo/Cylinder307
+        weight: 1
+      - path: Bamboo/Cylinder308
+        weight: 1
+      - path: Bamboo/Cylinder309
+        weight: 1
+      - path: Bamboo/Cylinder310
+        weight: 1
+      - path: Bamboo/Cylinder311
+        weight: 1
+      - path: Bamboo/Cylinder312
+        weight: 1
+      - path: Bamboo/Cylinder313
+        weight: 1
+      - path: Bamboo/Cylinder314
+        weight: 1
+      - path: Bamboo/Cylinder315
+        weight: 1
+      - path: Bamboo/Cylinder316
+        weight: 1
+      - path: Bamboo/Cylinder317
+        weight: 1
+      - path: Bamboo/Cylinder318
+        weight: 1
+      - path: Bamboo/Cylinder319
+        weight: 1
+      - path: Bamboo/Cylinder320
+        weight: 1
+      - path: Bamboo/Cylinder321
+        weight: 1
+      - path: Bamboo/Cylinder322
+        weight: 1
+      - path: Bamboo/Cylinder323
+        weight: 1
+      - path: Bamboo/Cylinder324
+        weight: 1
+      - path: Bamboo/Cylinder325
+        weight: 1
+      - path: Bamboo/Cylinder326
+        weight: 1
+      - path: Bamboo/Cylinder327
+        weight: 1
+      - path: Bamboo/Cylinder328
+        weight: 1
+      - path: Bamboo/Cylinder329
+        weight: 1
+      - path: Bamboo/Cylinder330
+        weight: 1
+      - path: Bamboo/Cylinder331
+        weight: 1
+      - path: Bamboo/Cylinder332
+        weight: 1
+      - path: Bamboo/Cylinder333
+        weight: 1
+      - path: Bamboo/Cylinder334
+        weight: 1
+      - path: Bamboo/Cylinder335
+        weight: 1
+      - path: Bamboo/Cylinder336
+        weight: 1
+      - path: Bamboo/Cylinder337
+        weight: 1
+      - path: Bamboo/Cylinder338
+        weight: 1
+      - path: Bamboo/Cylinder339
+        weight: 1
+      - path: Bamboo/Cylinder340
+        weight: 1
+      - path: Bamboo/Cylinder341
+        weight: 1
+      - path: Bamboo/Cylinder342
+        weight: 1
+      - path: Bamboo/Cylinder343
+        weight: 1
+      - path: Bamboo/Cylinder344
+        weight: 1
+      - path: Bamboo/Cylinder345
+        weight: 1
+      - path: Bamboo/Cylinder346
+        weight: 1
+      - path: Bamboo/Cylinder347
+        weight: 1
+      - path: Bamboo/Cylinder348
+        weight: 1
+      - path: Bamboo/Cylinder349
+        weight: 1
+      - path: Bamboo/Cylinder350
+        weight: 1
+      - path: Bamboo/Cylinder351
+        weight: 1
+      - path: Bamboo/Cylinder352
+        weight: 1
+      - path: Bamboo/Cylinder353
+        weight: 1
+      - path: Bamboo/Cylinder354
+        weight: 1
+      - path: Bamboo/Cylinder355
+        weight: 1
+      - path: Bamboo/Cylinder356
+        weight: 1
+      - path: Bamboo/Cylinder357
+        weight: 1
+      - path: Bamboo/Cylinder358
+        weight: 1
+      - path: Bamboo/Cylinder359
+        weight: 1
+      - path: Bamboo/Cylinder360
+        weight: 1
+      - path: Bamboo/Cylinder361
+        weight: 1
+      - path: Bamboo/Cylinder362
+        weight: 1
+      - path: Bamboo/Cylinder363
+        weight: 1
+      - path: Bamboo/Cylinder364
+        weight: 1
+      - path: Bamboo/Cylinder365
+        weight: 1
+      - path: Bamboo/Cylinder366
+        weight: 1
+      - path: Bamboo/Cylinder367
+        weight: 1
+      - path: Bamboo/Cylinder368
+        weight: 1
+      - path: Bamboo/Cylinder369
+        weight: 1
+      - path: Bamboo/Cylinder370
+        weight: 1
+      - path: Bamboo/Cylinder371
+        weight: 1
+      - path: Bamboo/Cylinder372
+        weight: 1
+      - path: Bamboo/Cylinder373
+        weight: 1
+      - path: Bamboo/Cylinder374
+        weight: 1
+      - path: Bamboo/Cylinder375
+        weight: 1
+      - path: Bamboo/Cylinder376
+        weight: 1
+      - path: Bamboo/Cylinder377
+        weight: 1
+      - path: Bamboo/Cylinder378
+        weight: 1
+      - path: Bamboo/Cylinder379
+        weight: 1
+      - path: Bamboo/Cylinder380
+        weight: 1
+      - path: Bamboo/Cylinder381
+        weight: 1
+      - path: Bamboo/Cylinder382
+        weight: 1
+      - path: Bamboo/Cylinder383
+        weight: 1
+      - path: Bamboo/Cylinder384
+        weight: 1
+      - path: Bamboo/Cylinder385
+        weight: 1
+      - path: Bamboo/Cylinder386
+        weight: 1
+      - path: Bamboo/Cylinder387
+        weight: 1
+      - path: Bamboo/Cylinder388
+        weight: 1
+      - path: Bamboo/Cylinder389
+        weight: 1
+      - path: Bamboo/Cylinder390
+        weight: 1
+      - path: Bamboo/Cylinder391
+        weight: 1
+      - path: Bamboo/Cylinder392
+        weight: 1
+      - path: Bamboo/Cylinder393
+        weight: 1
+      - path: Bamboo/Cylinder394
+        weight: 1
+      - path: Bamboo/Cylinder395
+        weight: 1
+      - path: Bamboo/Cylinder396
+        weight: 1
+      - path: Bamboo/Cylinder397
+        weight: 1
+      - path: Bamboo/Cylinder398
+        weight: 1
+      - path: Bamboo/Cylinder399
+        weight: 1
+      - path: Bamboo/Cylinder400
+        weight: 1
+      - path: Bamboo/Cylinder401
+        weight: 1
+      - path: Bamboo/Cylinder402
+        weight: 1
+      - path: Bamboo/Cylinder403
+        weight: 1
+      - path: Bamboo/Cylinder404
+        weight: 1
+      - path: Bamboo/Cylinder405
+        weight: 1
+      - path: Bamboo/Cylinder406
+        weight: 1
+      - path: Bamboo/Cylinder407
+        weight: 1
+      - path: Bamboo/Cylinder408
+        weight: 1
+      - path: Bamboo/Cylinder409
+        weight: 1
+      - path: Bamboo/Cylinder410
+        weight: 1
+      - path: Bamboo/Cylinder411
+        weight: 1
+      - path: Bamboo/Cylinder412
+        weight: 1
+      - path: Bamboo/Cylinder413
+        weight: 1
+      - path: Bamboo/Cylinder414
+        weight: 1
+      - path: Bamboo/Cylinder415
+        weight: 1
+      - path: Bamboo/Cylinder416
+        weight: 1
+      - path: Bamboo/Cylinder417
+        weight: 1
+      - path: Bamboo/Cylinder418
+        weight: 1
+      - path: Bamboo/Cylinder419
+        weight: 1
+      - path: Bamboo/Cylinder420
+        weight: 1
+      - path: Bamboo/Cylinder421
+        weight: 1
+      - path: Bamboo/Cylinder422
+        weight: 1
+      - path: Bamboo/Cylinder423
+        weight: 1
+      - path: Bamboo/Cylinder424
+        weight: 1
+      - path: Bamboo/Cylinder425
+        weight: 1
+      - path: Bamboo/Cylinder426
+        weight: 1
+      - path: Bamboo/Cylinder427
+        weight: 1
+      - path: Bamboo/Cylinder428
+        weight: 1
+      - path: Bamboo/Cylinder429
+        weight: 1
+      - path: Bamboo/Cylinder430
+        weight: 1
+      - path: Bamboo/Cylinder431
+        weight: 1
+      - path: Bamboo/Cylinder432
+        weight: 1
+      - path: Bamboo/Cylinder433
+        weight: 1
+      - path: Bamboo/Cylinder434
+        weight: 1
+      - path: Bamboo/Cylinder435
+        weight: 1
+      - path: Bamboo/Cylinder436
+        weight: 1
+      - path: Bamboo/Cylinder437
+        weight: 1
+      - path: Bamboo/Cylinder438
+        weight: 1
+      - path: Bamboo/Cylinder439
+        weight: 1
+      - path: Bamboo/Cylinder440
+        weight: 1
+      - path: Bamboo/Cylinder441
+        weight: 1
+      - path: Bamboo/Cylinder442
+        weight: 1
+      - path: Bamboo/Cylinder443
+        weight: 1
+      - path: Bamboo/Cylinder444
+        weight: 1
+      - path: Bamboo/Cylinder445
+        weight: 1
+      - path: Bamboo/Cylinder446
+        weight: 1
+      - path: Bamboo/Cylinder447
+        weight: 1
+      - path: Bamboo/Cylinder448
+        weight: 1
+      - path: Bamboo/Cylinder449
+        weight: 1
+      - path: Bamboo/Cylinder450
+        weight: 1
+      - path: Bamboo/Cylinder451
+        weight: 1
+      - path: Bamboo/Cylinder452
+        weight: 1
+      - path: Bamboo/Cylinder453
+        weight: 1
+      - path: Bamboo/Cylinder454
+        weight: 1
+      - path: Bamboo/Cylinder455
+        weight: 1
+      - path: Bamboo/Cylinder456
+        weight: 1
+      - path: Bamboo/Cylinder457
+        weight: 1
+      - path: Bamboo/Cylinder458
+        weight: 1
+      - path: Bamboo/Cylinder459
+        weight: 1
+      - path: Bamboo/Cylinder460
+        weight: 1
+      - path: Bamboo/Cylinder461
+        weight: 1
+      - path: Bamboo/Cylinder462
+        weight: 1
+      - path: Bamboo/Cylinder463
+        weight: 1
+      - path: Bamboo/Cylinder464
+        weight: 1
+      - path: Bamboo/Cylinder465
+        weight: 1
+      - path: Bamboo/Cylinder466
+        weight: 1
+      - path: Bamboo/Cylinder467
+        weight: 1
+      - path: Bamboo/Cylinder468
+        weight: 1
+      - path: Bamboo/Cylinder469
+        weight: 1
+      - path: Bamboo/Cylinder470
+        weight: 1
+      - path: Bamboo/Cylinder471
+        weight: 1
+      - path: Bamboo/Cylinder472
+        weight: 1
+      - path: Bamboo/Cylinder473
+        weight: 1
+      - path: Bamboo/Cylinder474
+        weight: 1
+      - path: Bamboo/Cylinder475
+        weight: 1
+      - path: Bamboo/Cylinder476
+        weight: 1
+      - path: Bamboo/Cylinder477
+        weight: 1
+      - path: Bamboo/Cylinder478
+        weight: 1
+      - path: Bamboo/Cylinder479
+        weight: 1
+      - path: Bamboo/Cylinder480
+        weight: 1
+      - path: Bamboo/Cylinder481
+        weight: 1
+      - path: Bamboo/Cylinder482
+        weight: 1
+      - path: Bamboo/Cylinder483
+        weight: 1
+      - path: Bamboo/Cylinder484
+        weight: 1
+      - path: Bamboo/Cylinder485
+        weight: 1
+      - path: Bamboo/Cylinder486
+        weight: 1
+      - path: Bamboo/Cylinder487
+        weight: 1
+      - path: Bamboo/Cylinder488
+        weight: 1
+      - path: Bamboo/Cylinder489
+        weight: 1
+      - path: Bamboo/Cylinder490
+        weight: 1
+      - path: Bamboo/Cylinder491
+        weight: 1
+      - path: Bamboo/Cylinder492
+        weight: 1
+      - path: Bamboo/Cylinder493
+        weight: 1
+      - path: Bamboo/Cylinder494
+        weight: 1
+      - path: Bamboo/Cylinder495
+        weight: 1
+      - path: Bamboo/Cylinder496
+        weight: 1
+      - path: Bamboo/Cylinder497
+        weight: 1
+      - path: Bamboo/Cylinder498
+        weight: 1
+      - path: Bamboo/Cylinder499
+        weight: 1
+      - path: Bamboo/Cylinder500
+        weight: 1
+      - path: Bamboo/Cylinder501
+        weight: 1
+      - path: Bamboo/Cylinder502
+        weight: 1
+      - path: Bamboo/Cylinder503
+        weight: 1
+      - path: Bamboo/Cylinder504
+        weight: 1
+      - path: Bamboo/Cylinder505
+        weight: 1
+      - path: Bamboo/Cylinder506
+        weight: 1
+      - path: Bamboo/Cylinder507
+        weight: 1
+      - path: Bamboo/Cylinder508
+        weight: 1
+      - path: Bamboo/Cylinder509
+        weight: 1
+      - path: Bamboo/Cylinder510
+        weight: 1
+      - path: Bamboo/Cylinder511
+        weight: 1
+      - path: Bamboo/Cylinder512
+        weight: 1
+      - path: Bamboo/Cylinder513
+        weight: 1
+      - path: Bamboo/Cylinder514
+        weight: 1
+      - path: Bamboo/Cylinder515
+        weight: 1
+      - path: Bamboo/Cylinder516
+        weight: 1
+      - path: Bamboo/Cylinder517
+        weight: 1
+      - path: Bamboo/Cylinder518
+        weight: 1
+      - path: Bamboo/Cylinder519
+        weight: 1
+      - path: Bamboo/Cylinder520
+        weight: 1
+      - path: Bamboo/Cylinder521
+        weight: 1
+      - path: Bamboo/Cylinder522
+        weight: 1
+      - path: Bamboo/Cylinder523
+        weight: 1
+      - path: Bamboo/Cylinder524
+        weight: 1
+      - path: Bamboo/Cylinder525
+        weight: 1
+      - path: Bamboo/Cylinder526
+        weight: 1
+      - path: Bamboo/Cylinder527
+        weight: 1
+      - path: Bamboo/Cylinder528
+        weight: 1
+      - path: Bamboo/Cylinder529
+        weight: 1
+      - path: Bamboo/Cylinder530
+        weight: 1
+      - path: Bamboo/Cylinder531
+        weight: 1
+      - path: Bamboo/Cylinder532
+        weight: 1
+      - path: Bamboo/Cylinder533
+        weight: 1
+      - path: Bamboo/Cylinder534
+        weight: 1
+      - path: Bamboo/Cylinder535
+        weight: 1
+      - path: Bamboo/Cylinder536
+        weight: 1
+      - path: Bamboo/Cylinder537
+        weight: 1
+      - path: Bamboo/Cylinder538
+        weight: 1
+      - path: Bamboo/Cylinder539
+        weight: 1
+      - path: Bamboo/Cylinder540
+        weight: 1
+      - path: Bamboo/Cylinder541
+        weight: 1
+      - path: Bamboo/Cylinder542
+        weight: 1
+      - path: Bamboo/Cylinder543
+        weight: 1
+      - path: Bamboo/Cylinder544
+        weight: 1
+      - path: Bamboo/Cylinder545
+        weight: 1
+      - path: Bamboo/Cylinder546
+        weight: 1
+      - path: Bamboo/Cylinder547
+        weight: 1
+      - path: Bamboo/Cylinder548
+        weight: 1
+      - path: Bamboo/Cylinder549
+        weight: 1
+      - path: Bamboo/Cylinder550
+        weight: 1
+      - path: Bamboo/Cylinder551
+        weight: 1
+      - path: Bamboo/Cylinder552
+        weight: 1
+      - path: Bamboo/Cylinder553
+        weight: 1
+      - path: Bamboo/Cylinder554
+        weight: 1
+      - path: Bamboo/Cylinder555
+        weight: 1
+      - path: Bamboo/Cylinder556
+        weight: 1
+      - path: Bamboo/Cylinder557
+        weight: 1
+      - path: Bamboo/Cylinder558
+        weight: 1
+      - path: Bamboo/Cylinder559
+        weight: 1
+      - path: Bamboo/Cylinder560
+        weight: 1
+      - path: Bamboo/Cylinder561
+        weight: 1
+      - path: Bamboo/Cylinder562
+        weight: 1
+      - path: Bamboo/Cylinder563
+        weight: 1
+      - path: Bamboo/Cylinder564
+        weight: 1
+      - path: Bamboo/Cylinder565
+        weight: 1
+      - path: Bamboo/Cylinder566
+        weight: 1
+      - path: Bamboo/Cylinder567
+        weight: 1
+      - path: Bamboo/Cylinder568
+        weight: 1
+      - path: Bamboo/Cylinder569
+        weight: 1
+      - path: Bamboo/Cylinder570
+        weight: 1
+      - path: Bamboo/Cylinder571
+        weight: 1
+      - path: Bamboo/Cylinder572
+        weight: 1
+      - path: Bamboo/Cylinder573
+        weight: 1
+      - path: Bamboo/Cylinder574
+        weight: 1
+      - path: Bamboo/Cylinder575
+        weight: 1
+      - path: Bamboo/Cylinder576
+        weight: 1
+      - path: Bamboo/Cylinder577
+        weight: 1
+      - path: Bamboo/Cylinder578
+        weight: 1
+      - path: Bamboo/Cylinder579
+        weight: 1
+      - path: Bamboo/Cylinder580
+        weight: 1
+      - path: Bamboo/Cylinder581
+        weight: 1
+      - path: Bamboo/Cylinder582
+        weight: 1
+      - path: Bamboo/Cylinder583
+        weight: 1
+      - path: Bamboo/Cylinder584
+        weight: 1
+      - path: Bamboo/Cylinder585
+        weight: 1
+      - path: Bamboo/Cylinder586
+        weight: 1
+      - path: Bamboo/Cylinder587
+        weight: 1
+      - path: Bamboo/Cylinder588
+        weight: 1
+      - path: Bamboo/Cylinder589
+        weight: 1
+      - path: Bamboo/Cylinder590
+        weight: 1
+      - path: Bamboo/Cylinder591
+        weight: 1
+      - path: Bamboo/Cylinder592
+        weight: 1
+      - path: Bamboo/Cylinder593
+        weight: 1
+      - path: Bamboo/Cylinder594
+        weight: 1
+      - path: Bamboo/Cylinder595
+        weight: 1
+      - path: Bamboo/Cylinder596
+        weight: 1
+      - path: Bamboo/Cylinder597
+        weight: 1
+      - path: Bamboo/Cylinder598
+        weight: 1
+      - path: Bamboo/Cylinder599
+        weight: 1
+      - path: Bamboo/Cylinder600
+        weight: 1
+      - path: Bamboo/Cylinder601
+        weight: 1
+      - path: Bamboo/Cylinder602
+        weight: 1
+      - path: Bamboo/Cylinder603
+        weight: 1
+      - path: Bamboo/Cylinder604
+        weight: 1
+      - path: Bamboo/Cylinder605
+        weight: 1
+      - path: Bamboo/Cylinder606
+        weight: 1
+      - path: Bamboo/Cylinder607
+        weight: 1
+      - path: Bamboo/Cylinder608
+        weight: 1
+      - path: Bamboo/Cylinder609
+        weight: 1
+      - path: Bamboo/Cylinder610
+        weight: 1
+      - path: Bamboo/Cylinder611
+        weight: 1
+      - path: Bamboo/Cylinder612
+        weight: 1
+      - path: Bamboo/Cylinder613
+        weight: 1
+      - path: Bamboo/Cylinder614
+        weight: 1
+      - path: Bamboo/Cylinder615
+        weight: 1
+      - path: Bamboo/Cylinder616
+        weight: 1
+      - path: Bamboo/Cylinder617
+        weight: 1
+      - path: Bamboo/Cylinder618
+        weight: 1
+      - path: Bamboo/Cylinder619
+        weight: 1
+      - path: Bamboo/Cylinder620
+        weight: 1
+      - path: Bamboo/Cylinder621
+        weight: 1
+      - path: Bamboo/Cylinder622
+        weight: 1
+      - path: Bamboo/Cylinder623
+        weight: 1
+      - path: Bamboo/Cylinder624
+        weight: 1
+      - path: Bamboo/Cylinder625
+        weight: 1
+      - path: Bamboo/Cylinder626
+        weight: 1
+      - path: Bamboo/Cylinder627
+        weight: 1
+      - path: Bamboo/Cylinder628
+        weight: 1
+      - path: Bamboo/Cylinder629
+        weight: 1
+      - path: Bamboo/Cylinder630
+        weight: 1
+      - path: Bamboo/Cylinder631
+        weight: 1
+      - path: Bamboo/Cylinder632
+        weight: 1
+      - path: Bamboo/Cylinder633
+        weight: 1
+      - path: Bamboo/Cylinder634
+        weight: 1
+      - path: Bamboo/Cylinder635
+        weight: 1
+      - path: Bamboo/Cylinder636
+        weight: 1
+      - path: Bamboo/Cylinder637
+        weight: 1
+      - path: Bamboo/Cylinder638
+        weight: 1
+      - path: Bamboo/Cylinder639
+        weight: 1
+      - path: Bamboo/Cylinder640
+        weight: 1
+      - path: Bamboo/Cylinder641
+        weight: 1
+      - path: Bamboo/Cylinder642
+        weight: 1
+      - path: Bamboo/Cylinder643
+        weight: 1
+      - path: Bamboo/Cylinder644
+        weight: 1
+      - path: Bamboo/Cylinder645
+        weight: 1
+      - path: Bamboo/Cylinder646
+        weight: 1
+      - path: Bamboo/Cylinder647
+        weight: 1
+      - path: Bamboo/Cylinder648
+        weight: 1
+      - path: Box001
+        weight: 1
+      - path: Floor Plan
+        weight: 1
+      - path: GeoSphere053
+        weight: 1
+      - path: Herdle 2
+        weight: 1
+      - path: Herdle 2/building
+        weight: 1
+      - path: Herdle 2/building/Box001 1
+        weight: 1
+      - path: Herdle 2/building/Box003 1
+        weight: 1
+      - path: Herdle 2/building/door
+        weight: 1
+      - path: Herdle 2/building001
+        weight: 1
+      - path: Herdle 2/building001/Box006
+        weight: 1
+      - path: Herdle 2/building001/Box007
+        weight: 1
+      - path: Herdle 2/building002
+        weight: 1
+      - path: Herdle 2/building002/Box008
+        weight: 1
+      - path: Herdle 2/building002/Box009
+        weight: 1
+      - path: Herdle 2/building002/door001
+        weight: 1
+      - path: Herdle 2/building003
+        weight: 1
+      - path: Herdle 2/building003/Box045
+        weight: 1
+      - path: Herdle 2/building003/Box046
+        weight: 1
+      - path: Herdle 2/building003/door002
+        weight: 1
+      - path: Herdle 2/building004
+        weight: 1
+      - path: Herdle 2/building004/Box049
+        weight: 1
+      - path: Herdle 2/building004/Box050
+        weight: 1
+      - path: Herdle 2/building005
+        weight: 1
+      - path: Herdle 2/building005/Box051
+        weight: 1
+      - path: Herdle 2/building005/Box052
+        weight: 1
+      - path: Herdle 2/building005/door003
+        weight: 1
+      - path: Herdle 2/building006
+        weight: 1
+      - path: Herdle 2/building006/Box054
+        weight: 1
+      - path: Herdle 2/building006/Box055
+        weight: 1
+      - path: Herdle 2/building006/door004
+        weight: 1
+      - path: Herdle 2/building007
+        weight: 1
+      - path: Herdle 2/building007/Box058
+        weight: 1
+      - path: Herdle 2/building007/Box059
+        weight: 1
+      - path: Herdle 2/building008
+        weight: 1
+      - path: Herdle 2/building008/Box060
+        weight: 1
+      - path: Herdle 2/building008/Box061
+        weight: 1
+      - path: Herdle 2/building008/door005
+        weight: 1
+      - path: Herdle 2/building009
+        weight: 1
+      - path: Herdle 2/building009/Box063
+        weight: 1
+      - path: Herdle 2/building009/Box064
+        weight: 1
+      - path: Herdle 2/building009/door006
+        weight: 1
+      - path: Herdle 2/building010
+        weight: 1
+      - path: Herdle 2/building010/Box067
+        weight: 1
+      - path: Herdle 2/building010/Box068
+        weight: 1
+      - path: Herdle 2/building011
+        weight: 1
+      - path: Herdle 2/building011/Box069
+        weight: 1
+      - path: Herdle 2/building011/Box070
+        weight: 1
+      - path: Herdle 2/building011/door007
+        weight: 1
+      - path: Herdle 2/building012
+        weight: 1
+      - path: Herdle 2/building012/Box072
+        weight: 1
+      - path: Herdle 2/building012/Box073
+        weight: 1
+      - path: Herdle 2/building012/door008
+        weight: 1
+      - path: Herdle 2/building013
+        weight: 1
+      - path: Herdle 2/building013/Box076
+        weight: 1
+      - path: Herdle 2/building013/Box077
+        weight: 1
+      - path: Herdle 2/building014
+        weight: 1
+      - path: Herdle 2/building014/Box078
+        weight: 1
+      - path: Herdle 2/building014/Box079
+        weight: 1
+      - path: Herdle 2/building014/door009
+        weight: 1
+      - path: Herdle 2/building015
+        weight: 1
+      - path: Herdle 2/building015/Box081
+        weight: 1
+      - path: Herdle 2/building015/Box082
+        weight: 1
+      - path: Herdle 2/building015/door010
+        weight: 1
+      - path: Herdle 2/building016
+        weight: 1
+      - path: Herdle 2/building016/Box085
+        weight: 1
+      - path: Herdle 2/building016/Box086
+        weight: 1
+      - path: Herdle 2/building017
+        weight: 1
+      - path: Herdle 2/building017/Box087
+        weight: 1
+      - path: Herdle 2/building017/Box088
+        weight: 1
+      - path: Herdle 2/building017/door011
+        weight: 1
+      - path: Herdle 2/building018
+        weight: 1
+      - path: Herdle 2/building018/Box091
+        weight: 1
+      - path: Herdle 2/building018/Box092
+        weight: 1
+      - path: Herdle 2/building019
+        weight: 1
+      - path: Herdle 2/building019/Box093
+        weight: 1
+      - path: Herdle 2/building019/Box094
+        weight: 1
+      - path: Herdle 2/building019/door012
+        weight: 1
+      - path: Herdle 2/building020
+        weight: 1
+      - path: Herdle 2/building020/Box096
+        weight: 1
+      - path: Herdle 2/building020/Box097
+        weight: 1
+      - path: Herdle 2/building020/door013
+        weight: 1
+      - path: Herdle 2/building021
+        weight: 1
+      - path: Herdle 2/building021/Box099
+        weight: 1
+      - path: Herdle 2/building021/Box100
+        weight: 1
+      - path: Herdle 2/building021/door014
+        weight: 1
+      - path: Herdle 2/Cylinder001
+        weight: 1
+      - path: Herdle 2/Cylinder003
+        weight: 1
+      - path: Herdle 2/Cylinder021
+        weight: 1
+      - path: Herdle 2/Cylinder041
+        weight: 1
+      - path: Herdle 2/Cylinder044
+        weight: 1
+      - path: Herdle 2/Cylinder045
+        weight: 1
+      - path: Herdle 2/Cylinder046
+        weight: 1
+      - path: Herdle 2/Cylinder047
+        weight: 1
+      - path: Herdle 2/Cylinder670
+        weight: 1
+      - path: Herdle 2/Cylinder671
+        weight: 1
+      - path: Herdle 2/Cylinder672
+        weight: 1
+      - path: Herdle 2/GeoSphere001
+        weight: 1
+      - path: Herdle 2/GeoSphere002
+        weight: 1
+      - path: Herdle 2/GeoSphere003
+        weight: 1
+      - path: Herdle 2/GeoSphere004
+        weight: 1
+      - path: Herdle 2/GeoSphere005
+        weight: 1
+      - path: Herdle 2/GeoSphere006
+        weight: 1
+      - path: Herdle 2/GeoSphere007
+        weight: 1
+      - path: Herdle 2/GeoSphere091
+        weight: 1
+      - path: Herdle 2/GeoSphere092
+        weight: 1
+      - path: Herdle 2/GeoSphere093
+        weight: 1
+      - path: Herdle 2/roof
+        weight: 1
+      - path: Herdle 2/roof/Box004 1
+        weight: 1
+      - path: Herdle 2/roof/Sphere001
+        weight: 1
+      - path: Herdle 2/roof/Sphere002
+        weight: 1
+      - path: Herdle 2/roof/Sphere003
+        weight: 1
+      - path: Herdle 2/roof/Sphere004
+        weight: 1
+      - path: Herdle 2/roof001
+        weight: 1
+      - path: Herdle 2/roof001/Box005
+        weight: 1
+      - path: Herdle 2/roof001/Sphere005
+        weight: 1
+      - path: Herdle 2/roof001/Sphere006
+        weight: 1
+      - path: Herdle 2/roof001/Sphere007
+        weight: 1
+      - path: Herdle 2/roof001/Sphere008
+        weight: 1
+      - path: Herdle 2/roof002
+        weight: 1
+      - path: Herdle 2/roof002/Box010
+        weight: 1
+      - path: Herdle 2/roof002/Sphere009
+        weight: 1
+      - path: Herdle 2/roof002/Sphere010
+        weight: 1
+      - path: Herdle 2/roof002/Sphere011
+        weight: 1
+      - path: Herdle 2/roof002/Sphere012
+        weight: 1
+      - path: Herdle 2/roof003
+        weight: 1
+      - path: Herdle 2/roof003/Box047
+        weight: 1
+      - path: Herdle 2/roof003/Sphere013
+        weight: 1
+      - path: Herdle 2/roof003/Sphere014
+        weight: 1
+      - path: Herdle 2/roof003/Sphere015
+        weight: 1
+      - path: Herdle 2/roof003/Sphere016
+        weight: 1
+      - path: Herdle 2/roof004
+        weight: 1
+      - path: Herdle 2/roof004/Box048
+        weight: 1
+      - path: Herdle 2/roof004/Sphere017
+        weight: 1
+      - path: Herdle 2/roof004/Sphere018
+        weight: 1
+      - path: Herdle 2/roof004/Sphere019
+        weight: 1
+      - path: Herdle 2/roof004/Sphere020
+        weight: 1
+      - path: Herdle 2/roof005
+        weight: 1
+      - path: Herdle 2/roof005/Box053
+        weight: 1
+      - path: Herdle 2/roof005/Sphere021
+        weight: 1
+      - path: Herdle 2/roof005/Sphere022
+        weight: 1
+      - path: Herdle 2/roof005/Sphere023
+        weight: 1
+      - path: Herdle 2/roof005/Sphere024
+        weight: 1
+      - path: Herdle 2/roof006
+        weight: 1
+      - path: Herdle 2/roof006/Box056
+        weight: 1
+      - path: Herdle 2/roof006/Sphere025
+        weight: 1
+      - path: Herdle 2/roof006/Sphere026
+        weight: 1
+      - path: Herdle 2/roof006/Sphere027
+        weight: 1
+      - path: Herdle 2/roof006/Sphere028
+        weight: 1
+      - path: Herdle 2/roof007
+        weight: 1
+      - path: Herdle 2/roof007/Box057
+        weight: 1
+      - path: Herdle 2/roof007/Sphere029
+        weight: 1
+      - path: Herdle 2/roof007/Sphere030
+        weight: 1
+      - path: Herdle 2/roof007/Sphere031
+        weight: 1
+      - path: Herdle 2/roof007/Sphere032
+        weight: 1
+      - path: Herdle 2/roof008
+        weight: 1
+      - path: Herdle 2/roof008/Box062
+        weight: 1
+      - path: Herdle 2/roof008/Sphere033
+        weight: 1
+      - path: Herdle 2/roof008/Sphere034
+        weight: 1
+      - path: Herdle 2/roof008/Sphere035
+        weight: 1
+      - path: Herdle 2/roof008/Sphere036
+        weight: 1
+      - path: Herdle 2/roof009
+        weight: 1
+      - path: Herdle 2/roof009/Box065
+        weight: 1
+      - path: Herdle 2/roof009/Sphere037
+        weight: 1
+      - path: Herdle 2/roof009/Sphere038
+        weight: 1
+      - path: Herdle 2/roof009/Sphere039
+        weight: 1
+      - path: Herdle 2/roof009/Sphere040
+        weight: 1
+      - path: Herdle 2/roof010
+        weight: 1
+      - path: Herdle 2/roof010/Box066
+        weight: 1
+      - path: Herdle 2/roof010/Sphere041
+        weight: 1
+      - path: Herdle 2/roof010/Sphere042
+        weight: 1
+      - path: Herdle 2/roof010/Sphere043
+        weight: 1
+      - path: Herdle 2/roof010/Sphere044
+        weight: 1
+      - path: Herdle 2/roof011
+        weight: 1
+      - path: Herdle 2/roof011/Box071
+        weight: 1
+      - path: Herdle 2/roof011/Sphere045
+        weight: 1
+      - path: Herdle 2/roof011/Sphere046
+        weight: 1
+      - path: Herdle 2/roof011/Sphere047
+        weight: 1
+      - path: Herdle 2/roof011/Sphere048
+        weight: 1
+      - path: Herdle 2/roof012
+        weight: 1
+      - path: Herdle 2/roof012/Box074
+        weight: 1
+      - path: Herdle 2/roof012/Sphere049
+        weight: 1
+      - path: Herdle 2/roof012/Sphere050
+        weight: 1
+      - path: Herdle 2/roof012/Sphere051
+        weight: 1
+      - path: Herdle 2/roof012/Sphere052
+        weight: 1
+      - path: Herdle 2/roof013
+        weight: 1
+      - path: Herdle 2/roof013/Box075
+        weight: 1
+      - path: Herdle 2/roof013/Sphere053
+        weight: 1
+      - path: Herdle 2/roof013/Sphere054
+        weight: 1
+      - path: Herdle 2/roof013/Sphere055
+        weight: 1
+      - path: Herdle 2/roof013/Sphere056
+        weight: 1
+      - path: Herdle 2/roof014
+        weight: 1
+      - path: Herdle 2/roof014/Box080
+        weight: 1
+      - path: Herdle 2/roof014/Sphere057
+        weight: 1
+      - path: Herdle 2/roof014/Sphere058
+        weight: 1
+      - path: Herdle 2/roof014/Sphere059
+        weight: 1
+      - path: Herdle 2/roof014/Sphere060
+        weight: 1
+      - path: Herdle 2/roof015
+        weight: 1
+      - path: Herdle 2/roof015/Box083
+        weight: 1
+      - path: Herdle 2/roof015/Sphere061
+        weight: 1
+      - path: Herdle 2/roof015/Sphere062
+        weight: 1
+      - path: Herdle 2/roof015/Sphere063
+        weight: 1
+      - path: Herdle 2/roof015/Sphere064
+        weight: 1
+      - path: Herdle 2/roof016
+        weight: 1
+      - path: Herdle 2/roof016/Box084
+        weight: 1
+      - path: Herdle 2/roof016/Sphere065
+        weight: 1
+      - path: Herdle 2/roof016/Sphere066
+        weight: 1
+      - path: Herdle 2/roof016/Sphere067
+        weight: 1
+      - path: Herdle 2/roof016/Sphere068
+        weight: 1
+      - path: Herdle 2/roof017
+        weight: 1
+      - path: Herdle 2/roof017/Box089
+        weight: 1
+      - path: Herdle 2/roof017/Sphere069
+        weight: 1
+      - path: Herdle 2/roof017/Sphere070
+        weight: 1
+      - path: Herdle 2/roof017/Sphere071
+        weight: 1
+      - path: Herdle 2/roof017/Sphere072
+        weight: 1
+      - path: Herdle 2/roof018
+        weight: 1
+      - path: Herdle 2/roof018/Box090
+        weight: 1
+      - path: Herdle 2/roof018/Sphere073
+        weight: 1
+      - path: Herdle 2/roof018/Sphere074
+        weight: 1
+      - path: Herdle 2/roof018/Sphere075
+        weight: 1
+      - path: Herdle 2/roof018/Sphere076
+        weight: 1
+      - path: Herdle 2/roof019
+        weight: 1
+      - path: Herdle 2/roof019/Box095
+        weight: 1
+      - path: Herdle 2/roof019/Sphere077
+        weight: 1
+      - path: Herdle 2/roof019/Sphere078
+        weight: 1
+      - path: Herdle 2/roof019/Sphere079
+        weight: 1
+      - path: Herdle 2/roof019/Sphere080
+        weight: 1
+      - path: Herdle 2/roof020
+        weight: 1
+      - path: Herdle 2/roof020/Box098
+        weight: 1
+      - path: Herdle 2/roof020/Sphere081
+        weight: 1
+      - path: Herdle 2/roof020/Sphere082
+        weight: 1
+      - path: Herdle 2/roof020/Sphere083
+        weight: 1
+      - path: Herdle 2/roof020/Sphere084
+        weight: 1
+      - path: Herdle 2/roof021
+        weight: 1
+      - path: Herdle 2/roof021/Box101
+        weight: 1
+      - path: Herdle 2/roof021/Sphere085
+        weight: 1
+      - path: Herdle 2/roof021/Sphere086
+        weight: 1
+      - path: Herdle 2/roof021/Sphere087
+        weight: 1
+      - path: Herdle 2/roof021/Sphere088
+        weight: 1
+      - path: Herdle 2/trees
+        weight: 1
+      - path: Herdle 2/trees/Cylinder673
+        weight: 1
+      - path: Herdle 2/trees/Cylinder674
+        weight: 1
+      - path: Herdle 2/trees/Cylinder675
+        weight: 1
+      - path: Hurdle 1
+        weight: 1
+      - path: Hurdle 1/Cylinder050
+        weight: 1
+      - path: Hurdle 1/Cylinder051
+        weight: 1
+      - path: Hurdle 1/Cylinder052
+        weight: 1
+      - path: Hurdle 1/Cylinder053
+        weight: 1
+      - path: Hurdle 1/Cylinder054
+        weight: 1
+      - path: Hurdle 1/Cylinder055
+        weight: 1
+      - path: Hurdle 1/Cylinder056
+        weight: 1
+      - path: Hurdle 1/Cylinder057
+        weight: 1
+      - path: Hurdle 1/Cylinder058
+        weight: 1
+      - path: Hurdle 1/Cylinder059
+        weight: 1
+      - path: Hurdle 1/Cylinder060
+        weight: 1
+      - path: Hurdle 1/Cylinder061
+        weight: 1
+      - path: Hurdle 1/Cylinder062
+        weight: 1
+      - path: Hurdle 1/Cylinder063
+        weight: 1
+      - path: Hurdle 1/Cylinder064
+        weight: 1
+      - path: Hurdle 1/GeoSphere008
+        weight: 1
+      - path: Hurdle 1/GeoSphere009
+        weight: 1
+      - path: Hurdle 1/GeoSphere010
+        weight: 1
+      - path: Hurdle 1/GeoSphere011
+        weight: 1
+      - path: Hurdle 1/GeoSphere012
+        weight: 1
+      - path: Hurdle 1/GeoSphere013
+        weight: 1
+      - path: Hurdle 1/GeoSphere014
+        weight: 1
+      - path: Hurdle 1/GeoSphere015
+        weight: 1
+      - path: Hurdle 1/GeoSphere016
+        weight: 1
+      - path: Hurdle 1/GeoSphere017
+        weight: 1
+      - path: Hurdle 1/GeoSphere018
+        weight: 1
+      - path: Hurdle 1/GeoSphere019
+        weight: 1
+      - path: Hurdle 1/GeoSphere020
+        weight: 1
+      - path: Hurdle 1/GeoSphere021
+        weight: 1
+      - path: Hurdle 1/GeoSphere022
+        weight: 1
+      - path: Hurdle 1/GeoSphere023
+        weight: 1
+      - path: Hurdle 1/GeoSphere024
+        weight: 1
+      - path: Hurdle 1/GeoSphere025
+        weight: 1
+      - path: Hurdle 1/GeoSphere026
+        weight: 1
+      - path: Hurdle 1/GeoSphere027
+        weight: 1
+      - path: Hurdle 1/GeoSphere028
+        weight: 1
+      - path: Hurdle 1/GeoSphere030
+        weight: 1
+      - path: Hurdle 1/GeoSphere031
+        weight: 1
+      - path: Hurdle 1/GeoSphere032
+        weight: 1
+      - path: Hurdle 1/GeoSphere033
+        weight: 1
+      - path: Hurdle 1/GeoSphere034
+        weight: 1
+      - path: Hurdle 1/GeoSphere035
+        weight: 1
+      - path: Hurdle 1/GeoSphere036
+        weight: 1
+      - path: Hurdle 1/GeoSphere037
+        weight: 1
+      - path: Hurdle 1/GeoSphere038
+        weight: 1
+      - path: Hurdle 1/GeoSphere039
+        weight: 1
+      - path: Hurdle 1/GeoSphere040
+        weight: 1
+      - path: Hurdle 1/GeoSphere041
+        weight: 1
+      - path: Hurdle 1/GeoSphere042
+        weight: 1
+      - path: Hurdle 1/GeoSphere043
+        weight: 1
+      - path: Hurdle 1/GeoSphere044
+        weight: 1
+      - path: Hurdle 1/GeoSphere045
+        weight: 1
+      - path: Hurdle 1/GeoSphere046
+        weight: 1
+      - path: Hurdle 1/GeoSphere047
+        weight: 1
+      - path: Hurdle 1/GeoSphere048
+        weight: 1
+      - path: Hurdle 1/GeoSphere049
+        weight: 1
+      - path: Hurdle 1/GeoSphere050
+        weight: 1
+      - path: Hurdle 1/GeoSphere051
+        weight: 1
+      - path: Hurdle 1/GeoSphere052
+        weight: 1
+      - path: Hurdle 1/GeoSphere054
+        weight: 1
+      - path: Hurdle 1/GeoSphere055
+        weight: 1
+      - path: Hurdle 1/GeoSphere056
+        weight: 1
+      - path: Hurdle 1/GeoSphere057
+        weight: 1
+      - path: Hurdle 1/GeoSphere058
+        weight: 1
+      - path: Hurdle 1/GeoSphere059
+        weight: 1
+      - path: Hurdle 1/GeoSphere060
+        weight: 1
+      - path: Hurdle 1/GeoSphere061
+        weight: 1
+      - path: Hurdle 1/GeoSphere062
+        weight: 1
+      - path: Hurdle 1/GeoSphere063
+        weight: 1
+      - path: Hurdle 1/GeoSphere064
+        weight: 1
+      - path: Hurdle 1/GeoSphere065
+        weight: 1
+      - path: Hurdle 1/GeoSphere066
+        weight: 1
+      - path: Hurdle 1/GeoSphere067
+        weight: 1
+      - path: Hurdle 1/GeoSphere068
+        weight: 1
+      - path: Hurdle 1/GeoSphere069
+        weight: 1
+      - path: Hurdle 3
+        weight: 1
+      - path: Hurdle 3/Cylinder022
+        weight: 1
+      - path: Hurdle 3/Cylinder649
+        weight: 1
+      - path: Hurdle 3/Cylinder650
+        weight: 1
+      - path: Hurdle 3/Cylinder651
+        weight: 1
+      - path: Hurdle 3/Cylinder652
+        weight: 1
+      - path: Hurdle 3/Cylinder653
+        weight: 1
+      - path: Hurdle 3/Cylinder654
+        weight: 1
+      - path: Hurdle 3/Cylinder657
+        weight: 1
+      - path: Hurdle 3/Cylinder658
+        weight: 1
+      - path: Hurdle 3/Cylinder659
+        weight: 1
+      - path: Hurdle 3/Cylinder660
+        weight: 1
+      - path: Hurdle 3/Cylinder661
+        weight: 1
+      - path: Hurdle 3/Cylinder662
+        weight: 1
+      - path: Hurdle 3/Cylinder663
+        weight: 1
+      - path: Hurdle 3/Cylinder664
+        weight: 1
+      - path: Hurdle 3/Cylinder665
+        weight: 1
+      - path: Hurdle 3/Cylinder666
+        weight: 1
+      - path: Hurdle 3/Cylinder667
+        weight: 1
+      - path: Hurdle 3/Cylinder668
+        weight: 1
+      - path: Hurdle 3/Cylinder669
+        weight: 1
+      - path: Hurdle 3/GeoSphere070
+        weight: 1
+      - path: Hurdle 3/GeoSphere071
+        weight: 1
+      - path: Hurdle 3/GeoSphere072
+        weight: 1
+      - path: Hurdle 3/GeoSphere073
+        weight: 1
+      - path: Hurdle 3/GeoSphere074
+        weight: 1
+      - path: Hurdle 3/GeoSphere075
+        weight: 1
+      - path: Hurdle 3/GeoSphere078
+        weight: 1
+      - path: Hurdle 3/GeoSphere079
+        weight: 1
+      - path: Hurdle 3/GeoSphere080
+        weight: 1
+      - path: Hurdle 3/GeoSphere081
+        weight: 1
+      - path: Hurdle 3/GeoSphere082
+        weight: 1
+      - path: Hurdle 3/GeoSphere083
+        weight: 1
+      - path: Hurdle 3/GeoSphere084
+        weight: 1
+      - path: Hurdle 3/GeoSphere085
+        weight: 1
+      - path: Hurdle 3/GeoSphere086
+        weight: 1
+      - path: Hurdle 3/GeoSphere087
+        weight: 1
+      - path: Hurdle 3/GeoSphere088
+        weight: 1
+      - path: Hurdle 3/GeoSphere089
+        weight: 1
+      - path: Hurdle 3/GeoSphere090
+        weight: 1
+      - path: Log animations
+        weight: 1
+      - path: Log animations/Cylinder037
+        weight: 1
+      - path: Log animations/Cylinder039
+        weight: 1
+      - path: Log animations/Cylinder040
+        weight: 1
+      - path: Log animations/Cylinder042
+        weight: 1
+      - path: Log animations/Cylinder043
+        weight: 1
+      - path: Rocks
+        weight: 1
+      - path: Rocks/Box003
+        weight: 1
+      - path: Rocks/Box004
+        weight: 1
+      - path: Rocks/Box027
+        weight: 1
+      - path: Rocks/Box028
+        weight: 1
+      - path: Rocks/Box029
+        weight: 1
+      - path: Rocks/Box030
+        weight: 1
+      - path: Rocks/Box031
+        weight: 1
+      - path: Rocks/Box032
+        weight: 1
+      - path: Rocks/Box033
+        weight: 1
+      - path: Rocks/Box035
+        weight: 1
+      - path: Rocks/Box036
+        weight: 1
+      - path: Rocks/Box037
+        weight: 1
+      - path: Rocks/Box038
+        weight: 1
+      - path: Trap 1
+        weight: 1
+      - path: Trap 1/Cone089
+        weight: 1
+      - path: Trap 1/Cone090
+        weight: 1
+      - path: Trap 1/Cone091
+        weight: 1
+      - path: Trap 1/Cone092
+        weight: 1
+      - path: Trap 1/Cone093
+        weight: 1
+      - path: Trap 1/Cone094
+        weight: 1
+      - path: Trap 1/Cone095
+        weight: 1
+      - path: Trap 1/Cone096
+        weight: 1
+      - path: Trap 1/Cone097
+        weight: 1
+      - path: Trap 1/Cone098
+        weight: 1
+      - path: Trap 1/Cone099
+        weight: 1
+      - path: Trap 1/Cone100
+        weight: 1
+      - path: Trap 1/Cone101
+        weight: 1
+      - path: Trap 1/Cone102
+        weight: 1
+      - path: Trap 1/Cone103
+        weight: 1
+      - path: Trap 1/Cone104
+        weight: 1
+      - path: Trap 1/Cone105
+        weight: 1
+      - path: Trap 1/Cone106
+        weight: 1
+      - path: Trap 1/Cone107
+        weight: 1
+      - path: Trap 1/Cone108
+        weight: 1
+      - path: Trap 1/Cone109
+        weight: 1
+      - path: Trap 1/Cone110
+        weight: 1
+      - path: Trap 1/Cone111
+        weight: 1
+      - path: Trap 1/Cone112
+        weight: 1
+      - path: Trap 1/Cone113
+        weight: 1
+      - path: Trap 1/Cone114
+        weight: 1
+      - path: Trap 1/Cone115
+        weight: 1
+      - path: Trap 1/Cone116
+        weight: 1
+      - path: Trap 1/Cone117
+        weight: 1
+      - path: Trap 1/Cone118
+        weight: 1
+      - path: Trap 1/Cone119
+        weight: 1
+      - path: Trap 1/Cone120
+        weight: 1
+      - path: Trap 1/Cone121
+        weight: 1
+      - path: Trap 1/Cone122
+        weight: 1
+      - path: Trap 1/Cone123
+        weight: 1
+      - path: Trap 1/Cone124
+        weight: 1
+      - path: Trap 1/Cone125
+        weight: 1
+      - path: Trap 1/Cone126
+        weight: 1
+      - path: Trap 1/Cone127
+        weight: 1
+      - path: Trap 1/Cone128
+        weight: 1
+      - path: Trap 1/Cone129
+        weight: 1
+      - path: Trap 1/Cone130
+        weight: 1
+      - path: Trap 1/Cone131
+        weight: 1
+      - path: Trap 1/Cone132
+        weight: 1
+      - path: Trap 1/Cone133
+        weight: 1
+      - path: Trap 1/Cone134
+        weight: 1
+      - path: Trap 1/Cone135
+        weight: 1
+      - path: Trap 1/Cone136
+        weight: 1
+      - path: Trap 1/Cone137
+        weight: 1
+      - path: Trap 1/Cone138
+        weight: 1
+      - path: Trap 1/Cone139
+        weight: 1
+      - path: Trap 1/Cone140
+        weight: 1
+      - path: Trap 1/Cone141
+        weight: 1
+      - path: Trap 1/Cone142
+        weight: 1
+      - path: Trap 1/Cone143
+        weight: 1
+      - path: Trap 1/Cone144
+        weight: 1
+      - path: Trap 1/Cone145
+        weight: 1
+      - path: Trap 1/Cone146
+        weight: 1
+      - path: Trap 1/Cone147
+        weight: 1
+      - path: Trap 1/Cone148
+        weight: 1
+      - path: Trap 1/Cone149
+        weight: 1
+      - path: Trap 1/Cone150
+        weight: 1
+      - path: Trap 1/Cone151
+        weight: 1
+      - path: Trap 1/Cone152
+        weight: 1
+      - path: Trap 1/Cone153
+        weight: 1
+      - path: Trap 1/Cone154
+        weight: 1
+      - path: Trap 1/Cone155
+        weight: 1
+      - path: Trap 1/Cone156
+        weight: 1
+      - path: Trap 1/Cone157
+        weight: 1
+      - path: Trap 1/Cone158
+        weight: 1
+      - path: Trap 1/Cone159
+        weight: 1
+      - path: Trap 1/Cone160
+        weight: 1
+      - path: Trap 1/Cone161
+        weight: 1
+      - path: Trap 1/Cone162
+        weight: 1
+      - path: Trap 1/Cone163
+        weight: 1
+      - path: Trap 1/Cone164
+        weight: 1
+      - path: Trap 1/Cone165
+        weight: 1
+      - path: Trap 1/Cone166
+        weight: 1
+      - path: Trap 1/Cone167
+        weight: 1
+      - path: Trap 1/Cone168
+        weight: 1
+      - path: Trap 1/Cone169
+        weight: 1
+      - path: Trap 1/Cone170
+        weight: 1
+      - path: Trap 1/Cone171
+        weight: 1
+      - path: Trap 1/Cone172
+        weight: 1
+      - path: Trap 1/Cone173
+        weight: 1
+      - path: Trap 1/Cone174
+        weight: 1
+      - path: Trap 1/Cone175
+        weight: 1
+      - path: Trap 1/Cone176
+        weight: 1
+      - path: Trap 1/Cone177
+        weight: 1
+      - path: Trap 1/Cone178
+        weight: 1
+      - path: Trap 1/Cone179
+        weight: 1
+      - path: Trap 1/Cone180
+        weight: 1
+      - path: Trap 1/Cone181
+        weight: 1
+      - path: Trap 1/Cone182
+        weight: 1
+      - path: Trap 1/Cone183
+        weight: 1
+      - path: Trap 1/Cone184
+        weight: 1
+      - path: Trap 1/Cone185
+        weight: 1
+      - path: Trap 1/Cone187
+        weight: 1
+      - path: Trap 1/Cone188
+        weight: 1
+      - path: Trap 1/Cone189
+        weight: 1
+      - path: Trap 1/Cone190
+        weight: 1
+      - path: Trap 1/Cone191
+        weight: 1
+      - path: Trap 1/Cone192
+        weight: 1
+      - path: Trap 1/Cone193
+        weight: 1
+      - path: Trap 1/Cone194
+        weight: 1
+      - path: Trap 1/Cone195
+        weight: 1
+      - path: Trap 1/Cone196
+        weight: 1
+      - path: Trap 1/Cone197
+        weight: 1
+      - path: Trap 1/Cone198
+        weight: 1
+      - path: Trap 1/Cone199
+        weight: 1
+      - path: Trap 1/Cone200
+        weight: 1
+      - path: Trap 1/Cone201
+        weight: 1
+      - path: Trap 1/Cone202
+        weight: 1
+      - path: Trap 1/Cone203
+        weight: 1
+      - path: Trap 1/Cone204
+        weight: 1
+      - path: Trap 1/Cone205
+        weight: 1
+      - path: Trap 1/Cone206
+        weight: 1
+      - path: Trap 1/Cone207
+        weight: 1
+      - path: Trap 1/Cone208
+        weight: 1
+      - path: Trap 1/Cone209
+        weight: 1
+      - path: Trap 1/Cone210
+        weight: 1
+      - path: Trap 1/Cone211
+        weight: 1
+      - path: Trap 1/Cone212
+        weight: 1
+      - path: Trap 1/Cone213
+        weight: 1
+      - path: Trap 1/Cone214
+        weight: 1
+      - path: Trap 1/Cone215
+        weight: 1
+      - path: Trap 1/Cone216
+        weight: 1
+      - path: Trap 1/Cone217
+        weight: 1
+      - path: Trap 1/Cone218
+        weight: 1
+      - path: Trap 1/Cone219
+        weight: 1
+      - path: Trap 1/Cone220
+        weight: 1
+      - path: Trap 1/Cone221
+        weight: 1
+      - path: Trap 1/Cone222
+        weight: 1
+      - path: Trap 1/Cone223
+        weight: 1
+      - path: Trap 1/Cone224
+        weight: 1
+      - path: Trap 1/Cone225
+        weight: 1
+      - path: Trap 1/Cone226
+        weight: 1
+      - path: Trap 1/Cone227
+        weight: 1
+      - path: Trap 1/Cone228
+        weight: 1
+      - path: Trap 1/Cone229
+        weight: 1
+      - path: Trap 1/Cone230
+        weight: 1
+      - path: Trap 1/Cone231
+        weight: 1
+      - path: Trap 1/Cone232
+        weight: 1
+      - path: Trap 1/Cone233
+        weight: 1
+      - path: Trap 1/Cone234
+        weight: 1
+      - path: Trap 1/Cone235
+        weight: 1
+      - path: Trap 1/Cone236
+        weight: 1
+      - path: Trap 1/Cone237
+        weight: 1
+      - path: Trap 1/Cone238
+        weight: 1
+      - path: Trap 1/Cone239
+        weight: 1
+      - path: Trap 1/Cone240
+        weight: 1
+      - path: Trap 1/Cone241
+        weight: 1
+      - path: Trap 1/Cone242
+        weight: 1
+      - path: Trap 1/Cone243
+        weight: 1
+      - path: Trap 1/Cone244
+        weight: 1
+      - path: Trap 1/Cone245
+        weight: 1
+      - path: Trap 1/Cone246
+        weight: 1
+      - path: Trap 1/Cone247
+        weight: 1
+      - path: Trap 1/Cone248
+        weight: 1
+      - path: Trap 1/Cone249
+        weight: 1
+      - path: Trap 1/Cone250
+        weight: 1
+      - path: Trap 1/Cone251
+        weight: 1
+      - path: Trap 1/Cone252
+        weight: 1
+      - path: Trap 1/Cone253
+        weight: 1
+      - path: Trap 1/Cone254
+        weight: 1
+      - path: Trap 1/Cone255
+        weight: 1
+      - path: Trap 1/Cone256
+        weight: 1
+      - path: Trap 1/Cone257
+        weight: 1
+      - path: Trap 1/Cone258
+        weight: 1
+      - path: Trap 1/Cone259
+        weight: 1
+      - path: Trap 1/Cone260
+        weight: 1
+      - path: Trap 1/Cone261
+        weight: 1
+      - path: Trap 1/Cone262
+        weight: 1
+      - path: Trap 1/Cone263
+        weight: 1
+      - path: Trap 1/Cone264
+        weight: 1
+      - path: Trap 1/Cone265
+        weight: 1
+      - path: Trap 1/Cone266
+        weight: 1
+      - path: Trap 1/Cone267
+        weight: 1
+      - path: Trap 1/Cone268
+        weight: 1
+      - path: Trap 1/Cone269
+        weight: 1
+      - path: Trap 1/Cone270
+        weight: 1
+      - path: Trap 1/Cone271
+        weight: 1
+      - path: Trap 1/Cone272
+        weight: 1
+      - path: Trap 1/Cone273
+        weight: 1
+      - path: Trap 1/Cone274
+        weight: 1
+      - path: Trap 1/Cone275
+        weight: 1
+      - path: Trap 1/Cone276
+        weight: 1
+      - path: Trap 1/Cone277
+        weight: 1
+      - path: Trap 1/Cone278
+        weight: 1
+      - path: Trap 1/Cone279
+        weight: 1
+      - path: Trap 1/Cone280
+        weight: 1
+      - path: Trap 1/Cone281
+        weight: 1
+      - path: Trap 1/Cone282
+        weight: 1
+      - path: Trap 1/Cone283
+        weight: 1
+      - path: Trap 1/Cone284
+        weight: 1
+      - path: Trap 1/Cone285
+        weight: 1
+      - path: Trap 1/Cone286
+        weight: 1
+      - path: Trap 1/Cone287
+        weight: 1
+      - path: Trap 1/Cone288
+        weight: 1
+      - path: Trap 1/Cone289
+        weight: 1
+      - path: Trap 1/Cone290
+        weight: 1
+      - path: Trap 1/Cone291
+        weight: 1
+      - path: Trap 1/Cone292
+        weight: 1
+      - path: Trap 1/Cone293
+        weight: 1
+      - path: Trap 1/Cone294
+        weight: 1
+      - path: Trap 1/Cone295
+        weight: 1
+      - path: Trap 1/Cone296
+        weight: 1
+      - path: Trap 1/Cone297
+        weight: 1
+      - path: Trap 1/Cone298
+        weight: 1
+      - path: Trap 1/Cone299
+        weight: 1
+      - path: Trap 1/Cone300
+        weight: 1
+      - path: Trap 1/Cone301
+        weight: 1
+      - path: Trap 1/Cone302
+        weight: 1
+      - path: Trap 1/Cone303
+        weight: 1
+      - path: Trap 1/Cone304
+        weight: 1
+      - path: Trap 1/Cone305
+        weight: 1
+      - path: Trap 1/Cone306
+        weight: 1
+      - path: Trap 1/Cone307
+        weight: 1
+      - path: Trap 1/Cone308
+        weight: 1
+      - path: Trap 1/Cone309
+        weight: 1
+      - path: Trap 1/Cone310
+        weight: 1
+      - path: Trap 1/Cone311
+        weight: 1
+      - path: Trap 1/Cone313
+        weight: 1
+      - path: Trap 1/Cone314
+        weight: 1
+      - path: Trap 1/Cone315
+        weight: 1
+      - path: Trap 1/Cone316
+        weight: 1
+      - path: Trap 1/Cone317
+        weight: 1
+      - path: Trap 1/Cone318
+        weight: 1
+      - path: Trap 1/Cone319
+        weight: 1
+      - path: Trap 1/Cone320
+        weight: 1
+      - path: Trap 1/Cone321
+        weight: 1
+      - path: Trap 1/Cone322
+        weight: 1
+      - path: Trap 1/Cone323
+        weight: 1
+      - path: Trap 1/Cone324
+        weight: 1
+      - path: Trap 1/Cone325
+        weight: 1
+      - path: Trap 1/Cone326
+        weight: 1
+      - path: Trap 1/Cone327
+        weight: 1
+      - path: Trap 1/Cone328
+        weight: 1
+      - path: Trap 1/Cone329
+        weight: 1
+      - path: Trap 1/Cone330
+        weight: 1
+      - path: Trap 1/Cone331
+        weight: 1
+      - path: Trap 1/Cone332
+        weight: 1
+      - path: Trap 1/Cone333
+        weight: 1
+      - path: Trap 1/Cone334
+        weight: 1
+      - path: Trap 1/Cone335
+        weight: 1
+      - path: Trap 1/Cone336
+        weight: 1
+      - path: Trap 1/Cone337
+        weight: 1
+      - path: Trap 1/Cone338
+        weight: 1
+      - path: Trap 1/Cone339
+        weight: 1
+      - path: Trap 1/Cone340
+        weight: 1
+      - path: Trap 1/Cone341
+        weight: 1
+      - path: Trap 1/Cone342
+        weight: 1
+      - path: Trap 1/Cone343
+        weight: 1
+      - path: Trap 1/Cone344
+        weight: 1
+      - path: Trap 1/Cone345
+        weight: 1
+      - path: Trap 1/Cone346
+        weight: 1
+      - path: Trap 1/Cone347
+        weight: 1
+      - path: Trap 1/Cone348
+        weight: 1
+      - path: Trap 1/Cone349
+        weight: 1
+      - path: Trap 1/Cone350
+        weight: 1
+      - path: Trap 1/Cone351
+        weight: 1
+      - path: Trap 1/Cone352
+        weight: 1
+      - path: Trap 1/Cone353
+        weight: 1
+      - path: Trap 1/Cone354
+        weight: 1
+      - path: Trap 1/Cone355
+        weight: 1
+      - path: Trap 1/Cone356
+        weight: 1
+      - path: Trap 1/Cone357
+        weight: 1
+      - path: Trap 1/Cone358
+        weight: 1
+      - path: Trap 1/Cone359
+        weight: 1
+      - path: Trap 1/Cone360
+        weight: 1
+      - path: Trap 1/Cone361
+        weight: 1
+      - path: Trap 1/Cone362
+        weight: 1
+      - path: Trap 1/Cone363
+        weight: 1
+      - path: Trap 1/Cone364
+        weight: 1
+      - path: Trap 1/Cone365
+        weight: 1
+      - path: Trap 1/Cone366
+        weight: 1
+      - path: Trap 1/Cone367
+        weight: 1
+      - path: Trap 1/Cone368
+        weight: 1
+      - path: Trap 1/Cone369
+        weight: 1
+      - path: Trap 1/Cone370
+        weight: 1
+      - path: Trap 1/Cone371
+        weight: 1
+      - path: Trap 1/Cone372
+        weight: 1
+      - path: Trap 1/Cone373
+        weight: 1
+      - path: Trap 1/Cone374
+        weight: 1
+      - path: Trap 1/Cone375
+        weight: 1
+      - path: Trap 1/Cone376
+        weight: 1
+      - path: Trap 1/Cone377
+        weight: 1
+      - path: Trap 1/Cone378
+        weight: 1
+      - path: Trap 1/Cone379
+        weight: 1
+      - path: Trap 1/Cone380
+        weight: 1
+      - path: Trap 1/Cone381
+        weight: 1
+      - path: Trap 1/Cone382
+        weight: 1
+      - path: Trap 1/Cone383
+        weight: 1
+      - path: Trap 1/Cone384
+        weight: 1
+      - path: Trap 1/Cone385
+        weight: 1
+      - path: Trap 1/Cone386
+        weight: 1
+      - path: Trap 1/Cone387
+        weight: 1
+      - path: Trap 1/Cone388
+        weight: 1
+      - path: Trap 1/Cone389
+        weight: 1
+      - path: Trap 1/Cone390
+        weight: 1
+      - path: Trap 1/Cone391
+        weight: 1
+      - path: Trap 1/Cone392
+        weight: 1
+      - path: Trap 1/Cone393
+        weight: 1
+      - path: Trap 1/Cone394
+        weight: 1
+      - path: Trap 1/Cone395
+        weight: 1
+      - path: Trap 1/Cone396
+        weight: 1
+      - path: Trap 1/Cone397
+        weight: 1
+      - path: Trap 1/Cone398
+        weight: 1
+      - path: Trap 1/Cone399
+        weight: 1
+      - path: Trap 1/Cone400
+        weight: 1
+      - path: Trap 1/Cone401
+        weight: 1
+      - path: Trap 1/Cone402
+        weight: 1
+      - path: Trap 1/Cone403
+        weight: 1
+      - path: Trap 1/Cone404
+        weight: 1
+      - path: Trap 1/Cone405
+        weight: 1
+      - path: Trap 1/Cone406
+        weight: 1
+      - path: Trap 1/Cone407
+        weight: 1
+      - path: Trap 1/Cone408
+        weight: 1
+      - path: Trap 1/Cone409
+        weight: 1
+      - path: Trap 1/Cone410
+        weight: 1
+      - path: Trap 1/Cone411
+        weight: 1
+      - path: Trap 1/Cone412
+        weight: 1
+      - path: Trap 1/Cone413
+        weight: 1
+      - path: Trap 1/Cone414
+        weight: 1
+      - path: Trap 1/Cone415
+        weight: 1
+      - path: Trap 1/Cone416
+        weight: 1
+      - path: Trap 1/Cone417
+        weight: 1
+      - path: Trap 1/Cone418
+        weight: 1
+      - path: Trap 1/Cone419
+        weight: 1
+      - path: Trap 1/Cone420
+        weight: 1
+      - path: Trap 1/Cone421
+        weight: 1
+      - path: Trap 1/Cone422
+        weight: 1
+      - path: Trap 1/Cone423
+        weight: 1
+      - path: Trap 1/Cone424
+        weight: 1
+      - path: Trap 1/Cone425
+        weight: 1
+      - path: Trap 1/Cone426
+        weight: 1
+      - path: Trap 1/Cone427
+        weight: 1
+      - path: Trap 1/Cone428
+        weight: 1
+      - path: Trap 1/Cone429
+        weight: 1
+      - path: Trap 1/Cone430
+        weight: 1
+      - path: Trap 1/Cone431
+        weight: 1
+      - path: Trap 1/Cone432
+        weight: 1
+      - path: Trap 1/Cone433
+        weight: 1
+      - path: Trap 1/Cone434
+        weight: 1
+      - path: Trap 1/Cone435
+        weight: 1
+      - path: Trap 1/Cone436
+        weight: 1
+      - path: Trap 1/Cone437
+        weight: 1
+      - path: Trap 1/Cone438
+        weight: 1
+      - path: Trap 1/Cone439
+        weight: 1
+      - path: Trap 1/Cone440
+        weight: 1
+      - path: Trap 1/Cone441
+        weight: 1
+      - path: Trap 1/Cone442
+        weight: 1
+      - path: Trap 1/Cone443
+        weight: 1
+      - path: Trap 1/Cone444
+        weight: 1
+      - path: Trap 1/Cone445
+        weight: 1
+      - path: Trap 1/Cone446
+        weight: 1
+      - path: Trap 1/Cone447
+        weight: 1
+      - path: Trap 1/Cone448
+        weight: 1
+      - path: Trap 1/Cone449
+        weight: 1
+      - path: Trap 1/Cone450
+        weight: 1
+      - path: Trap 1/Cone451
+        weight: 1
+      - path: Trap 1/Cone452
+        weight: 1
+      - path: Trap 1/Cone453
+        weight: 1
+      - path: Trap 1/Cone454
+        weight: 1
+      - path: Trap 1/Cone455
+        weight: 1
+      - path: Trap 1/Cone456
+        weight: 1
+      - path: Trap 1/Cone457
+        weight: 1
+      - path: Trap 1/Cylinder024
+        weight: 1
+      - path: Trap 1/Cylinder025
+        weight: 1
+      - path: Trap 1/Cylinder026
+        weight: 1
+      - path: Trap 1/Cylinder027
+        weight: 1
+      - path: Trap 1/Cylinder028
+        weight: 1
+      - path: Trap 1/Cylinder029
+        weight: 1
+      - path: Trap 1/Cylinder030
+        weight: 1
+      - path: Trap 1/Cylinder031
+        weight: 1
+      - path: Trap 1/Cylinder032
+        weight: 1
+      - path: Trap 1/Cylinder033
+        weight: 1
+      - path: Trap 1/Cylinder034
+        weight: 1
+      - path: Trap 1/Cylinder035
+        weight: 1
+      - path: Trap 1/Cylinder036
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -230,8 +230,7 @@ public class Player : Characters
 		// When enemies damage our player and our shield powerup is not on
 		if (col.gameObject.CompareTag("Enemy")
 			&& !isShieldOn
-			&& isPlayerAlive
-			&& !isAttacking)
+			&& isPlayerAlive)
 		{
 			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
