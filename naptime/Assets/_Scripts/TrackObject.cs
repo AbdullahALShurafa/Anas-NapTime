@@ -53,23 +53,23 @@ public class TrackObject : MonoBehaviour
 	{
 		if (camera && target)
 		{
-			if (freeLook)
-			{
-				// Interpolate euler angles between current and target
-				newRotation.x = Mathf.LerpAngle(newRotation.x, target.transform.rotation.eulerAngles.x, (1 / smoothing) * Time.deltaTime);
-				newRotation.y = Mathf.LerpAngle(newRotation.y, target.transform.rotation.eulerAngles.y, (1 / smoothing) * Time.deltaTime);
-				newRotation.z = Mathf.LerpAngle(newRotation.z, target.transform.rotation.eulerAngles.z, (1 / smoothing) * Time.deltaTime);
-
-				// Give physical object body a velocity to move towards target and apply rotation changes
-				body.velocity = (target.transform.position - camera.transform.position) * (4 / smoothing);
-				camera.transform.rotation = Quaternion.Euler(newRotation);
-			}
-			else
-			{
+//			if (freeLook)
+//			{
+//				// Interpolate euler angles between current and target
+//				newRotation.x = Mathf.LerpAngle(newRotation.x, target.transform.rotation.eulerAngles.x, (1 / smoothing) * Time.deltaTime);
+//				newRotation.y = Mathf.LerpAngle(newRotation.y, target.transform.rotation.eulerAngles.y, (1 / smoothing) * Time.deltaTime);
+//				newRotation.z = Mathf.LerpAngle(newRotation.z, target.transform.rotation.eulerAngles.z, (1 / smoothing) * Time.deltaTime);
+//
+//				// Give physical object body a velocity to move towards target and apply rotation changes
+//				body.velocity = (target.transform.position - camera.transform.position) * (4 / smoothing);
+//				camera.transform.rotation = Quaternion.Euler(newRotation);
+//			}
+//			else
+//			{
 				Vector3 targetPos = player.transform.position + offset;
 				camera.transform.position = targetPos + perspective * distance;
 				camera.transform.rotation = Quaternion.Euler(angle);
-			}
+			//}
 		}
 	}
 }
