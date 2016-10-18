@@ -14,7 +14,7 @@ public class Player : Characters
 
 	public bool isPlayerGrounded = true;
 	internal bool isPlayerAlive = true;
-	private bool isShieldOn;
+	internal bool isShieldOn;
 	internal bool isInSecondDimension = false;
 	internal bool isAttacking = false;
 
@@ -113,7 +113,7 @@ public class Player : Characters
 			
 	}
 
-	void Respawn()
+	internal void Respawn()
 	{
 	//	 remove one of his total healths
 		g_totalHealth--;
@@ -230,7 +230,8 @@ public class Player : Characters
 		// When enemies damage our player and our shield powerup is not on
 		if (col.gameObject.CompareTag("Enemy")
 			&& !isShieldOn
-			&& isPlayerAlive)
+			&& isPlayerAlive
+			&& !isAttacking)
 		{
 			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
@@ -265,8 +266,9 @@ public class Player : Characters
 		}
 		if ( col.gameObject.CompareTag("Arrow"))
 		{
-			FastRunningPowerUp();
-			Destroy(col.gameObject);
+			m_playerBehaviour.m_speed = 50;
+			//FastRunningPowerUp();
+			//Destroy(col.gameObject);
 		}
 
 		if ( col.gameObject.CompareTag("clock"))
@@ -296,7 +298,7 @@ public class Player : Characters
 					//Jump
 					//rb.isKinematic = false;
 					isPlayerGrounded = false;
-			transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
+			//	transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
 
 			}
 	}
@@ -343,5 +345,11 @@ public class Player : Characters
 //	{
 //		m_playerBehaviour.m_animator.SetBool("Slide", false);
 //	}
+
+		void DisableAttackTrigger()
+		{
+			isAttacking = false;
+			Debug.Log (isAttacking);
+		}
 
 }

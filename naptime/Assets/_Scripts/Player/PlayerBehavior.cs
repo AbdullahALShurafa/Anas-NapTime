@@ -42,6 +42,8 @@ public class PlayerBehaviour : PlayerMovement
 		{
 			TriggerAnimation ("Attack");
 			Player.myPlayer.isAttacking = true;
+			Debug.Log(Player.myPlayer.isAttacking );
+				
 		}
 	}
 
