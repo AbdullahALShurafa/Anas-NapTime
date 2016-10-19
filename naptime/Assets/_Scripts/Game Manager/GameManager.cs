@@ -43,19 +43,6 @@ public class GameManager : MonoBehaviour {
 //
 	void PanelsBehaviors()
 	{
-		// just for testing
-		if (Input.GetKey(KeyCode.K))
-			{
-				// When level is cleared
-				// play the panel animation and enable it
-				endLevelPanel.SetActive(true);
-				// Get me the timer score text from the timer text and implement in into my EndScore text
-				endLevelScore.text = "Finished in: " +  minutes.ToString("00") + ":" + seconds.ToString("00") ;
-				// i dont want player to have any behavior after this so disable his script
-				Player.myPlayer.enabled = false;
-
-			}
-
 		// when player dies
 		if (!Player.myPlayer.isPlayerAlive)
 		{
@@ -64,6 +51,17 @@ public class GameManager : MonoBehaviour {
 			isTimerPaused = true;
 
 		}
+	}
+
+	internal void EndOfLevel()
+	{
+		// When level is cleared
+		// play the panel animation and enable it
+		endLevelPanel.SetActive(true);
+		// Get me the timer score text from the timer text and implement in into my EndScore text
+		endLevelScore.text = "Finished in: " +  minutes.ToString("00") + ":" + seconds.ToString("00") ;
+		// i dont want player to have any behavior after this so disable his script
+		Player.myPlayer.enabled = false;
 	}
 
 	// Call this whenever we want to play a VFX for collectiables

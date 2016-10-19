@@ -24,7 +24,7 @@ public class EnemyMove : MonoBehaviour {
 	{
 
 		// When enemies damage our player and our shield powerup is not on
-		if (col.gameObject.CompareTag("Player") && Player.myPlayer.isAttacking)
+		if (col.gameObject.CompareTag("Player") && Player.myPlayer.isAttackingOrSliding)
 		{
 			m_animator.SetTrigger("die");
 			enemyIsAlive = false;

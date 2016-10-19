@@ -10,13 +10,14 @@ public class Player : Characters
 
 	/// Player Componenets, -------------------
 
-	PlayerBehaviour m_playerBehaviour;
+	PlayerMovementBehavior m_playerBehaviour;
 
 	public bool isPlayerGrounded = true;
 	internal bool isPlayerAlive = true;
 	internal bool isShieldOn;
 	internal bool isInSecondDimension = false;
-	internal bool isAttacking = false;
+	internal bool isAttackingOrSliding = false;
+
 
 	private Rigidbody rb;
 
@@ -66,7 +67,7 @@ public class Player : Characters
 
 		m_animator = GetComponent<Animator> ();
 
-		m_playerBehaviour = new PlayerBehaviour (m_animator,transform);
+		m_playerBehaviour = new PlayerMovementBehavior (m_animator,transform);
 
 		g_CurrentHealth = m_health;
 
@@ -86,7 +87,10 @@ public class Player : Characters
 	void Update ()
 	{ 
 
-		JumpState();
+		//JumpState();
+		//AttackState();
+		//SlideState();
+		Behavior();
 		m_playerBehaviour.Behaviour ();
 
 		if (g_totalHealth > 0 )
@@ -190,6 +194,50 @@ public class Player : Characters
 	}
 
 
+
+
+	void Behavior()
+	{
+		// Attack 
+		if (Input.GetKeyDown (KeyCode.LeftShift) && Is_animation("Attack" , false) && isPlayerGrounded)
+		{
+			TriggerAnimation ("Attack");
+			isAttackingOrSliding = true;
+
+		}
+
+		// Slide
+		if (Input.GetKeyDown (KeyCode.DownArrow) && Is_animation("Slide" , false) && isPlayerGrounded)
+		{
+			TriggerAnimation ("Slide");
+			isAttackingOrSliding = true;
+			transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.Acceleration);
+
+
+		}
+
+		//Jump
+		//if not in the state of jumping
+		if (Input.GetKeyDown (KeyCode.Space) 
+			&& m_playerBehaviour.Is_animation("Jump", false) 
+			&& isPlayerGrounded 
+			&& isPlayerAlive
+			&& !isAttackingOrSliding ) 
+
+		{
+
+			//Let player jump
+			m_animator.SetBool("jump",true);
+
+			//Jump
+			//rb.isKinematic = false;
+			isPlayerGrounded = false;
+			transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
+
+		}
+	}
+		
+
 	public IEnumerator FlashHurtImage()
 	{
 		//Enable the image for the flash effect
@@ -231,7 +279,7 @@ public class Player : Characters
 		if (col.gameObject.CompareTag("Enemy")
 			&& !isShieldOn
 			&& isPlayerAlive
-			&& !isAttacking)
+			&& !isAttackingOrSliding)
 		{
 			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
@@ -278,56 +326,20 @@ public class Player : Characters
 			Destroy(col.gameObject);
 		}
 
+		if ( col.gameObject.CompareTag("endLevel"))
+		{
+			GameManager.g_gameManager.EndOfLevel();
+		}
 		
 
 	}
 		
 
-	void JumpState()
-	{
-			//if not in the state of jumping
-		if (Input.GetKeyDown (KeyCode.Space) 
-			&& m_playerBehaviour.Is_animation("Jump", false) 
-			&& isPlayerGrounded 
-			&& isPlayerAlive) 
 
-			{
-					//Let player jump
-			//		m_playerBehaviour.BoolAnimation ("jump");
-					m_animator.SetBool("jump",true);
-					//Jump
-					//rb.isKinematic = false;
-					isPlayerGrounded = false;
-			//	transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
-
-			}
-	}
 
 
 
 	//Events for certain clips..
-	//while in the jump state
-//	void EventOfJump()
-//	{
-//
-//	}
-
-//	void EventOfAttack()
-//	{
-//		m_playerBehaviour.m_animator.SetBool("Attack", true);
-//
-//	}
-//
-//	void DisableOfAttack()
-//	{
-//		m_playerBehaviour.m_animator.SetBool("Attack", false);
-//
-//	}
-//	void EventOfSlide()
-//	{
-//		m_playerBehaviour.m_animator.SetBool("Slide", true);
-//	}
-//
 	//This is being called inside certain animation clips, to make player move. 
 	void ActionMove(float a_speed)
 	{
@@ -336,20 +348,11 @@ public class Player : Characters
 		
 	//Events Disables
 	//Following logic will disable certain parameter
-//	void DisableJumpTrigger()
-//	{
-//		m_playerBehaviour.m_animator.SetBool ("Jump", false);
-//	}
 
-//	void DisableSlideTrigger()
-//	{
-//		m_playerBehaviour.m_animator.SetBool("Slide", false);
-//	}
-
-		void DisableAttackTrigger()
-		{
-			isAttacking = false;
-			Debug.Log (isAttacking);
-		}
+	void DisableAttackOrSlideTrigger()
+	{
+		isAttackingOrSliding = false;
+		Debug.Log (isAttackingOrSliding);
+	}
 
 }

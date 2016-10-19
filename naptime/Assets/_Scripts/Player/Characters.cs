@@ -27,6 +27,8 @@ public class Characters : MonoBehaviour
 
 	internal Vector3 m_distance ;
 	internal Vector3 jumpVelocity = new  Vector3(0, 15f, 0);
+	internal Vector3 SlideVelocity = new  Vector3(10, 0, 0);
+
 
 
 	//Checking is player in the state of certain animation
