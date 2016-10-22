@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 8417133d89bd14fd291adc48d9991345
+timeCreated: 1477144055
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Base Human
+    100002: Base HumanHead
+    100004: Base HumanLCalf
+    100006: Base HumanLCollarbone
+    100008: Base HumanLFoot
+    100010: Base HumanLForearm
+    100012: Base HumanLPalm
+    100014: Base HumanLPlatform
+    100016: Base HumanLThigh
+    100018: Base HumanLUpperarm
+    100020: Base HumanNeck1
+    100022: Base HumanNeck2
+    100024: Base HumanPelvis
+    100026: Base HumanRArmCollarbone
+    100028: Base HumanRArmForearm
+    100030: Base HumanRArmPalm
+    100032: Base HumanRArmUpperarm
+    100034: Base HumanRibcage
+    100036: Base HumanRLegCalf
+    100038: Base HumanRLegFoot
+    100040: Base HumanRLegPlatform
+    100042: Base HumanRLegThigh
+    100044: Base HumanSpine1
+    100046: Base HumanSpine2
+    100048: Base HumanSpine3
+    100050: Base HumanSpine4
+    100052: Base HumanTail1
+    100054: Base HumanTail2
+    100056: Base HumanTail3
+    100058: Base HumanTail4
+    100060: Base HumanTail5
+    100062: Box001
+    100064: Circle001
+    100066: Circle002
+    100068: L_inner eye
+    100070: L_outer eye
+    100072: R_inner eye
+    100074: R_outer eye
+    100076: Rectangle001
+    100078: //RootNode
+    400000: Base Human
+    400002: Base HumanHead
+    400004: Base HumanLCalf
+    400006: Base HumanLCollarbone
+    400008: Base HumanLFoot
+    400010: Base HumanLForearm
+    400012: Base HumanLPalm
+    400014: Base HumanLPlatform
+    400016: Base HumanLThigh
+    400018: Base HumanLUpperarm
+    400020: Base HumanNeck1
+    400022: Base HumanNeck2
+    400024: Base HumanPelvis
+    400026: Base HumanRArmCollarbone
+    400028: Base HumanRArmForearm
+    400030: Base HumanRArmPalm
+    400032: Base HumanRArmUpperarm
+    400034: Base HumanRibcage
+    400036: Base HumanRLegCalf
+    400038: Base HumanRLegFoot
+    400040: Base HumanRLegPlatform
+    400042: Base HumanRLegThigh
+    400044: Base HumanSpine1
+    400046: Base HumanSpine2
+    400048: Base HumanSpine3
+    400050: Base HumanSpine4
+    400052: Base HumanTail1
+    400054: Base HumanTail2
+    400056: Base HumanTail3
+    400058: Base HumanTail4
+    400060: Base HumanTail5
+    400062: Box001
+    400064: Circle001
+    400066: Circle002
+    400068: L_inner eye
+    400070: L_outer eye
+    400072: R_inner eye
+    400074: R_outer eye
+    400076: Rectangle001
+    400078: //RootNode
+    2300000: L_inner eye
+    2300002: L_outer eye
+    2300004: R_inner eye
+    2300006: R_outer eye
+    3300000: L_inner eye
+    3300002: L_outer eye
+    3300004: R_inner eye
+    3300006: R_outer eye
+    4300000: R_outer eye
+    4300002: R_inner eye
+    4300004: L_outer eye
+    4300006: L_inner eye
+    4300008: Box001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Box001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nInbetween bone default rotation found in this file
+      is different from the one found in the source avatar:\n\t'Base HumanSpine1'
+      : rotation error = 0.175864 deg\n\t'Base HumanRibcage' : rotation error = 0.255190
+      deg\n\t'Base HumanNeck2' : rotation error = 3.424452 deg\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Base Human
+        weight: 1
+      - path: Base HumanLPlatform
+        weight: 1
+      - path: Base HumanPelvis
+        weight: 1
+      - path: Base HumanPelvis/Base HumanLThigh
+        weight: 1
+      - path: Base HumanPelvis/Base HumanLThigh/Base HumanLCalf
+        weight: 1
+      - path: Base HumanPelvis/Base HumanLThigh/Base HumanLCalf/Base HumanLFoot
+        weight: 1
+      - path: Base HumanPelvis/Base HumanRLegThigh
+        weight: 1
+      - path: Base HumanPelvis/Base HumanRLegThigh/Base HumanRLegCalf
+        weight: 1
+      - path: Base HumanPelvis/Base HumanRLegThigh/Base HumanRLegCalf/Base HumanRLegFoot
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanLCollarbone
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanLCollarbone/Base HumanLUpperarm
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanLCollarbone/Base HumanLUpperarm/Base
+          HumanLForearm
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanLCollarbone/Base HumanLUpperarm/Base
+          HumanLForearm/Base HumanLPalm
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead/L_outer
+          eye
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead/L_outer
+          eye/L_inner eye
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead/R_outer
+          eye
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead/R_outer
+          eye/R_inner eye
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead/Rectangle001
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead/Rectangle001/Circle001
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanNeck1/Base HumanNeck2/Base HumanHead/Rectangle001/Circle002
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanRArmCollarbone
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanRArmCollarbone/Base HumanRArmUpperarm
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanRArmCollarbone/Base HumanRArmUpperarm/Base
+          HumanRArmForearm
+        weight: 1
+      - path: Base HumanPelvis/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Base
+          HumanSpine4/Base HumanRibcage/Base HumanRArmCollarbone/Base HumanRArmUpperarm/Base
+          HumanRArmForearm/Base HumanRArmPalm
+        weight: 1
+      - path: Base HumanPelvis/Base HumanTail1
+        weight: 1
+      - path: Base HumanPelvis/Base HumanTail1/Base HumanTail2
+        weight: 1
+      - path: Base HumanPelvis/Base HumanTail1/Base HumanTail2/Base HumanTail3
+        weight: 1
+      - path: Base HumanPelvis/Base HumanTail1/Base HumanTail2/Base HumanTail3/Base
+          HumanTail4
+        weight: 1
+      - path: Base HumanPelvis/Base HumanTail1/Base HumanTail2/Base HumanTail3/Base
+          HumanTail4/Base HumanTail5
+        weight: 1
+      - path: Base HumanRLegPlatform
+        weight: 1
+      - path: Box001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Base HumanPelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanLThigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanRLegThigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanLCalf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanRLegCalf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanLFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanRLegFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanSpine2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanSpine4
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanNeck1
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanHead
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanLCollarbone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanRArmCollarbone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanLUpperarm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanRArmUpperarm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanLForearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanRArmForearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanLPalm
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Base HumanRArmPalm
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_outer eye
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_outer eye
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: walking_marten(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Base Human
+      position: {x: 0.78633106, y: -52.935715, z: 3.5635042}
+      rotation: {x: 0.5000001, y: -0.49999997, z: -0.50000006, w: 0.4999999}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Base HumanLPlatform
+      position: {x: -11.479035, y: -46.94697, z: -19.875528}
+      rotation: {x: -0.67840093, y: 0.19453543, z: 0.68810576, w: -0.16863741}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.9999993}
+      transformModified: 1
+    - name: Base HumanRLegPlatform
+      position: {x: 2.7354023, y: -44.50843, z: 28.56815}
+      rotation: {x: -0.40852103, y: 0.7312922, z: 0.37895355, w: -0.39334035}
+      scale: {x: 1.0000004, y: 0.9999993, z: 0.9999998}
+      transformModified: 1
+    - name: Box001
+      position: {x: 0, y: 0, z: -0.0000009536743}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Base HumanPelvis
+      position: {x: 0.00000166893, y: 49.70305, z: -2.4778724}
+      rotation: {x: 0.49912703, y: -0.5008716, z: -0.4991269, w: 0.5008715}
+      scale: {x: 1.0000005, y: 0.99999976, z: 0.9999995}
+      transformModified: 1
+    - name: Base HumanLThigh
+      position: {x: -1.1162052, y: 3.0434484, z: 5.702708}
+      rotation: {x: 0.018927008, y: 0.98957324, z: -0.014030695, w: 0.1420907}
+      scale: {x: 0.99999976, y: 1, z: 0.99999946}
+      transformModified: 1
+    - name: Base HumanLCalf
+      position: {x: -17.568548, y: 0.0000026226044, z: -0.0000023841858}
+      rotation: {x: 0.011017054, y: 0.25158295, z: -0.015372276, w: 0.967651}
+      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000005}
+      transformModified: 1
+    - name: Base HumanLFoot
+      position: {x: -28.857853, y: -0.0000009536743, z: 0.0000019073486}
+      rotation: {x: 0.018824331, y: -0.12741493, z: -0.6274062, w: 0.7679665}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.9999999}
+      transformModified: 1
+    - name: Base HumanSpine1
+      position: {x: -2.9630618, y: -0.22670531, z: -0.00000059604645}
+      rotation: {x: -0.000000059604645, y: -0.000000059604645, z: -0.14865753, w: 0.9888888}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: Base HumanSpine2
+      position: {x: -16.046438, y: -0.00000047683716, z: 0.000000059604645}
+      rotation: {x: 0.0000025629995, y: 0.00000044703478, z: 0.17011474, w: 0.9854243}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+      transformModified: 1
+    - name: Base HumanSpine3
+      position: {x: -13.669423, y: -0.00000023841858, z: -0.00000011920929}
+      rotation: {x: -0.0000025033953, y: 0.00000032782557, z: 0.08468916, w: 0.99640745}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000001}
+      transformModified: 1
+    - name: Base HumanSpine4
+      position: {x: -14.689514, y: 0, z: -0.00000011920929}
+      rotation: {x: 0.000000029802322, y: -0.00000008940697, z: -0.086892515, w: 0.9962177}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+      transformModified: 1
+    - name: Base HumanRibcage
+      position: {x: -19.794613, y: -0.00000011920929, z: 0.00000017881393}
+      rotation: {x: 0.000000014901161, y: 0.000000059604645, z: -0.021266863, w: 0.99977386}
+      scale: {x: 0.99999905, y: 0.9999993, z: 0.9999997}
+      transformModified: 1
+    - name: Base HumanLCollarbone
+      position: {x: -0.91817474, y: 6.5804815, z: 4.0026865}
+      rotation: {x: 0.057317622, y: 0.68701226, z: 0.16117778, w: 0.7062228}
+      scale: {x: 0.9999999, y: 1.0000002, z: 0.99999994}
+      transformModified: 1
+    - name: Base HumanLUpperarm
+      position: {x: -10.607775, y: 0, z: 0}
+      rotation: {x: 0.18712638, y: 0.014794124, z: -0.15960835, w: 0.96916974}
+      scale: {x: 1.0000006, y: 1.0000004, z: 0.9999962}
+      transformModified: 1
+    - name: Base HumanLForearm
+      position: {x: -27.13942, y: 0, z: 0.0000019073486}
+      rotation: {x: 0.05023214, y: 0.0047255238, z: -0.0071958285, w: 0.9987005}
+      scale: {x: 0.9999912, y: 0.9999995, z: 1.0000098}
+      transformModified: 1
+    - name: Base HumanLPalm
+      position: {x: -23.12255, y: 0, z: -0.0000009536743}
+      rotation: {x: -0.38564005, y: 0.09645214, z: 0.010037947, w: 0.91753906}
+      scale: {x: 0.9999734, y: 1.0000265, z: 1.0000032}
+      transformModified: 1
+    - name: Base HumanNeck1
+      position: {x: -0.051490784, y: -0.22670603, z: -0.00000035762787}
+      rotation: {x: -0.000000059604638, y: 0.000000059604638, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+      transformModified: 1
+    - name: Base HumanNeck2
+      position: {x: -13.575859, y: 0.00000047683716, z: -0.00000023841858}
+      rotation: {x: 0.00000004470348, y: -0.000000059604638, z: 0, w: 1}
+      scale: {x: 0.99999964, y: 1, z: 1.0000002}
+      transformModified: 1
+    - name: Base HumanHead
+      position: {x: -13.575851, y: 0, z: -0.00000023841858}
+      rotation: {x: -0.000000029802319, y: 0.0000000745058, z: -0.000000029802319,
+        w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+      transformModified: 1
+    - name: L_outer eye
+      position: {x: -6.3053665, y: 10.4885645, z: 5.031166}
+      rotation: {x: -0.609115, y: 0.3433779, z: 0.6293494, w: 0.3391016}
+      scale: {x: 0.07389175, y: 0.07389174, z: 0.07389173}
+      transformModified: 1
+    - name: L_inner eye
+      position: {x: -0.0000038146973, y: -0.00012207031, z: -2.0222168}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99041766, y: 0.99041766, z: 0.99041766}
+      transformModified: 1
+    - name: R_outer eye
+      position: {x: -6.230644, y: 10.359326, z: -4.7144623}
+      rotation: {x: -0.609115, y: 0.34337792, z: 0.62934935, w: 0.33910155}
+      scale: {x: 0.07389175, y: 0.07389174, z: 0.07389173}
+      transformModified: 1
+    - name: R_inner eye
+      position: {x: 0.0000076293945, y: -0.000061035156, z: 2.0222168}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99041766, y: 0.99041766, z: 0.99041766}
+      transformModified: 1
+    - name: Rectangle001
+      position: {x: -6.3260956, y: 18.14386, z: 0.07319236}
+      rotation: {x: -0.5007892, y: 0.49920103, z: 0.50079775, w: 0.49920952}
+      scale: {x: 1.0000002, y: 0.9999999, z: 0.99999976}
+      transformModified: 1
+    - name: Circle001
+      position: {x: -5.030986, y: 0.24300385, z: 0.050445557}
+      rotation: {x: -0.26277837, y: 0.000003864706, z: -0.0000051220213, w: 0.96485627}
+      scale: {x: 0.80523413, y: 0.805234, z: 0.80523413}
+      transformModified: 1
+    - name: Circle002
+      position: {x: 4.71464, y: 0.16828918, z: -0.078956604}
+      rotation: {x: -0.26277837, y: 0.000003864706, z: -0.0000051220213, w: 0.96485627}
+      scale: {x: 0.80523413, y: 0.805234, z: 0.80523413}
+      transformModified: 1
+    - name: Base HumanRArmCollarbone
+      position: {x: -0.9181671, y: 6.5804815, z: -4.0026855}
+      rotation: {x: 0.05731783, y: 0.6870121, z: -0.1611781, w: -0.70622295}
+      scale: {x: 0.99999976, y: 1.0000005, z: 0.9999999}
+      transformModified: 1
+    - name: Base HumanRArmUpperarm
+      position: {x: -10.607772, y: 0.0000019073486, z: -0.0000038146973}
+      rotation: {x: -0.18712844, y: -0.014794088, z: -0.15960857, w: 0.9691694}
+      scale: {x: 0.99999774, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: Base HumanRArmForearm
+      position: {x: -27.139385, y: 0.0000038146973, z: -0.0000019073486}
+      rotation: {x: -0.050211597, y: -0.0047241393, z: -0.0071957083, w: 0.9987016}
+      scale: {x: 0.9999898, y: 1.0000001, z: 1.0000105}
+      transformModified: 1
+    - name: Base HumanRArmPalm
+      position: {x: -23.122524, y: -0.0000019073486, z: 0.0000009536743}
+      rotation: {x: 0.38564384, y: -0.096451834, z: 0.010043707, w: 0.91753745}
+      scale: {x: 0.9999712, y: 1.0000246, z: 1.0000064}
+      transformModified: 1
+    - name: Base HumanRLegThigh
+      position: {x: -1.1162043, y: 3.0434482, z: -5.7027063}
+      rotation: {x: 0.018927515, y: 0.9895732, z: 0.014033437, w: -0.14209089}
+      scale: {x: 1.0000002, y: 0.99999976, z: 1.0000001}
+      transformModified: 1
+    - name: Base HumanRLegCalf
+      position: {x: -17.568554, y: 0.0000038146973, z: 0.0000014305115}
+      rotation: {x: -0.011012167, y: -0.25154006, z: -0.0153618455, w: 0.96766233}
+      scale: {x: 1, y: 1.0000002, z: 0.99999946}
+      transformModified: 1
+    - name: Base HumanRLegFoot
+      position: {x: -28.85785, y: 0.0000014305115, z: -0.0000009536743}
+      rotation: {x: -0.018907247, y: 0.12724565, z: -0.6274172, w: 0.76798356}
+      scale: {x: 1.0000007, y: 0.99999934, z: 0.9999999}
+      transformModified: 1
+    - name: Base HumanTail1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0.000000067055225, z: 0.56358564, w: 0.82605773}
+      scale: {x: 1.0000002, y: 0.9999996, z: 1.0000001}
+      transformModified: 1
+    - name: Base HumanTail2
+      position: {x: -9.989643, y: -0.0000009536743, z: 0}
+      rotation: {x: 0.000000022351742, y: 0.00000009872019, z: 0.50532216, w: 0.86293083}
+      scale: {x: 1, y: 0.9999997, z: 0.9999998}
+      transformModified: 1
+    - name: Base HumanTail3
+      position: {x: -12.867729, y: -0.0000009536743, z: 0}
+      rotation: {x: 0.00000004470348, y: 0.00000014156102, z: 0.22125556, w: 0.9752159}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1.0000001}
+      transformModified: 1
+    - name: Base HumanTail4
+      position: {x: -15.300421, y: 0, z: 0.000000059604645}
+      rotation: {x: -0.000000059604638, y: -0.00000009685753, z: -0.100484535, w: 0.9949387}
+      scale: {x: 1.0000002, y: 1, z: 1}
+      transformModified: 1
+    - name: Base HumanTail5
+      position: {x: -13.977898, y: 0, z: 0}
+      rotation: {x: 0.000000044703473, y: -0.000000002793967, z: -0.40948674, w: 0.91231614}
+      scale: {x: 1.0000004, y: 0.9999997, z: 0.99999994}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
