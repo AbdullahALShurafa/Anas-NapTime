@@ -28,7 +28,7 @@ public class EnemyMove : MonoBehaviour {
 		{
 			m_animator.SetTrigger("die");
 			enemyIsAlive = false;
-			//Destroy(gameObject,5);
+			Destroy(gameObject,5);
 
 		}
 

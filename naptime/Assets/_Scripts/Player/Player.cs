@@ -22,7 +22,7 @@ public class Player : Characters
 	private Rigidbody rb;
 
 	public Image flashingHurtImage;
-
+	public GameObject DeathFader;
 
 	// Transforms and vector components for player
 	internal Vector3 checkPointPos;
@@ -105,6 +105,7 @@ public class Player : Characters
 
 	void Death()
 	{
+
 		// Player is Dead. 
 		isPlayerAlive = false;
 
@@ -114,18 +115,23 @@ public class Player : Characters
 		// Fixes a bug that affects the UI of the Health.. , Tried to do it automaticly in the if condition but did'nt work therefore it needed a manual fix
 		HeartUIContainer.sprite = HeartSprites[0];
 
+
 			
 	}
 
 	internal void Respawn()
 	{
-	//	 remove one of his total healths
+		//	 remove one of his total healths
 		g_totalHealth--;
 		// Respawn only when we have totalhealth 
 		//TODO: Set player pos to this pos 
 		// Activated checkpoint only when our player has total health else his dead and he shouldn't respawn at the checkpoint
 		if (g_totalHealth >0) 
+		{
+			StartCoroutine(FaderOfDeath(2));
+		
 			this.transform.position = checkPointPos;
+		}
 
 		// Refill his health 
 		g_CurrentHealth = 5;
@@ -194,7 +200,13 @@ public class Player : Characters
 	}
 
 
+	IEnumerator FaderOfDeath (float a_FadeTime)
+	{
+		DeathFader.SetActive (true);
+		yield return new WaitForSeconds(a_FadeTime);
+		DeathFader.SetActive (false);
 
+	}
 
 	void Behavior()
 	{

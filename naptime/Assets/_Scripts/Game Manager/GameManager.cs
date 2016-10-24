@@ -35,12 +35,12 @@ public class GameManager : MonoBehaviour {
 		StartCoroutine (Timer());
 	}
 
-//	void Update()
-//	{
-//		PanelsBehaviors();
-//
-//	}
-//
+	void Update()
+	{
+		PanelsBehaviors();
+
+	}
+
 	void PanelsBehaviors()
 	{
 		// when player dies
