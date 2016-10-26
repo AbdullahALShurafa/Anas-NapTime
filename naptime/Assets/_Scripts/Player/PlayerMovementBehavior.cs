@@ -51,16 +51,16 @@ public class PlayerMovementBehavior : Characters
 				RotationKeys();
 			}
 
-			// Backward movement
-			else if(Is_keyPressed(KeyCode.S))	
-			{
-				Run(Vector3.back, AnimationClip.RunBackward);
-				Direction(angle);
-				Player.myPlayer.DeductStamina(1);
-
-				// Handle turns while going backwards
-				RotationKeys();
-			}
+//			// Backward movement
+//			else if(Is_keyPressed(KeyCode.S))	
+//			{
+//				Run(Vector3.back, AnimationClip.RunBackward);
+//				Direction(angle);
+//				Player.myPlayer.DeductStamina(1);
+//
+//				// Handle turns while going backwards
+//				RotationKeys();
+//			}
 
 			// No forward or back
 			else	
@@ -80,12 +80,20 @@ public class PlayerMovementBehavior : Characters
 		{
 			Direction(angle - 180 * Time.deltaTime);
 
+			//Direction(angle - 180 * Time.deltaTime);
+
+
 		}
 
 		if (Is_keyPressed(KeyCode.D))
 		{
 			Direction(angle + 180 * Time.deltaTime);
+
+		//	Direction(angle + 180 * Time.deltaTime);
+
 		}
+
+	
 	}
 
 	/// <summary>

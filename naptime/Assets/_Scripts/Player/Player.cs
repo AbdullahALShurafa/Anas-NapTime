@@ -304,7 +304,7 @@ public class Player : Characters
 
 		if ( col.gameObject.CompareTag("coffee"))
 		{
-			AddStamina(100);
+			AddStamina(400);
 			GameManager.g_gameManager.InstantiateParticle(1);
 			Destroy(col.gameObject);
 		}
