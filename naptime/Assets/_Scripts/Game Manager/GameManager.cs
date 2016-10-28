@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour {
 			// Show the game over panel
 			LostLevelPanel.SetActive(true);
 			isTimerPaused = true;
+			Player.myPlayer.enabled = false;
 
 		}
 	}

@@ -18,6 +18,7 @@ public class Player : Characters
 	internal bool isInSecondDimension = false;
 	internal bool isAttackingOrSliding = false;
 
+	public AudioClip[] SFXsounds;
 
 	private Rigidbody rb;
 
@@ -79,6 +80,8 @@ public class Player : Characters
 
 		flashingHurtImage.enabled = false;
 
+
+
 	}
 
 
@@ -101,7 +104,14 @@ public class Player : Characters
 
 
 	}
-		
+
+	public void playAudio(int clipNumber)
+	{
+		AudioSource audio = GetComponent<AudioSource>();
+		audio.clip = SFXsounds[clipNumber];
+		audio.Play ();
+
+	}
 
 	void Death()
 	{
@@ -138,6 +148,8 @@ public class Player : Characters
 			
 		g_totalHealthTxt.text = "x" + g_totalHealth; 
 	}
+
+
 
 
 	void Heart_Handler()
@@ -215,7 +227,6 @@ public class Player : Characters
 		{
 			TriggerAnimation ("Attack");
 			isAttackingOrSliding = true;
-
 		}
 
 		// Slide
@@ -244,7 +255,6 @@ public class Player : Characters
 			//Jump
 			//rb.isKinematic = false;
 			isPlayerGrounded = false;
-			transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
 
 		}
 	}
@@ -295,6 +305,7 @@ public class Player : Characters
 		{
 			// Damage the player and play the flash hurt effect
 			g_CurrentHealth--;
+			playAudio(4);
 			StartCoroutine(FlashHurtImage());
 
 			// when player health is finished respawn him to the last checkpoint 
@@ -305,6 +316,7 @@ public class Player : Characters
 		if ( col.gameObject.CompareTag("coffee"))
 		{
 			AddStamina(400);
+			playAudio(3);
 			GameManager.g_gameManager.InstantiateParticle(1);
 			Destroy(col.gameObject);
 		}
@@ -312,6 +324,8 @@ public class Player : Characters
 		if ( col.gameObject.CompareTag("shield"))
 		{
 			StartCoroutine(ShieldOnBehavior(5));
+			playAudio(3);
+
 			Destroy(col.gameObject);
 		}
 
@@ -319,6 +333,8 @@ public class Player : Characters
 		if ( col.gameObject.CompareTag("Heart"))
 		{
 			AddHealth();
+			playAudio(3);
+
 			//TODO: play heart VFX here
 			GameManager.g_gameManager.InstantiateParticle(0);
 			Destroy(col.gameObject);
@@ -326,6 +342,8 @@ public class Player : Characters
 		}
 		if ( col.gameObject.CompareTag("Arrow"))
 		{
+			playAudio(3);
+
 			m_playerBehaviour.m_speed = 50;
 			//FastRunningPowerUp();
 			//Destroy(col.gameObject);
@@ -334,6 +352,8 @@ public class Player : Characters
 		if ( col.gameObject.CompareTag("clock"))
 		{
 			StartCoroutine(PauseTimePowerup(5));
+			playAudio(3);
+
 			GameManager.g_gameManager.InstantiateParticle(2);
 			Destroy(col.gameObject);
 		}
@@ -356,6 +376,12 @@ public class Player : Characters
 	void ActionMove(float a_speed)
 	{
 		m_playerBehaviour.m_speed = a_speed;
+	}
+
+	void JumpForceEvent()
+	{
+		transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
+
 	}
 		
 	//Events Disables
