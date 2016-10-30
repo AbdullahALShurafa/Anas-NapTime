@@ -30,6 +30,12 @@ public class Characters : MonoBehaviour
 	internal Vector3 SlideVelocity = new  Vector3(10, 0, 0);
 
 
+	protected float maxHealth;
+	protected float maxSpeed;
+	protected float maxDamage;
+	protected bool isDead;
+
+
 
 	//Checking is player in the state of certain animation
 	internal bool Is_animation(string a_nameTag, bool a_isActive)
@@ -78,5 +84,26 @@ public class Characters : MonoBehaviour
 		m_transform.Translate (a_position * m_speed * Time.deltaTime);
 
 		Animation(a_animationClip);
+	}
+
+	public float GetHealth()
+	{
+		return maxHealth;
+	}
+	public void SetHealth(float a_health)
+	{
+		maxHealth = a_health;
+	}
+	public float GetSpeed()
+	{
+		return maxSpeed;
+	}
+	public void SetSpeed(float a_speed)
+	{
+		maxSpeed = a_speed;
+	}
+	public void IsDead(bool a_isdead)
+	{
+		isDead = a_isdead;
 	}
 }

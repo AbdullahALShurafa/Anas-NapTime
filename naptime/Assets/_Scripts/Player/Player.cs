@@ -18,9 +18,9 @@ public class Player : Characters
 	internal bool isInSecondDimension = false;
 	internal bool isAttackingOrSliding = false;
 
+	public CapsuleCollider playerCapCol;
 	public AudioClip[] SFXsounds;
 
-	private Rigidbody rb;
 
 	public Image flashingHurtImage;
 	public GameObject DeathFader;
@@ -76,7 +76,6 @@ public class Player : Characters
 
 		g_lowStaminaTxt.enabled = false;
 
-		rb = GetComponent<Rigidbody>();
 
 		flashingHurtImage.enabled = false;
 
@@ -233,6 +232,7 @@ public class Player : Characters
 		if (Input.GetKeyDown (KeyCode.DownArrow) && Is_animation("Slide" , false) && isPlayerGrounded)
 		{
 			TriggerAnimation ("Slide");
+			playerCapCol.direction = 0;
 			isAttackingOrSliding = true;
 			transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.Acceleration);
 
@@ -390,6 +390,7 @@ public class Player : Characters
 	void DisableAttackOrSlideTrigger()
 	{
 		isAttackingOrSliding = false;
+		playerCapCol.direction = 1;
 		Debug.Log (isAttackingOrSliding);
 	}
 

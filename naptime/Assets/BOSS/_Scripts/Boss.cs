@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class Boss : Character
+public class Boss : Characters
 {
     // Testing...
     enum EnemyState
@@ -13,6 +13,7 @@ public class Boss : Character
         Firepit,
         Dead
     };
+
     EnemyState state = EnemyState.Walking;
     float m_timer;
     public float g_chargeTimer;
@@ -33,6 +34,7 @@ public class Boss : Character
     public GameObject[] g_landingPos;
     private int m_randomLandingPointIndex;
     private bool m_didGetLandingPoint;
+
     void Start()
     {
         m_player = GameObject.FindGameObjectWithTag("Player");
@@ -43,21 +45,26 @@ public class Boss : Character
         m_agent.speed = GetSpeed();
         didSetupAttack = false;
         m_didGetLandingPoint = false;
+
+		m_animator = GetComponent<Animator> ();
+
         
     }
 
     public void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.C))
+        // Testing Animtion
+		if (Input.GetKeyDown(KeyCode.C) && Is_animation("dash" , false))
         {
             SetState(EnemyState.Charge);
             getPlayerPosOnce = true;
+			m_animator.SetTrigger("dash");
         }
-        if (Input.GetKeyDown(KeyCode.J))
+		if (Input.GetKeyDown(KeyCode.J))
         {
             SetState(EnemyState.Jump);
             getPlayerPosOnce = true;
+
         }
         switch (state)
         {
@@ -78,6 +85,12 @@ public class Boss : Character
                 break;
             case EnemyState.Firepit:
                 {
+					//TODO: User the spell animation
+				if ( Is_animation("spell" , false))
+				{
+					// In the animation clip, there will be a event that will be called to shot the actual fire.
+					m_animator.SetTrigger("spell");
+				}
                     Debug.Log(Vector3.Distance(m_player.transform.position, g_landingPos[0].transform.position));
                     //if ((Vector3.Distance(transform.position, m_player.transform.position) < 15) && m_player.GetComponent<CharacterController>().isGrounded == true)
                     //{
@@ -88,7 +101,6 @@ public class Boss : Character
                 break;
            case EnemyState.Dead:
                 {
-
                 }
                 break;
             default:
@@ -145,6 +157,13 @@ public class Boss : Character
         }
     }
   
+	//Firepit Event
+	void ShootTheFire()
+	{
+		// Shot the fire here
+	}
+
+
     void PerformJumpAttack()
     {
        
