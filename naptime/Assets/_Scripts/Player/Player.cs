@@ -377,6 +377,11 @@ public class Player : Characters
 		transform.gameObject.GetComponent<Rigidbody>().AddForce (m_playerBehaviour.jumpVelocity, ForceMode.VelocityChange);
 
 	}
+
+	void RunAudioSFX()
+	{
+		playAudio(5);
+	}
 		
 	//Events Disables
 	//Following logic will disable certain parameter
