@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class Boss : Characters
 {
@@ -35,6 +36,14 @@ public class Boss : Characters
     private int m_randomLandingPointIndex;
     private bool m_didGetLandingPoint;
 
+
+
+	private float a_maxHealth = 100f;
+	public float g_currentHealth;
+	public GameObject healthBar;
+	public Slider HealthUI;
+
+
     void Start()
     {
         m_player = GameObject.FindGameObjectWithTag("Player");
@@ -48,6 +57,11 @@ public class Boss : Characters
 
 		m_animator = GetComponent<Animator> ();
 
+	
+		g_currentHealth = a_maxHealth;
+
+
+
         
     }
 
@@ -60,10 +74,12 @@ public class Boss : Characters
             getPlayerPosOnce = true;
 			m_animator.SetTrigger("dash");
         }
-		if (Input.GetKeyDown(KeyCode.J))
+		if (Input.GetKeyDown(KeyCode.J) && Is_animation("spell" , false))
         {
-            SetState(EnemyState.Jump);
+           SetState(EnemyState.Jump);
+			LookAtPlayer();
             getPlayerPosOnce = true;
+			m_animator.SetTrigger("spell");
 
         }
         switch (state)
@@ -161,14 +177,15 @@ public class Boss : Characters
 	void ShootTheFire()
 	{
 		// Shot the fire here
+		// hurt character if they collide. 
 	}
 
 
     void PerformJumpAttack()
     {
        
-        // Loops throught the patrol points to choose a landing point closest to the player.
-        // THERE IS A BUG WHERE THE PLAYER CAN ACTIVATE MORE THAN ONE LANDING POINT!!!
+//        // Loops throught the patrol points to choose a landing point closest to the player.
+//        // THERE IS A BUG WHERE THE PLAYER CAN ACTIVATE MORE THAN ONE LANDING POINT!!!
         for (int i = 0; i < g_landingPos.Length; i++)
         {
             float _distanceOfPlayerFromLandingPoints = Vector3.Distance(m_player.transform.position, g_landingPos[i].transform.position);
@@ -208,6 +225,9 @@ public class Boss : Characters
         {
             
             // checks if the player is close to the agent once landed & if the player is grounded to deal damage
+			// To check if player isGrounded use "Player.myPlayer.isPlayerGrounded"
+			// if isPlayerGrounded doesent work check the ground layers and player layers , there are 2 sphere collidies on panda legs.
+
             if ((Vector3.Distance(transform.position, m_player.transform.position) < 15) && m_player.GetComponent<CharacterController>().isGrounded == true)
             {
                 Debug.Log("Player Is Grounded");
@@ -270,8 +290,29 @@ public class Boss : Characters
         if(obj.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player Has Been Hit");
+			//Player.myPlayer.g_CurrentHealth--;
+
         }
     }
+
+
+
+	public void GetDamaged()
+	{
+
+		g_currentHealth -= 1;
+		HealthUI.value = g_currentHealth;
+
+
+		if (g_currentHealth <=0)
+		{
+			g_currentHealth = 0f;
+
+		}
+
+	}
+
+
 }   
    
 

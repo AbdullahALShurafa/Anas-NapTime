@@ -240,7 +240,6 @@ public class Player : Characters
 		}
 
 		//Jump
-		//if not in the state of jumping
 		if (Input.GetKeyDown (KeyCode.Space) 
 			&& m_playerBehaviour.Is_animation("Jump", false) 
 			&& isPlayerGrounded 
@@ -248,12 +247,8 @@ public class Player : Characters
 			&& !isAttackingOrSliding ) 
 
 		{
-
 			//Let player jump
 			m_animator.SetBool("jump",true);
-
-			//Jump
-			//rb.isKinematic = false;
 			isPlayerGrounded = false;
 
 		}
@@ -345,7 +340,6 @@ public class Player : Characters
 			playAudio(3);
 
 			m_playerBehaviour.m_speed = 50;
-			//FastRunningPowerUp();
 			//Destroy(col.gameObject);
 		}
 
@@ -391,7 +385,6 @@ public class Player : Characters
 	{
 		isAttackingOrSliding = false;
 		playerCapCol.direction = 1;
-		Debug.Log (isAttackingOrSliding);
 	}
 
 }
